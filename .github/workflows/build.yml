@@ -1,5 +1,5 @@
 # Builds the site in the cloud whenever content / template / assets change on main.
-# Result: index.html, feed.xml, sitemap.xml, og.png are regenerated and committed back,
+# Result: index.html, feed.xml, sitemap.xml and the icons (from avatar.jpg) are regenerated and committed back,
 # and GitHub Pages (deploy from branch main) republishes within ~1 minute.
 # So editing content/site.json directly on github.com is enough — no local tools needed.
 name: build site
@@ -32,4 +32,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: 'build: regenerate site'
-          file_pattern: 'index.html feed.xml sitemap.xml og.png'
+          file_pattern: 'index.html feed.xml sitemap.xml favicon.png favicon.ico apple-touch-icon.png og-avatar.png'
