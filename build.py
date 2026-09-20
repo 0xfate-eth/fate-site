@@ -5,7 +5,7 @@
         └──► index.html   (data inlined, SEO meta filled)
         └──► feed.xml     (RSS of the `updates` list)
         └──► sitemap.xml
-        └──► og.png       (share image; needs Pillow, skipped otherwise)
+        └──► favicon.png / favicon.ico / apple-touch-icon.png / og-avatar.png  (all from avatar.jpg; needs Pillow)
 
 Run:  python3 build.py            (from the site folder)
 Exit code 1 = content failed validation; nothing is written.
@@ -87,8 +87,8 @@ if errors:
 
 # ---------- 2. index.html ----------
 url = S["meta"]["site_url"]
-title = f'{S["meta"]["name"]} — {S["meta"]["title"]} · AI platform map'
-desc = S["meta"]["tagline"] + " " + S["meta"]["lede"]
+title = f'{S["meta"]["name"]} — {S["meta"]["tagline"]}'
+desc = S["meta"]["lede"]
 data = json.dumps({"en": S, "zh": Z or S}, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
 page = (TPL.read_text(encoding="utf-8")
         .replace("{{TITLE}}", html.escape(title, quote=True))
@@ -127,42 +127,18 @@ print("✓ feed.xml", len(items), "items")
     encoding="utf-8")
 print("✓ sitemap.xml")
 
-# ---------- 5. og.png (optional) ----------
+# ---------- 5. icons + social image, all derived from avatar.jpg ----------
 try:
-    from PIL import Image, ImageDraw, ImageFont
-    W, H = 1200, 630
-    im = Image.new("RGB", (W, H), "#F4F1EA")
-    d = ImageDraw.Draw(im)
-    def font(size, bold=False):
-        for p in (["/System/Library/Fonts/Supplemental/Georgia Bold.ttf" if bold else "/System/Library/Fonts/Supplemental/Georgia.ttf",
-                   "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf" if bold else "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf"]):
-            try:
-                return ImageFont.truetype(p, size)
-            except Exception:
-                pass
-        return ImageFont.load_default()
-    d.rectangle([0, 0, W, 10], fill="#C8412B")
-    d.rectangle([72, 70, 128, 126], fill="#C8412B")
-    d.text((100, 98), "F", fill="#F4F1EA", font=font(40, True), anchor="mm")
-    d.text((148, 98), f'{S["meta"]["name"]}  ·  {S["meta"]["title"]}', fill="#85817A", font=font(24), anchor="lm")
-    # wrap tagline
-    words, lines, cur = S["meta"]["tagline"].split(), [], ""
-    f_big = font(58)
-    for w in words:
-        t = (cur + " " + w).strip()
-        if d.textlength(t, font=f_big) > W - 144:
-            lines.append(cur); cur = w
-        else:
-            cur = t
-    lines.append(cur)
-    y = 200
-    for ln in lines[:4]:
-        d.text((72, y), ln, fill="#17171A", font=f_big); y += 70
-    d.text((72, 540), f'{S["score"]["overall"]:.1f} / 10', fill="#C8412B", font=font(44, True))
-    d.text((290, 556), f'{S["meta"]["period"]} · {len(S["workflows"])} workflows · data as of {S["meta"]["data_date"]}', fill="#85817A", font=font(22))
-    im.save(ROOT / "og.png")
-    print("✓ og.png")
+    from PIL import Image
+    av = ROOT / (S["meta"].get("avatar") or "avatar.jpg")
+    im = Image.open(av).convert("RGB")
+    side = min(im.size); im = im.crop(((im.width-side)//2, (im.height-side)//2, (im.width+side)//2, (im.height+side)//2))
+    im.resize((500, 500), Image.LANCZOS).save(ROOT / "og-avatar.png")          # social preview (square card)
+    im.resize((180, 180), Image.LANCZOS).save(ROOT / "apple-touch-icon.png")   # iOS home screen
+    im.resize((64, 64), Image.LANCZOS).save(ROOT / "favicon.png")              # browser tab
+    im.resize((64, 64), Image.LANCZOS).save(ROOT / "favicon.ico", sizes=[(16,16),(32,32),(48,48),(64,64)])
+    print("✓ og-avatar.png · apple-touch-icon.png · favicon.png · favicon.ico (from", av.name + ")")
 except ImportError:
-    print("· og.png skipped (pip install pillow to enable)")
+    print("· icons skipped (pip install pillow to enable)")
 
 print("done —", S["meta"]["data_date"], "·", len(S["workflows"]), "workflows ·", len(S["updates"]), "updates")
