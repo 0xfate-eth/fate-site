@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Daily 08:30 publish. Install:
+     cp launchd/com.fate.site-publish.plist ~/Library/LaunchAgents/
+     sed -i '' "s#__SITE_DIR__#$(pwd)#" ~/Library/LaunchAgents/com.fate.site-publish.plist
+     launchctl load ~/Library/LaunchAgents/com.fate.site-publish.plist
+     Verify it actually ran: tail publish.log  (a "checked" or "published" line must appear the next morning) -->
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.fate.site-publish</string>
+  <key>ProgramArguments</key><array><string>/bin/bash</string><string>__SITE_DIR__/publish.sh</string></array>
+  <key>WorkingDirectory</key><string>__SITE_DIR__</string>
+  <key>StartCalendarInterval</key><dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>30</integer></dict>
+  <key>StandardOutPath</key><string>__SITE_DIR__/publish.log</string>
+  <key>StandardErrorPath</key><string>__SITE_DIR__/publish.log</string>
+  <key>EnvironmentVariables</key><dict><key>PATH</key><string>/usr/local/bin:/opt/homebrew/bin:/usr/bin:/bin</string></dict>
+</dict></plist>
