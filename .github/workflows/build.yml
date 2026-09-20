@@ -1,0 +1,35 @@
+# Builds the site in the cloud whenever content / template / assets change on main.
+# Result: index.html, feed.xml, sitemap.xml, og.png are regenerated and committed back,
+# and GitHub Pages (deploy from branch main) republishes within ~1 minute.
+# So editing content/site.json directly on github.com is enough — no local tools needed.
+name: build site
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/**'
+      - 'src/**'
+      - 'build.py'
+      - 'avatar.jpg'
+      - '.github/workflows/build.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: build-site
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install opencc-python-reimplemented pillow
+      - run: python3 build.py
+      - name: commit generated files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'build: regenerate site'
+          file_pattern: 'index.html feed.xml sitemap.xml og.png'
