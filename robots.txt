@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://0xfate-eth.github.io/fate-site/sitemap.xml

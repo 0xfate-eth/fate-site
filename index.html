@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fate — Product lead, crypto wallet company · AI platform map</title>
+<meta name="description" content="A product department, rebuilt around one knowledge base and an AI that runs on it. A live map of that work: what the platform can do today, what it knows, what it has produced, and how the score moves each quarter.">
+<link rel="canonical" href="https://0xfate-eth.github.io/fate-site/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fate — Product lead, crypto wallet company · AI platform map">
+<meta property="og:description" content="A product department, rebuilt around one knowledge base and an AI that runs on it. A live map of that work: what the platform can do today, what it knows, what it has produced, and how the score moves each quarter.">
+<meta property="og:url" content="https://0xfate-eth.github.io/fate-site/">
+<meta property="og:image" content="https://0xfate-eth.github.io/fate-site/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="alternate" type="application/rss+xml" title="Updates" href="https://0xfate-eth.github.io/fate-site/feed.xml">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23C8412B'/%3E%3Ctext x='32' y='46' font-family='Georgia,serif' font-size='42' font-weight='700' fill='%23F4F1EA' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#F4F1EA" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#151517" media="(prefers-color-scheme: dark)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..700,0..100&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+TC:wght@400;500;600&family=Noto+Sans+TC:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F1EA;--paper-2:#EBE6DA;--paper-3:#E2DCCD;
+  --ink:#17171A;--ink-2:#45454B;--mute:#85817A;--num:#A69E8D;--rule:#D6CFC0;--rule-2:#C4BCAA;
+  --accent:#C8412B;--accent-ink:#9A2F1E;--accent-soft:#F3DDD6;
+  --ok:#2E6B4E;--ok-soft:#DCEBE0;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,"Helvetica Neue",Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --max:1120px;--gut:24px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#151517;--paper-2:#1C1C1F;--paper-3:#242428;
+  --ink:#ECE8DF;--ink-2:#BDB8AD;--mute:#8A867E;--num:#A8A399;--rule:#2C2C31;--rule-2:#3D3D44;
+  --accent:#E2573F;--accent-ink:#F0846F;--accent-soft:#3A1E19;
+  --ok:#7FC49E;--ok-soft:#1B2E24;
+}}
+:root[data-theme="dark"]{
+  --paper:#151517;--paper-2:#1C1C1F;--paper-3:#242428;
+  --ink:#ECE8DF;--ink-2:#BDB8AD;--mute:#8A867E;--num:#A8A399;--rule:#2C2C31;--rule-2:#3D3D44;
+  --accent:#E2573F;--accent-ink:#F0846F;--accent-soft:#3A1E19;
+  --ok:#7FC49E;--ok-soft:#1B2E24;
+}
+html[lang="zh-Hant"]{--serif:"Noto Serif TC","Fraunces",Georgia,serif;--sans:"Noto Sans TC","Inter",-apple-system,"PingFang TC","Helvetica Neue",Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 var(--sans);font-feature-settings:"ss01","cv11";overflow-x:hidden}
+a{color:inherit}
+::selection{background:var(--accent);color:var(--paper)}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--gut)}
+@media (max-width:640px){:root{--gut:16px}}
+b,strong{font-weight:600}
+button{font-family:inherit}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--mute)}
+html[lang="zh-Hant"] .mono,html[lang="zh-Hant"] .tag,html[lang="zh-Hant"] .lb,html[lang="zh-Hant"] .chip,html[lang="zh-Hant"] summary,html[lang="zh-Hant"] .strip .l,html[lang="zh-Hant"] .hero-meta,html[lang="zh-Hant"] .xall{letter-spacing:.02em;text-transform:none}
+svg.i{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+
+/* ---------- top bar ---------- */
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:saturate(1.2) blur(10px);-webkit-backdrop-filter:saturate(1.2) blur(10px);border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;align-items:center;gap:14px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
+.mark{width:28px;height:28px;border-radius:6px;background:var(--accent);color:#F4F1EA;font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:19px;display:grid;place-items:center;line-height:1}
+.brand .nm{font-family:var(--serif);font-weight:600;font-size:18px;letter-spacing:-.01em}
+nav.main{display:flex;gap:2px;margin-left:auto}
+nav.main a{text-decoration:none;font-size:13.5px;color:var(--ink-2);padding:6px 10px;border-radius:6px;position:relative;white-space:nowrap}
+nav.main a:hover{background:var(--paper-2);color:var(--ink)}
+nav.main a.on{color:var(--ink)}
+nav.main a.on::after{content:"";position:absolute;left:10px;right:10px;bottom:2px;height:2px;background:var(--accent);border-radius:2px}
+@media (max-width:900px){nav.main{display:none}}
+.srch{position:relative;flex-shrink:0}
+.srch input{width:140px;padding:7px 10px 7px 30px;border:1px solid var(--rule-2);border-radius:8px;background:var(--paper-2);color:var(--ink);font:13px var(--sans);transition:width .2s}
+.srch input:focus{outline:2px solid var(--accent);outline-offset:1px;width:210px}
+.srch svg{position:absolute;left:9px;top:50%;transform:translateY(-50%);width:14px;height:14px;stroke:var(--mute);fill:none;stroke-width:2}
+.srch kbd{position:absolute;right:8px;top:50%;transform:translateY(-50%);font:11px var(--mono);color:var(--mute);border:1px solid var(--rule-2);border-radius:4px;padding:0 5px;background:var(--paper)}
+.srch input:focus + svg + kbd{display:none}
+@media (max-width:640px){.srch input{width:110px}.srch kbd{display:none}}
+.lang{flex-shrink:0;border:1px solid var(--rule-2);background:var(--paper-2);color:var(--ink);border-radius:8px;padding:6px 10px;font:12.5px var(--mono);cursor:pointer;white-space:nowrap}
+.lang:hover{border-color:var(--accent);color:var(--accent)}
+.chip{font-family:var(--mono);font-size:11.5px;color:var(--ink-2);border:1px solid var(--rule-2);border-radius:999px;padding:4px 10px;white-space:nowrap;flex-shrink:0}
+.chip i{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--ok);margin-right:7px;vertical-align:1px;box-shadow:0 0 0 3px var(--ok-soft)}
+@media (max-width:1000px){.chip{display:none}}
+.mnav{display:none;margin-left:auto}
+@media (max-width:900px){.mnav{display:block}}
+.mnav select{font:13px var(--sans);color:var(--ink);background:var(--paper-2);border:1px solid var(--rule-2);border-radius:8px;padding:7px 8px;max-width:110px}
+
+/* ---------- search results banner ---------- */
+.hitbar{display:none;position:sticky;top:60px;z-index:19;background:var(--accent);color:#F4F1EA;font:13px var(--sans);padding:8px 0}
+.hitbar.show{display:block}
+.hitbar .wrap{display:flex;gap:14px;align-items:center}
+.hitbar b{font-family:var(--mono)}
+.hitbar button{margin-left:auto;background:transparent;border:1px solid rgba(244,241,234,.6);color:#F4F1EA;border-radius:6px;padding:3px 10px;font:12px var(--sans);cursor:pointer}
+body.searching .nohit{display:none!important}
+
+/* ---------- hero ---------- */
+.hero{padding:64px 0 40px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:48px;align-items:start}
+@media (max-width:900px){.hero{padding:40px 0 28px}.hero .wrap{grid-template-columns:1fr;gap:32px}}
+.who{display:flex;align-items:center;gap:16px;margin-bottom:26px}
+.avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;border:3px solid var(--paper);box-shadow:0 0 0 1.5px var(--rule-2),0 8px 20px rgba(0,0,0,.08);flex-shrink:0;background:var(--paper-2)}
+.who .nm{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:-.01em;line-height:1.1}
+.who .tt{font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin-top:6px}
+html[lang="zh-Hant"] .who .tt{letter-spacing:.06em;text-transform:none}
+h1.h{font-family:var(--serif);font-weight:400;font-variation-settings:"opsz" 144,"SOFT" 30;font-size:clamp(34px,5.2vw,60px);line-height:1.04;letter-spacing:-.022em;margin:0 0 22px;text-wrap:balance}
+html[lang="zh-Hant"] h1.h{font-weight:500;line-height:1.22;letter-spacing:0;font-size:clamp(30px,4.4vw,50px)}
+h1.h em{font-style:italic;font-weight:500;color:var(--accent)}
+html[lang="zh-Hant"] h1.h em{font-style:normal}
+.lede{font-size:18px;line-height:1.6;color:var(--ink-2);max-width:560px;margin:0 0 26px}
+@media (max-width:640px){.lede{font-size:16.5px}}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 22px;font-family:var(--mono);font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.04em}
+.hero-meta b{color:var(--ink);font-weight:500}
+
+/* scorecard */
+.score{background:var(--paper-2);border:1px solid var(--rule);border-radius:14px;padding:24px 26px 20px;position:relative;overflow:hidden}
+.score::before{content:"";position:absolute;inset:0;background:linear-gradient(var(--rule) 1px,transparent 1px) 0 0/100% 28px;opacity:.35;pointer-events:none;mask-image:linear-gradient(#000 60%,transparent);-webkit-mask-image:linear-gradient(#000 60%,transparent)}
+.score>*{position:relative}
+.score .hd{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:6px}
+.score .stamp{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);border:1.5px solid var(--accent);border-radius:4px;padding:3px 7px;transform:rotate(-4deg);transform-origin:right top}
+html[lang="zh-Hant"] .score .stamp{text-transform:none;letter-spacing:.08em}
+.bigwrap{display:flex;align-items:baseline;gap:8px;margin:4px 0 16px}
+.big{font-family:"Fraunces",Georgia,serif;font-variation-settings:"opsz" 144,"SOFT" 50;font-weight:300;font-size:92px;line-height:.9;letter-spacing:-.04em;color:var(--ink)}
+.bigwrap small{font-family:var(--mono);font-size:13px;color:var(--mute)}
+.dim{display:grid;grid-template-columns:140px 1fr 40px;gap:12px;align-items:center;padding:7px 0;border-top:1px solid var(--rule);font-size:13.5px;position:relative}
+.dim:last-of-type{border-bottom:1px solid var(--rule)}
+.dim .nm{color:var(--ink-2);cursor:help;text-decoration:underline dotted var(--rule-2);text-underline-offset:3px}
+.dim .bar{height:6px;background:var(--paper-3);border-radius:3px;overflow:hidden}
+.dim .bar i{display:block;height:100%;width:0;background:var(--ink);border-radius:3px;transition:width 1.1s cubic-bezier(.2,.7,.2,1)}
+.dim.low .bar i{background:var(--accent)}
+.dim .v{font-family:var(--mono);font-size:13px;text-align:right;font-variant-numeric:tabular-nums}
+.dim.low .v{color:var(--accent);font-weight:500}
+.dim .tip{display:none;position:absolute;left:0;top:100%;z-index:3;background:var(--ink);color:var(--paper);font-size:12px;line-height:1.45;padding:8px 10px;border-radius:6px;max-width:320px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.dim:hover .tip,.dim:focus-within .tip{display:block}
+.score .cap{font-size:12px;color:var(--mute);margin:12px 0 0}
+@media (max-width:420px){.dim{grid-template-columns:110px 1fr 36px;gap:8px}.big{font-size:76px}}
+
+/* stats strip */
+.strip{border-top:1px solid var(--ink);border-bottom:1px solid var(--rule);margin-top:44px}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.strip .st{padding:18px 18px 18px 0;border-right:1px solid var(--rule)}
+.strip .st:last-child{border-right:0}
+.strip .st+.st{padding-left:18px}
+.strip .n{font-family:"Fraunces",Georgia,serif;font-variation-settings:"opsz" 96;font-size:34px;font-weight:500;letter-spacing:-.02em;line-height:1}
+.strip .l{font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--mute);margin-top:6px}
+@media (max-width:720px){.strip .wrap{grid-template-columns:1fr 1fr}.strip .st{border-right:0;border-bottom:1px solid var(--rule)}.strip .st:nth-child(odd){border-right:1px solid var(--rule)}.strip .st:nth-child(n+3){border-bottom:0}.strip .st+.st{padding-left:18px}.strip .st:nth-child(3){padding-left:0}}
+
+/* ---------- sections ---------- */
+section.sec{padding:64px 0 8px;scroll-margin-top:70px}
+@media (max-width:640px){section.sec{padding:46px 0 4px}}
+.sh{display:grid;grid-template-columns:96px 1fr auto;gap:20px;align-items:end;padding-bottom:16px;border-bottom:1px solid var(--ink);margin-bottom:22px}
+.sh .num{font-family:"Fraunces",Georgia,serif;font-variation-settings:"opsz" 144;font-weight:300;font-size:58px;line-height:.8;color:var(--accent);letter-spacing:-.03em}
+.sh h2{font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 96;font-size:clamp(26px,3.2vw,36px);letter-spacing:-.02em;line-height:1.1;margin:0;display:flex;align-items:center;gap:12px}
+.sh h2 svg.i{width:26px;height:26px;color:var(--accent);stroke-width:1.5}
+.sh p{margin:6px 0 0;color:var(--mute);font-size:14px;max-width:640px}
+.xall{background:none;border:1px solid var(--rule-2);color:var(--ink-2);border-radius:999px;padding:5px 12px;font:11.5px var(--mono);letter-spacing:.04em;text-transform:uppercase;cursor:pointer;white-space:nowrap;margin-bottom:4px}
+.xall:hover{border-color:var(--accent);color:var(--accent)}
+@media (max-width:640px){.sh{grid-template-columns:1fr auto;gap:8px}.sh .num{display:none}}
+
+/* verdict */
+.verdict{display:grid;grid-template-columns:96px 1fr;gap:20px}
+.verdict .side{font-family:var(--mono);font-size:11.5px;color:var(--mute);text-transform:uppercase;letter-spacing:.04em;line-height:1.6;padding-top:6px}
+.verdict .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.verdict .cols p{margin:0;font-size:15px;line-height:1.6;color:var(--ink-2)}
+.verdict .cols p b{display:block;font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 48;font-size:22px;line-height:1.2;letter-spacing:-.01em;color:var(--ink);margin-bottom:8px}
+.verdict .cols p:nth-child(3) b{color:var(--accent)}
+@media (max-width:900px){.verdict{grid-template-columns:1fr}.verdict .side{display:none}.verdict .cols{grid-template-columns:1fr;gap:22px}}
+
+/* accordion (shared) */
+.acc-b{display:grid;grid-template-rows:0fr;transition:grid-template-rows .32s cubic-bezier(.2,.7,.2,1)}
+.acc-b>div{overflow:hidden;min-height:0}
+.open>.acc-b{grid-template-rows:1fr}
+.chev{width:18px;height:18px;stroke:var(--mute);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:transform .3s;flex-shrink:0;margin-left:auto}
+.open .chev{transform:rotate(180deg)}
+
+/* workflows */
+.wf{border-bottom:1px solid var(--rule)}
+.wf:first-child{border-top:1px solid var(--rule)}
+.wf-h{width:100%;display:grid;grid-template-columns:96px 24px 1fr auto 18px;gap:16px;align-items:center;padding:16px 0;background:none;border:0;color:inherit;text-align:left;cursor:pointer;font:inherit}
+.wf-h:hover .nm h3{color:var(--accent)}
+.wf-h .no{font-family:"Fraunces",Georgia,serif;font-variation-settings:"opsz" 144;font-weight:300;font-size:36px;line-height:1;color:var(--num);letter-spacing:-.03em}
+.wf-h svg.i{color:var(--accent)}
+.wf-h .nm{min-width:0}
+.wf-h h3{font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 48;font-size:20px;letter-spacing:-.01em;margin:0;display:inline;transition:color .15s}
+.wf-h .gist{display:block;font-size:13.5px;color:var(--mute);margin-top:3px}
+.wf.open .wf-h .gist{display:none}
+.tag{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;border-radius:4px;padding:2px 7px;background:var(--ok-soft);color:var(--ok);font-weight:500;white-space:nowrap}
+.tag.new{background:var(--accent-soft);color:var(--accent-ink)}
+.wf-body{padding:2px 0 22px 136px}
+.flow{display:grid;grid-template-columns:1fr 1fr 1fr}
+.flow .cell{padding:12px 14px;border:1px solid var(--rule);background:var(--paper-2);position:relative;font-size:14px;line-height:1.5}
+.flow .cell+.cell{border-left:0}
+.flow .cell:first-child{border-radius:8px 0 0 8px}
+.flow .cell:last-child{border-radius:0 8px 8px 0}
+.flow .cell .lb{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-bottom:5px}
+.flow .cell.ai{background:var(--paper);border-top:2px solid var(--accent)}
+.flow .cell.ai .lb{color:var(--accent)}
+.flow .cell.out{background:var(--paper-3)}
+.flow .cell+.cell::before{content:"";position:absolute;left:-7px;top:50%;width:12px;height:12px;background:inherit;border-left:1px solid var(--rule);border-bottom:1px solid var(--rule);transform:translateY(-50%) rotate(-135deg);z-index:1}
+.flow .cell.ai::before{background:var(--paper)}
+.flow .cell.out::before{background:var(--paper-3)}
+.wf .dep{margin:12px 0 0;font-size:14px;color:var(--ink-2);line-height:1.55}
+.wf .dep b{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--ink);font-weight:500;margin-right:8px}
+@media (max-width:760px){.wf-h{grid-template-columns:24px 1fr 18px;gap:12px;padding:14px 0}.wf-h .no{display:none}.wf-h .tag{grid-column:2;justify-self:start;margin-top:-2px}.wf-body{padding-left:0}.flow{grid-template-columns:1fr}.flow .cell+.cell{border-left:1px solid var(--rule);border-top:0}.flow .cell:first-child{border-radius:8px 8px 0 0}.flow .cell:last-child{border-radius:0 0 8px 8px}.flow .cell.ai{border-top:1px solid var(--rule);border-left:2px solid var(--accent)}.flow .cell+.cell::before{left:50%;top:-7px;transform:translateX(-50%) rotate(-45deg)}}
+
+/* cards (knowledge + outputs) */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:start}
+@media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.grid{grid-template-columns:1fr}}
+.card{background:var(--paper-2);border:1px solid var(--rule);border-radius:12px;transition:border-color .15s}
+.card:hover{border-color:var(--rule-2)}
+.card.open{border-color:var(--rule-2)}
+.card-h{width:100%;display:flex;align-items:center;gap:12px;padding:14px 16px;background:none;border:0;color:inherit;text-align:left;cursor:pointer;font:inherit}
+.card-h svg.i{color:var(--accent)}
+.card-h h3{font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 48;font-size:18px;line-height:1.25;letter-spacing:-.01em;margin:0;flex:1;min-width:0;min-height:2.5em;display:flex;align-items:center}
+.card-h .k{font-family:var(--mono);font-size:11px;color:var(--mute);letter-spacing:.04em;white-space:nowrap}
+.card-body{padding:0 16px 14px}
+.card .it{padding:7px 0;border-top:1px solid var(--rule);font-size:14px;line-height:1.5}
+.card .it b{font-weight:600}
+.card .it span{color:var(--mute)}
+.card .it .mt{font-family:var(--mono);font-size:11px;color:var(--accent);margin-right:8px;letter-spacing:.03em}
+.card.found{grid-column:1/-1;background:var(--paper);border:1.5px solid var(--accent)}
+.card.found .card-h h3{color:var(--accent)}
+.card.found .note{padding:0 16px 14px;font-size:14.5px;color:var(--ink-2);margin:0;max-width:760px}
+.card.found .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:0 28px}
+@media (max-width:760px){.card.found .cols{grid-template-columns:1fr}}
+details{border-top:1px solid var(--rule);margin-top:4px}
+summary{cursor:pointer;list-style:none;font-family:var(--mono);font-size:11.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--mute);padding:9px 0 4px;user-select:none;display:flex;align-items:center;gap:8px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+";font-size:14px;color:var(--accent);width:12px;display:inline-block}
+details[open] summary::before{content:"–"}
+summary:hover{color:var(--ink)}
+details .it{font-size:13.5px;color:var(--ink-2)}
+details .also{padding:6px 0 4px;font-size:13.5px;color:var(--ink-2);line-height:1.5}
+
+/* routines */
+.routines{display:grid;grid-template-columns:96px 1fr;gap:20px;margin-bottom:40px}
+.routines .side{font-family:var(--mono);font-size:11.5px;color:var(--mute);text-transform:uppercase;letter-spacing:.04em;padding-top:12px}
+.rt{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:11px 0;border-top:1px solid var(--rule);font-size:14.5px}
+.rt.last{border-bottom:1px solid var(--rule)}
+.rt .w{font-family:var(--mono);font-size:12.5px;color:var(--ink);font-weight:500;letter-spacing:.02em;padding-top:2px}
+.rt.core .w::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:2px}
+.rt.x .w{color:var(--mute);font-weight:400}
+.rt .d{color:var(--ink-2)}
+.routines details{border-top:0;margin:0}
+.routines summary{padding:9px 0}
+@media (max-width:760px){.routines{grid-template-columns:1fr;gap:6px}.rt{grid-template-columns:1fr;gap:2px}}
+.sub-h{font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 48;font-size:22px;margin:0 0 14px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.sub-h .mono{font-size:11.5px;text-transform:none;letter-spacing:0}
+.sub-h .xall{margin-left:auto}
+
+/* updates */
+.upd{display:grid;grid-template-columns:96px 1fr;gap:20px;padding:18px 0;border-top:1px solid var(--rule)}
+.upd:last-child{border-bottom:1px solid var(--rule)}
+.upd .dt{font-family:var(--mono);font-size:12.5px;color:var(--accent);padding-top:3px}
+.upd h4{font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 48;font-size:19px;margin:0 0 4px}
+.upd p{margin:0;color:var(--ink-2);font-size:14.5px}
+.rss{display:inline-flex;align-items:center;gap:8px;margin-top:18px;font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--ink-2);text-decoration:none;border:1px solid var(--rule-2);border-radius:999px;padding:6px 12px}
+.rss:hover{border-color:var(--accent);color:var(--accent)}
+@media (max-width:640px){.upd{grid-template-columns:1fr;gap:4px}}
+
+/* about */
+.about{display:grid;grid-template-columns:96px 1fr 1fr;gap:20px 40px}
+.about .side{font-family:var(--mono);font-size:11.5px;color:var(--mute);text-transform:uppercase;letter-spacing:.04em;padding-top:6px}
+.about p{margin:0 0 14px;font-size:15.5px;line-height:1.62;color:var(--ink-2)}
+.about .pr{border-top:1px solid var(--rule);padding:14px 0;display:grid;grid-template-columns:24px 1fr;gap:12px}
+.about .pr:last-child{border-bottom:1px solid var(--rule)}
+.about .pr svg.i{color:var(--accent);margin-top:3px}
+.about .pr b{display:block;font-family:var(--serif);font-weight:500;font-variation-settings:"opsz" 48;font-size:18px;color:var(--ink);margin-bottom:4px}
+.about .pr span{font-size:14px;color:var(--ink-2)}
+.links{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.links a{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.04em;text-decoration:none;border:1px solid var(--rule-2);border-radius:999px;padding:6px 12px;color:var(--ink-2)}
+.links a:hover{border-color:var(--accent);color:var(--accent)}
+@media (max-width:900px){.about{grid-template-columns:1fr}.about .side{display:none}}
+
+/* footer */
+footer{margin-top:72px;border-top:1px solid var(--ink);padding:26px 0 44px;font-size:13px;color:var(--mute)}
+footer .wrap{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:start}
+footer p{margin:0;max-width:640px;line-height:1.55}
+footer .r{font-family:var(--mono);font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;text-align:right;line-height:1.9}
+html[lang="zh-Hant"] footer .r{text-transform:none}
+footer .r b{color:var(--ink);font-weight:500}
+footer button{background:none;border:1px solid var(--rule-2);color:var(--ink-2);border-radius:999px;padding:4px 10px;font:11.5px var(--mono);cursor:pointer;text-transform:uppercase;letter-spacing:.04em}
+footer button:hover{border-color:var(--accent);color:var(--accent)}
+@media (max-width:640px){footer .wrap{grid-template-columns:1fr}footer .r{text-align:left}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(10px);transition:opacity .55s ease,transform .55s ease}
+.rv.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="brand" href="#top" aria-label="Home"><span class="mark">F</span><span class="nm" id="b-name"></span></a>
+  <nav class="main" id="nav">
+    <a href="#verdict"></a><a href="#platform"></a><a href="#knowledge"></a><a href="#work"></a><a href="#updates"></a><a href="#about"></a>
+  </nav>
+  <div class="mnav"><select id="mnav" aria-label="Jump to section"></select></div>
+  <div class="srch"><input id="q" type="search" autocomplete="off"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><kbd>/</kbd></div>
+  <button class="lang" id="lang" aria-label="Switch language"></button>
+  <span class="chip" id="chip"><i></i><span id="chip-l"></span> <b id="chip-date"></b></span>
+</div></header>
+<div class="hitbar" id="hitbar"><div class="wrap"><span><b id="hitn">0</b> <span id="hit-l"></span> “<span id="hitq"></span>”</span><button id="hitx"></button></div></div>
+
+<main id="top">
+
+<section class="hero"><div class="wrap">
+  <div>
+    <div class="who"><img class="avatar" id="avatar" alt="" width="84" height="84"><div><div class="nm" id="k-name"></div><div class="tt" id="k-title"></div></div></div>
+    <h1 class="h" id="h1"></h1>
+    <p class="lede" id="lede"></p>
+    <div class="hero-meta">
+      <span><span id="m-period-l"></span> <b id="m-period"></b></span>
+      <span><span id="m-since-l"></span> <b id="m-since"></b></span>
+      <span><b id="m-cadence"></b></span>
+    </div>
+  </div>
+  <aside class="score" aria-label="Quarterly score">
+    <div class="hd"><span class="mono" id="sc-l"></span><span class="stamp" id="stamp"></span></div>
+    <div class="bigwrap"><span class="big" id="big">0.0</span><small>/ 10</small></div>
+    <div id="dims"></div>
+    <p class="cap" id="cap"></p>
+  </aside>
+</div></section>
+
+<div class="strip"><div class="wrap" id="strip"></div></div>
+
+<section class="sec" id="verdict"><div class="wrap">
+  <div class="sh"><div class="num">I</div><div><h2 id="s1-t"></h2><p id="s1-p"></p></div></div>
+  <div class="verdict"><div class="side"><span id="v-side"></span><br>· <span id="v-date"></span></div><div class="cols" id="verdict-cols"></div></div>
+</div></section>
+
+<section class="sec" id="platform"><div class="wrap">
+  <div class="sh"><div class="num">II</div><div><h2 id="s2-t"></h2><p id="s2-p"></p></div><button class="xall" data-for="workflows"></button></div>
+  <div id="workflows"></div>
+</div></section>
+
+<section class="sec" id="knowledge"><div class="wrap">
+  <div class="sh"><div class="num">III</div><div><h2 id="s3-t"></h2><p id="s3-p"></p></div><button class="xall" data-for="knowledge-grid"></button></div>
+  <div class="grid" id="knowledge-grid"></div>
+</div></section>
+
+<section class="sec" id="work"><div class="wrap">
+  <div class="sh"><div class="num">IV</div><div><h2 id="s4-t"></h2><p id="s4-p"></p></div></div>
+  <h3 class="sub-h"><span id="s4-a"></span><span class="mono" id="r-intro"></span></h3>
+  <div class="routines"><div class="side" id="core-legend"></div><div id="routines"></div></div>
+  <h3 class="sub-h"><span id="s4-b"></span><span class="mono" id="o-intro"></span><button class="xall" data-for="outputs-grid"></button></h3>
+  <div class="grid" id="outputs-grid"></div>
+</div></section>
+
+<section class="sec" id="updates"><div class="wrap">
+  <div class="sh"><div class="num">V</div><div><h2 id="s5-t"></h2><p id="s5-p"></p></div></div>
+  <div id="updates-list"></div>
+  <a class="rss" href="feed.xml"><svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="5" cy="19" r="2.5"/><path d="M3 10a11 11 0 0 1 11 11h-3a8 8 0 0 0-8-8zM3 3a18 18 0 0 1 18 18h-3A15 15 0 0 0 3 6z"/></svg><span id="rss-l"></span></a>
+</div></section>
+
+<section class="sec" id="about"><div class="wrap">
+  <div class="sh"><div class="num">VI</div><div><h2 id="s6-t"></h2></div></div>
+  <div class="about">
+    <div class="side" id="a-side"></div>
+    <div><p id="a-who"></p><p id="a-why"></p><div class="links" id="a-links"></div></div>
+    <div id="principles"></div>
+  </div>
+</div></section>
+
+</main>
+
+<footer><div class="wrap">
+  <p id="f-disc"></p>
+  <div class="r"><b id="f-name"></b> · <span id="f-year"></span><br><span id="f-built"></span><br><button id="theme"></button></div>
+</div></footer>
+
+<script id="site-data" type="application/json">{"en":{"meta":{"site_url":"https://0xfate-eth.github.io/fate-site/","name":"Fate","title":"Product lead, crypto wallet company","tagline":"A product department, rebuilt around one knowledge base and an AI that runs on it.","lede":"A live map of that work: what the platform can do today, what it knows, what it has produced, and how the score moves each quarter.","data_date":"2026-09-20","period":"Q3 2026","review_cadence":"Re-scored every quarter","since":"2026-08","avatar":"avatar.jpg"},"score":{"overall":7.1,"dims":[{"name":"Knowledge coverage","value":8.2,"note":"How much of the department's facts, data and rules live in the base"},{"name":"Business output","value":8.0,"note":"Deliverables that were actually used in decisions or sent out"},{"name":"Automation","value":7.4,"note":"Share of routine work that runs without me"},{"name":"Data trust","value":7.2,"note":"Every number traceable to one source with a stated definition"},{"name":"Maintenance load","value":4.8,"note":"The weak spot: the base still needs too many rules to stay healthy","low":true}],"caption":"Quarterly self-assessment, 0–10. Lower is worse on every line."},"verdict":[{"lead":"It does real work.","text":"Give it the input, get the result — and the results feed each other: minutes feed the board, one data source feeds every analysis, one dictionary governs every external word."},{"lead":"It is becoming the department's.","text":"Progress already flows in from colleagues' meetings, chats and the project tracker; bcc one AI mailbox and it joins any thread. The surface is still narrow."},{"lead":"Next.","text":"Push it deeper into daily work, hand coordination tasks to AI one by one, and halve the base's own maintenance rules."}],"workflows":[{"n":1,"name":"Decision → execution","status":"stable","input":"A meeting recording; the transcript dropped into an inbox folder","ai":"Turns it into standard meeting minutes","output":"Filed by company / product / department / partner","built_label":"Built on it","built":"Action items flow into the department work list and progress board. Some are handed straight to AI to execute and deliver, closing the loop from decision to result. Related knowledge pages update in step.","gist":"Recording in → filed minutes and action items out","icon":"mic"},{"n":2,"name":"Department progress board","status":"stable","input":"Meeting minutes · team chat · project tracker · Telegram · email · new material in the base","ai":"Updates the department work list every week, flagging on-time, off-track and stalled items","output":"Progress board + stalled-items list + @-mentioned to-dos in the team chat","built_label":"Built on it","built":"Department reports come straight from here. I can see anyone's progress at any time, nobody writes a weekly report anymore, and performance reviews use it as evidence.","gist":"Six sources in → a weekly board of on-time, off-track and stalled","icon":"board"},{"n":3,"name":"Partner tracking","status":"stable","input":"15 partner Telegram groups · external email","ai":"Daily briefs; weekly digests distilled into knowledge cards; colleagues' confirmations and corrections collected every two hours","output":"One page per partner: key facts + progress","built_label":"Built on it","built":"Fees, settlement terms and integration details are always at hand. Any later message to that partner can be drafted by AI from that one page.","gist":"15 partner chats in → one living page per partner","icon":"link"},{"n":4,"name":"Product analytics","status":"stable","input":"Event tracking · backend reports · push-notification log · swap transaction records","ai":"Every night, reads user behaviour alongside that day's pushes, releases and market moves","output":"Daily app-behaviour report · dashboards · deep-dives","built_label":"Built on it","built":"Catches product bugs on its own (a feature nobody uses overnight, an error spike), measures every push, explains why swaps rose or fell and which chain is lagging.","gist":"Nightly read of behaviour, pushes, releases and markets","icon":"chart"},{"n":5,"name":"Competitor research","status":"stable","input":"A brand name","ai":"Installs the competitor's app by itself, walks every screen, takes screenshots, checks official figures, scores on a fixed five-dimension framework","output":"Dimension-by-dimension comparable reports + multi-brand benchmarks","built_label":"Same method also produced","built":"Regulatory impact analysis, new-business option selection, vendor evaluation.","gist":"A brand name in → a scored, comparable report out","icon":"search"},{"n":6,"name":"External materials","status":"stable","input":"Copy to publish · slide decks · statements · investor materials · patent documents","ai":"Drafts to the terminology dictionary and brand rules; numbers and product specs come from one source only","output":"English copy · report decks · customs declarations · patent responses and technical disclosures","built_label":"Built on it","built":"One company-wide voice. A script catches wrong wording. Patent materials go straight to the attorney.","gist":"One dictionary, one data source, every external document","icon":"file"},{"n":7,"name":"Reputation & security","status":"stable","input":"User reviews · media coverage · suspected impersonation","ai":"Scans the web before dawn every day, scores and classifies","output":"Daily sentiment report + archives of negatives and impersonators","built_label":"When an incident hits","built":"AI produces the technical brief, the public response and the support scripts.","gist":"Web scanned daily; incident kit ready when needed","icon":"shield"},{"n":8,"name":"Financial modelling","status":"stable","input":"Accounts · authoritative shipment and revenue data · ops-meeting conclusions","ai":"Builds the model, reconciles definitions, re-tunes after each meeting","output":"Revenue forecast · five-year model · review summaries","built_label":"Built on it","built":"Company-level analysis: reviews, forecasts, target-setting, and the numbers in investor materials.","gist":"Model, reconcile, re-tune after every meeting","icon":"calc"},{"n":9,"name":"Support automation","status":"new","input":"Support tickets · team email","ai":"Understands the issue, drafts a reply, files every ticket as structured data","output":"Sent after human sign-off · ticket archive","built_label":"Built on it","built":"The archive supports any statistical cut and surfaces systemic problems automatically.","gist":"Tickets read, replies drafted, archive built — a human sends","icon":"headset"},{"n":10,"name":"Self-maintenance","status":"stable","input":"The whole knowledge base","ai":"Backs up core rules daily, runs a full health check monthly, and after any rule change checks whether existing content still complies","output":"Health reports · pending suggestions","built_label":"Principle","built":"AI proposes. It never deletes. It never decides for me.","gist":"Daily backup, monthly health check, rule-change audits","icon":"refresh"}],"knowledge_intro":"Only base facts, data, standards, principles, settled designs and communication that actually happened. Open a card for its core items.","knowledge":[{"name":"Authoritative data","foundation":true,"note":"The single source for every number. Nearly every workflow above and every category below draws from here.","items":[["Monthly hardware shipments","units shipped, by month"],["Software revenue, three reconciled definitions","which number to use, when"],["User base",""],["App / firmware release history","what shipped, when, what changed"],["Push-notification log","every push, its time and content"],["Major events affecting data · product code names",""],["Metric catalogue","definitions and calculation rules"],["Backend report field guide",""],["Historical weekly data",""]],"icon":"database"},{"name":"Company & funding","items":[["Legal-entity basics","registration, directors, business definition"],["Company & product introduction · fundraising deck","latest version for investors and clients"],["Listing-preparation materials","drafts and third-party industry reports"],["Investor Q&A","what to say, which numbers"]],"more":"Company-level meeting minutes; external AI-transformation cases and peer exchanges.","icon":"building"},{"name":"App product","items":[["App 5.0 scope and rationale","why, and how big"],["Swap feature design","routing, fees, thresholds, in-house swap"],["Product rules","display rules; how new features are evaluated"],["Event-tracking spec","how events are defined and reviewed"],["Privacy policies","product and website versions"]],"more":"Status of retired features; private-transaction proposal; staking mechanics; app-store copy.","icon":"phone"},{"name":"Hardware product","items":[["Product specifications","the only external reference"],["Card-form hardware: progress and issues","design decisions, security upgrades, known issues"],["Error codes · manuals · accessory requirements",""],["Firmware upgrade status",""]],"more":"Customs and certification statements; legacy-device coin support; next-form-factor planning notes; why the backup card was shelved.","icon":"cpu"},{"name":"Patents","items":[["Status of patents and trademarks","where each stands, what's next"],["Examiner opinions, summarised","grounds and deadlines"],["Decisions from attorney discussions",""]],"more":"Every filing and response.","icon":"award"},{"name":"Partners","items":[["Swap providers: key facts","each one's fees, settlement and integration notes, plus the shared baseline"],["On/off-ramp and staking providers","who, status, what's live"],["Communication records","group digests and full external emails"]],"more":"Progress per partner; candidate evaluations; prediction-market trials; vendor research index; due-diligence checklist.","icon":"link"},{"name":"Payments","items":[["Own payment product facts","fees, tokens, compliance boundaries"],["Payment-partner selection","card and QR providers, by status"]],"more":"Payment strategy notes; external materials; audit quotes.","icon":"card"},{"name":"Security","items":[["Security philosophy and public messaging","one way of talking about security"],["Audit and risk-control vendors",""],["Internal and industry incident records","what happened, response, decisions"]],"more":"Current security mechanisms per product line.","icon":"lock"},{"name":"Marketing & support","items":[["How third-party reviews may be quoted","which words are allowed"],["Website rebuild","final design, dev handoff, contract"],["Negative-review taxonomy · case-handling ownership",""]],"more":"User and KOL feedback; sentiment archive.","icon":"megaphone"},{"name":"Industry & regulation","items":[["Regulatory research","US, EU, Canada, app-store rules"],["Crypto payments and card-industry knowledge",""],["Third-party report library","external reports, by topic"]],"more":"Trade-show leads; exchange and institution research; technical explainers; competitors' external materials.","icon":"scale"},{"name":"Team","items":[["Department work list","the only record of every work item"],["Decisions pending my call",""],["Roster · performance · department minutes",""]],"more":"Innovation topic pool; knowledge distilled from team chat.","icon":"team"},{"name":"Rules & standards","items":[["AI working rules","two levels: personal and project"],["Knowledge-base maintenance principles",""],["Product terminology dictionary","the single standard for external wording"],["Corrected conclusions · known-error table · lessons library",""]],"more":"Indexes; minutes-formatting SOP; automation guide and migration checklist.","icon":"book"}],"routines_intro":"What runs on its own, and how often.","routines":[{"when":"Daily","what":"App-behaviour report · sentiment report · Telegram group briefs · core-rules backup","core":true},{"when":"Every Monday","what":"Telegram weekly digest and knowledge cards · department progress update and board regeneration","core":true},{"when":"1st of month","what":"Full knowledge-base health check","core":true},{"when":"Every 2 hours","what":"Collect colleagues' confirmations and corrections from group chats · process team email"},{"when":"Continuous","what":"Telegram message capture · event-data capture · department board web service"},{"when":"Manual","what":"Export team chat on Fridays · review knowledge cards on Mondays · collect colleague corrections on Tuesdays · start the phone emulator when needed"}],"outputs_intro":"Deliverables produced with the base since August 2026. Open a card to see them.","outputs":[{"name":"Competitors & positioning","items":[["09","Five-dimension research on three competitors + three-brand benchmark"],["08","Financial and economic model teardown of a listed competitor"],["08","Full company profile and industry positioning"]],"more":["Standard competitor-research template and automation skill"]},{"name":"Data & event tracking","items":[["08","App status and product-problem diagnosis"],["08 · 09","Swap user analysis, two rounds"],["09","Backend data analysis + authoritative data system"]],"more":["Daily app-behaviour report system","App 5.0 event-tracking spec and review","Swap analysis methodology","Backend report field verification","App 5.0 tracking-stack decision","On/off-ramp fee chain teardown"]},{"name":"Financial models","items":[["08","Five-year forecast model"],["08","Next-fiscal-year software revenue forecast"]],"more":["Core data summary for the product work meeting"]},{"name":"Patents","items":[["08 · 09","Examiner-opinion review and response strategy"],["09","New patent technical disclosure"]]},{"name":"Regulation & new business","items":[["09","Impact of new US rules on a tokenized-stock business"],["08","Tokenized US equities: option selection"],["08","Offline stablecoin payment routes, compared"]],"more":["US stock transfer-agent regime study","Evaluation and negotiation points for one transfer agent","US crypto-asset bill, explained in one chart"]},{"name":"Security","items":[["08","Technical brief and public response to an industry security incident"],["09","Impact assessment and post-mortem of an internal incident"]],"more":["Competitor data-breach study and prevention plan"]},{"name":"AI transformation","items":[["09","AI transformation report deck"],["08","AI transformation path and action plan"],["09","AI platform map and summary report — the source of this site"]],"more":["Transformation cases from two benchmark companies","Weekly minutes turned into a social long-form graphic","Peer exchange notes"]},{"name":"Team mechanisms","items":[["08","Weekly department progress mechanism launched"],["08","Department work-list baseline confirmed"],["08 · 09","Product terminology dictionary finalised and upgraded"]],"more":["External case-handling ownership","Weekly progress update and workload review","Product design-doc structure standard","AI ticket-handling flow"]},{"name":"Other","items":[["08","Technical statement for hardware customs clearance"],["09","Sentiment monitoring system built"]]}],"updates":[{"date":"2026-09-20","title":"Site launched with the Q3 2026 platform map","note":"Overall 7.1. Ten workflows running, nine stable and one just launched. Weak spot: maintenance load at 4.8."}],"principles":[{"k":"Give it the input, get the result.","v":"A workflow counts only when a colleague can trigger it without me in the loop."},{"k":"AI proposes. I decide. Nothing gets deleted.","v":"Every change to the base is a suggestion until a person signs it off; deletion is never automated."},{"k":"Every number has one source and a stated definition.","v":"Revenue alone has three definitions. Mixing them is the fastest way to a wrong decision."}],"about":{"who":"Fate leads product at a crypto wallet company serving consumers in North America and Europe. Since August 2026 the job has had a second half: building the knowledge base and AI platform that a product department can run on — and handing the department's coordination work to it, one piece at a time.","why_site":"Most of this work is invisible from outside. This page makes it legible: what exists, how well it works, and what changed. It will grow to cover career background, writing and other channels.","links":[]},"footer":{"disclaimer":"De-identified by design: no company, product or partner names appear here. Scores are self-assessed and re-run each quarter. Numbers reflect the stated data date."},"platform_intro":"Ten of the workflows in daily use — a representative sample, not the full list. Open any row: what I give → what the AI does → what comes out, and what has been built on top."},"zh":{"meta":{"site_url":"https://0xfate-eth.github.io/fate-site/","name":"Fate","title":"加密錢包公司 · 產品負責人","tagline":"圍繞一個知識庫和一個跑在上面的 AI，重建一個產品部門的工作方式。","lede":"這裡是這項工作的實時地圖：平臺現在能做什麼、知道什麼、做出了什麼，以及分數每季度怎麼變。","data_date":"2026-09-20","period":"2026 年第三季","review_cadence":"每季度重新評分","since":"2026-08","avatar":"avatar.jpg"},"score":{"overall":7.1,"dims":[{"name":"知識覆蓋","value":8.2,"note":"部門的事實、資料、規則有多少已在庫裡"},{"name":"業務產出","value":8.0,"note":"真正用在決策或對外發出的成果"},{"name":"自動化","value":7.4,"note":"例行工作中不需要我參與的比例"},{"name":"資料可信","value":7.2,"note":"每個數字都能追到唯一來源和明確口徑"},{"name":"維護負擔","value":4.8,"note":"短板：知識庫仍需太多規則才能保持健康","low":true}],"caption":"季度自評，0–10 分。每一項都是越低越差。"},"verdict":[{"lead":"平臺已經能幹活。","text":"給輸入就出結果，而且產出之間互相銜接：會議紀要喂進展看板，權威資料喂每一份分析，術語字典管每一個對外用詞。"},{"lead":"它正在從「我的」變成「部門的」。","text":"進展已經從同事的會議、群聊和專案工具自動流入；發郵件時密送 AI 專用郵箱，它就能參與任何一條執行緒。只是範圍還不夠寬。"},{"lead":"下一步。","text":"把它和日常工作融合得更深，把部門的管理與組織工作一項一項交給 AI 重構，同時把知識庫自身的維護規則減半。"}],"workflows":[{"n":1,"name":"決策-執行","status":"stable","input":"現場錄音，轉寫稿丟進收件箱","ai":"AI 整理成標準會議紀要","output":"按公司 / 產品 / 部門 / 合作方歸檔","built_label":"建立在它之上","built":"會上的待辦自動進部門工作清單和進展看板；其中一部分待辦可直接交給 AI 執行並輸出成果，形成「決議 → 成果」的閉環；相關知識頁同步更新。","gist":"錄音進 → 歸檔紀要與待辦出","icon":"mic"},{"n":2,"name":"部門工作看板","status":"stable","input":"會議紀要 · 團隊群 · 專案工具 · Telegram · 郵件 · 庫內新材料","ai":"AI 每週更新部門工作清單，標出按期、異常、停滯","output":"部門進展看板 + 停滯清單 + 群裡 @ 到人的待辦","built_label":"建立在它之上","built":"部門工作彙報直接從這裡出；每個人的進展我隨時能看，同事從此不用寫週報；績效評估也以它為依據。","gist":"六個來源進 → 每週一張按期 / 異常 / 停滯看板","icon":"board"},{"n":3,"name":"合作跟進","status":"stable","input":"15 個合作方 Telegram 群 · 對外郵件","ai":"每天出速報，每週出摘要並提煉知識卡，每兩小時採集同事的確認與更正","output":"每家合作方一頁「關鍵事實」和「合作進展」","built_label":"建立在它之上","built":"費率、結算、對接要點隨時可查；和這家合作方後續的所有溝通內容，AI 都能基於這一頁直接寫出來。","gist":"15 個合作方群進 → 每家一頁活頁出","icon":"link"},{"n":4,"name":"產品運營","status":"stable","input":"埋點資料 · 後臺報表 · 推送記錄 · 兌換流水","ai":"AI 每晚把使用者行為和當天的推送、版本、行情放在一起綜合分析","output":"App 行為日報 · 看板 · 專題分析","built_label":"建立在它之上","built":"自動發現產品 BUG（某個功能突然沒人用、報錯突增）、評估每次推送的效果、解釋兌換為什麼漲跌、哪條鏈拖後腿。","gist":"每晚把行為、推送、版本、行情放在一起讀","icon":"chart"},{"n":5,"name":"競品調研","status":"stable","input":"給一個品牌名","ai":"AI 自己裝上對方的 App 逐屏體驗、截圖、核對官方資料，按固定五維框架打分","output":"可逐維對比的報告 + 多品牌橫評","built_label":"同一套方法還做了","built":"法規影響分析、新業務方案選型、新服務商評估。","gist":"一個品牌名進 → 一份可逐維對比的評分報告出","icon":"search"},{"n":6,"name":"對外材料輸出","status":"stable","input":"要發的文案 · PPT · 宣告 · 投資人材料 · 專利檔案","ai":"AI 按術語字典和品牌規範起草，數字與產品引數只認一個來源","output":"英文文案 · 彙報 PPT · 清關宣告 · 專利答覆與技術交底書","built_label":"建立在它之上","built":"對外口徑全公司統一，寫錯能被指令碼查出來；專利材料可直接交代理機構。","gist":"一本字典、一個資料來源，管住所有對外檔案","icon":"file"},{"n":7,"name":"輿情與安全","status":"stable","input":"使用者評價 · 媒體報道 · 疑似仿冒","ai":"每天凌晨掃全網、打分歸類","output":"輿情日報 + 負面與仿冒歸檔","built_label":"輿論事件發生時","built":"AI 出技術底稿、對外回應口徑和客服話術。","gist":"每天掃全網；事件來了應對包現成","icon":"shield"},{"n":8,"name":"財務模型","status":"stable","input":"財務賬 · 出貨與收入權威資料 · 運營會結論","ai":"AI 建模、校口徑、按會議結論重調","output":"收入預測 · 五年模型 · 覆盤資料摘要","built_label":"建立在它之上","built":"公司級資料分析——工作覆盤、收入預測、目標制定、投資人材料裡的數字。","gist":"建模、校口徑、每次會後重調","icon":"calc"},{"n":9,"name":"客服自動化","status":"new","input":"客服工單 · 團隊郵件","ai":"AI 讀懂問題、寫好建議回覆，同時把每個工單結構化存檔","output":"人工確認後傳送 · 工單檔案","built_label":"建立在它之上","built":"工單檔案可做各種統計分析，自動發現群體性問題。","gist":"讀工單、擬回覆、建檔案——人來傳送","icon":"headset"},{"n":10,"name":"知識庫自我維護","status":"stable","input":"整個知識庫","ai":"每天備份核心規則，每月全面體檢，改完規則自動檢查存量是否跟上","output":"體檢報告 · 待處理建議","built_label":"原則","built":"AI 只提建議，不刪任何東西，不替我做取捨。","gist":"每日備份、每月體檢、改規則即回掃","icon":"refresh"}],"knowledge_intro":"只算基礎事實、資料、標準、原則、已定設計、已發生的溝通與事件。點開卡片看核心條目。","knowledge":[{"name":"權威資料","foundation":true,"note":"所有數字的唯一來源。上面幾乎每一件工作、下面每一類知識裡的數，都從這裡取。","items":[["硬體月度出貨表","每月發了多少臺"],["軟體收入表 + 三口徑對照","收入該用哪個數"],["使用者規模表",""],["App / 韌體版本釋出表","每版哪天發、改了什麼"],["推送傳送記錄表","每條推送何時發、發了什麼"],["影響資料的重大事件表 · 產品代號對照",""],["資料指標全景","各項指標的定義與口徑"],["後臺報表欄位說明",""],["歷史周度資料",""]],"icon":"database"},{"name":"公司與融資","items":[["公司主體基礎資訊","註冊資訊、董事、業務定性"],["公司與產品介紹 · 融資 Deck","給投資人和客戶的最新版"],["上市籌備材料","草稿與第三方行研報告"],["投資人問答口徑","對外怎麼講、用哪些數"]],"more":"公司級會議紀要；AI 轉型外部案例與同行交流記錄。","icon":"building"},{"name":"App 產品","items":[["App 5.0 立項與範圍","為什麼做、做多大"],["兌換功能設計","路由、費率、門檻、自建兌換"],["產品規則","顯示規則、新功能評估原則"],["埋點規範","事件怎麼定義、怎麼評審"],["隱私政策","產品側與官網側兩份"]],"more":"已下線功能的現狀；隱私交易方案；質押機制；應用商店文案。","icon":"phone"},{"name":"硬體產品","items":[["產品規格引數","對外唯一依據"],["卡片式硬體產品進展與問題彙編","設計定論、安全升級、已知問題"],["錯誤碼 · 說明書 · 配件需求",""],["韌體升級現狀",""]],"more":"清關認證宣告；早期硬體產品歷史幣種；新形態硬體產品的規劃要點；備份卡為何沒做。","icon":"cpu"},{"name":"專利","items":[["現有專利與商標狀態","進展到哪、下一步是什麼"],["審查意見原件摘要","駁回理由與期限"],["與代理機構的溝通決議",""]],"more":"歷次申請材料與答覆記錄。","icon":"award"},{"name":"合作方","items":[["兌換服務商關鍵事實","每一家的費率、結算、對接要點，以及通用底線"],["買賣幣與質押服務商現狀","用哪家、合作狀態、已上線內容"],["合作方溝通記錄","群摘要與對外郵件全文"]],"more":"各家合作進展；候選服務商評估記錄；預測市場實測；新服務商調研索引；盡調標準清單。","icon":"link"},{"name":"支付","items":[["自有支付產品事實","收費、代幣、合規邊界"],["支付合作方選型現狀","銀行卡、掃碼支付各家狀態"]],"more":"支付戰略思考；對外材料；審計報價。","icon":"card"},{"name":"安全","items":[["安全理念與對外口徑","對外講安全的統一說法"],["審計與風控服務商事實",""],["內部與行業安全事件記錄","經過、處置、決議"]],"more":"我方各產品線的安全機制現狀。","icon":"lock"},{"name":"市場與客服","items":[["第三方評價的引用口徑","哪些話能說"],["官網重構","設計終稿、開發交接、合同"],["使用者負評分類 · 個案對接分工",""]],"more":"使用者與 KOL 反饋；輿情累積庫。","icon":"megaphone"},{"name":"行業與法規","items":[["各國法規研究","美國、歐盟、加拿大及應用商店規則"],["加密支付與銀行卡行業知識",""],["第三方報告庫","外部行業報告按主題存放"]],"more":"展會線索表；交易所與機構研究；技術科普；競品的外部資料。","icon":"scale"},{"name":"團隊","items":[["部門工作清單","全部工作項的唯一記錄"],["待我拍板清單",""],["成員名單 · 績效表 · 部門會議紀要",""]],"more":"創新議題池；團隊群知識沉澱。","icon":"team"},{"name":"規則與標準","items":[["AI 工作規則","兩級規則檔案"],["知識庫維護原則",""],["產品術語字典","對外用詞唯一標準"],["已更正結論清單 · 重要錯誤事實表 · 經驗庫",""]],"more":"各類索引；會議紀要整理規範；自動化說明與遷移清單。","icon":"book"}],"routines_intro":"自動在跑的，以及多久跑一次。","routines":[{"when":"每天","what":"App 行為日報 · 輿情日報 · Telegram 群速報 · 核心規則備份","core":true},{"when":"每週一","what":"Telegram 周摘要與知識卡 · 部門進展更新與看板重生成","core":true},{"when":"每月 1 日","what":"知識庫全面體檢","core":true},{"when":"每兩小時","what":"採集同事在群裡的確認與更正 · 處理團隊郵件"},{"when":"持續","what":"Telegram 訊息採集 · 埋點資料採集 · 部門看板網頁服務"},{"when":"人工","what":"週五匯出團隊群記錄 · 週一審知識卡 · 週二收同事更正 · 需要時開手機模擬器"}],"outputs_intro":"2026 年 8 月起用知識庫做出來的成果。點開卡片檢視。","outputs":[{"name":"競品與行業定位","items":[["09","三家競品五維調研 + 三品牌橫評"],["08","一家上市競品的財務與經濟模型拆解"],["08","本公司全面畫像與行業定位"]],"more":["競品調研標準模版與自動化技能"]},{"name":"資料分析與埋點","items":[["08","App 現狀與產品問題定位"],["08 · 09","兌換使用者分析兩期"],["09","後臺資料分析 + 權威資料體系建立"]],"more":["App 行為日報系統搭建","5.0 埋點設計規範與方案評審","兌換分析方法論","後臺報表欄位核查","5.0 埋點體系選型決策","買賣幣費率鏈條拆解"]},{"name":"財務模型","items":[["08","五年財務預測模型"],["08","下一財年軟體收入預測"]],"more":["產品工作會核心資料摘要"]},{"name":"專利","items":[["08 · 09","審查意見覆盤與答覆策略"],["09","新專利技術交底書"]]},{"name":"監管與新業務","items":[["09","美國新規對股票代幣業務的影響分析"],["08","代幣化美股業務方案選型"],["08","線下穩定幣支付路線對比"]],"more":["美國股票登記機構制度研究","一家登記機構的評估與談判要點","美國加密資產條例提案一圖看懂"]},{"name":"安全","items":[["08","行業安全事件的技術底稿與對外回應材料"],["09","內部安全事件的影響評估與覆盤"]],"more":["競品資料洩露事件研究與防範方案"]},{"name":"AI 轉型","items":[["09","AI 轉型彙報材料"],["08","AI 轉型路徑與行動建議"],["09","AI 平臺建設地圖與總結報告——本站的來源"]],"more":["兩家標杆公司的轉型案例","週會紀要改編社媒長圖","同行交流記錄"]},{"name":"團隊機制","items":[["08","部門周進展機制上線"],["08","部門工作清單基線確認"],["08 · 09","產品術語字典定稿與升版"]],"more":["使用者個案對外對接分工機制","周進展更新與部門負載評估","產品設計文件結構標準","客服工單 AI 處理流程"]},{"name":"其他","items":[["08","硬體產品清關用技術宣告"],["09","輿情監控體系搭建"]]}],"updates":[{"date":"2026-09-20","title":"站點上線，載入 2026 年第三季平臺地圖","note":"總分 7.1。10 條工作流在跑，9 條已穩定、1 條剛上線。短板：維護負擔 4.8。"}],"principles":[{"k":"給輸入，就出結果。","v":"一條工作流只有在同事不經過我也能觸發時，才算數。"},{"k":"AI 只提建議，我來拍板，不刪任何東西。","v":"對知識庫的每一處改動在有人簽字前都只是建議；刪除永遠不自動化。"},{"k":"每個數字只有一個來源、一個明確口徑。","v":"光是收入就有三種口徑。把它們混在一起，是做出錯誤決策最快的方式。"}],"about":{"who":"Fate 在一家面向北美與歐洲消費者的加密錢包公司負責產品。2026 年 8 月起，這份工作多了另一半：搭建一個產品部門能跑在上面的知識庫與 AI 平臺，並把部門的組織協調工作一件一件交給它。","why_site":"這些工作從外面幾乎看不見。這一頁把它變得可讀：有什麼、做得怎樣、改了什麼。之後會逐步加入職業背景、寫作與其他渠道。","links":[]},"footer":{"disclaimer":"本站按設計脫敏：不出現任何公司、產品或合作方名稱。分數為自評，每季度重跑。數字以標註的資料時點為準。"},"platform_intro":"日常在用的工作流裡挑出 10 條——是代表性樣本，不是全部。點開任一行：我給什麼 → AI 做什麼 → 得到什麼，以及哪些工作建立在它之上。"}}</script>
+<script>
+(function(){
+  var ALL = JSON.parse(document.getElementById('site-data').textContent);
+  var $ = function(id){ return document.getElementById(id); };
+  var esc = function(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); };
+
+  /* ---- icons (24px line set) ---- */
+  var P = {
+    mic:'<path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>',
+    board:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M9 4v16M15 4v16"/>',
+    link:'<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>',
+    chart:'<path d="M3 20h18M6 16l4-5 4 3 5-7"/>',
+    search:'<circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/>',
+    file:'<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',
+    shield:'<path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/>',
+    calc:'<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 12h3M13 12h3M8 16h3M13 16h3"/>',
+    headset:'<path d="M4 14v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="13" width="4" height="6" rx="1"/><rect x="17" y="13" width="4" height="6" rx="1"/><path d="M19 19a3 3 0 0 1-3 2h-3"/>',
+    refresh:'<path d="M20 12a8 8 0 1 1-2.3-5.7"/><path d="M20 4v5h-5"/>',
+    database:'<ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
+    building:'<rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M9 15h2M13 15h2M10 21v-3h4v3"/>',
+    phone:'<rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/>',
+    cpu:'<rect x="6" y="6" width="12" height="12" rx="2"/><rect x="10" y="10" width="4" height="4"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/>',
+    award:'<circle cx="12" cy="9" r="5"/><path d="M9 13.5L8 22l4-2 4 2-1-8.5"/>',
+    card:'<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/>',
+    lock:'<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+    megaphone:'<path d="M3 10v4h3l7 4V6l-7 4z"/><path d="M17 9a4 4 0 0 1 0 6"/>',
+    scale:'<path d="M12 3v18M5 21h14M3 8h18M6 8l-3 6a3 3 0 0 0 6 0zM18 8l-3 6a3 3 0 0 0 6 0z"/>',
+    team:'<circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2 20a6 6 0 0 1 12 0M10 20a6 6 0 0 1 12 0"/>',
+    book:'<path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4zM20 4h-6a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h7z"/>',
+    compass:'<circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>',
+    layers:'<path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5M3 17.5l9 5 9-5"/>',
+    activity:'<path d="M3 12h4l3-8 4 16 3-8h4"/>',
+    clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    user:'<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+    box:'<path d="M12 3l9 4.5v9L12 21l-9-4.5v-9z"/><path d="M3 7.5l9 4.5 9-4.5M12 12v9"/>',
+    sparkle:'<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 17l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/>',
+    flag:'<path d="M5 21V4M5 4h11l-2 4 2 4H5"/>',
+    check:'<path d="M5 12l4 4L19 7"/>',
+    hand:'<path d="M7 11V6a1.5 1.5 0 0 1 3 0v5M10 10V4a1.5 1.5 0 0 1 3 0v6M13 10V5a1.5 1.5 0 0 1 3 0v6"/><path d="M16 11a1.5 1.5 0 0 1 3 0v4a6 6 0 0 1-6 6h-2a6 6 0 0 1-5-2.7L3.5 15a1.5 1.5 0 0 1 2.5-1.7L7 14"/>',
+    hash:'<path d="M4 9h16M4 15h16M10 3L8 21M16 3l-2 18"/>'
+  };
+  var ico = function(k,cls){ return '<svg class="i'+(cls?' '+cls:'')+'" viewBox="0 0 24 24" aria-hidden="true">'+(P[k]||P.box)+'</svg>'; };
+  var CHEV = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+  var OUT_ICONS = ['search','chart','calc','award','scale','lock','sparkle','team','box'];
+  var PR_ICONS = ['hand','check','hash'];
+
+  /* ---- UI strings ---- */
+  var UI = {
+    en:{ nav:['Verdict','Platform','Knowledge','Work','Updates','About'], jump:'Jump to…', filter:'Filter the page', asof:'Data as of', period:'Period', since:'Building since', score:'Platform score', self:'self-assessed',
+      s1:['Where it stands','Three sentences that carry the quarter. Everything below is evidence.'], s2:['What the platform does today'], s3:['What it knows'], s4:['What it runs, and what it made','A: routines that run on their own. B: deliverables produced with the base.'], s4a:'A · Routines', s4b:'B · Deliverables', s5:['Updates','What changed on this page, newest first.'], s6:['About'],
+      give:'I give', does:'AI does', get:'I get', stable:'Stable', newt:'Just launched', expand:'Expand all', collapse:'Collapse all', also:'Also', more:'more', core:'core', coreLegend:'● = core', rss:'RSS feed', matches:'matches for', clear:'Clear', theme:['Theme: auto','Theme: light','Theme: dark'], built:'Static page · updated by script', whoWhy:'Who · why', verdict:'Verdict', lang:'繁體中文',
+      strip:[['workflows shown','of many in daily use'],['knowledge domains','one data foundation'],['deliverables','since {since}'],['automated routines','daily to monthly']] },
+    zh:{ nav:['判斷','平台','知識','工作','更新','關於'], jump:'跳到…', filter:'篩選全頁', asof:'資料時點', period:'期間', since:'建設始於', score:'平台評分', self:'自評',
+      s1:['現在到哪了','三句話說完整個季度,下面全是證據。'], s2:['平台現在能做什麼'], s3:['它知道什麼'], s4:['它在跑什麼,做出了什麼','A:自動在跑的例行工作。B:用知識庫做出的成果。'], s4a:'A · 例行', s4b:'B · 成果', s5:['更新','這一頁改了什麼,最新在前。'], s6:['關於'],
+      give:'我給', does:'AI 做', get:'我得到', stable:'已穩定', newt:'剛上線', expand:'全部展開', collapse:'全部收起', also:'其他', more:'更多', core:'核心', coreLegend:'● = 核心', rss:'RSS 訂閱', matches:'條符合', clear:'清除', theme:['主題:自動','主題:淺色','主題:深色'], built:'靜態頁面 · 由腳本更新', whoWhy:'是誰 · 為何', verdict:'判斷', lang:'EN',
+      strip:[['條工作流展示','日常在用的一部分'],['類知識','一個資料底座'],['項成果','自 {since} 起'],['項自動例行','每日到每月']] }
+  };
+
+  var lang = 'en';
+  try{ lang = localStorage.getItem('lang') || 'en'; }catch(e){}   // default English; Chinese only after the visitor switches (choice remembered)
+  if (/[?&]lang=zh/.test(location.search)) lang='zh'; if (/[?&]lang=en/.test(location.search)) lang='en';
+  var themeIdx = 0;
+
+  function render(){
+    var S = ALL[lang], T = UI[lang];
+    document.documentElement.setAttribute('lang', lang==='zh'?'zh-Hant':'en');
+    $('lang').textContent = T.lang;
+
+    /* header */
+    $('b-name').textContent = S.meta.name;
+    document.querySelectorAll('nav.main a').forEach(function(a,i){ a.textContent = T.nav[i]; });
+    $('mnav').innerHTML = '<option value="">'+esc(T.jump)+'</option>'+['#verdict','#platform','#knowledge','#work','#updates','#about'].map(function(h,i){ return '<option value="'+h+'">'+esc(T.nav[i])+'</option>'; }).join('');
+    $('q').placeholder = T.filter; $('q').setAttribute('aria-label', T.filter);
+    $('chip-l').textContent = T.asof; $('chip-date').textContent = S.meta.data_date;
+    $('hit-l').textContent = T.matches; $('hitx').textContent = T.clear;
+
+    /* hero */
+    $('avatar').src = S.meta.avatar || ''; $('avatar').alt = S.meta.name;
+    $('k-name').textContent = S.meta.name; $('k-title').textContent = S.meta.title;
+    (function(){ var t=S.meta.tagline, m=t.match(/^(.*?)(\ban AI that runs on it\.?)$/); $('h1').innerHTML = m ? esc(m[1])+'<em>'+esc(m[2])+'</em>' : esc(t); })();
+    $('lede').textContent = S.meta.lede;
+    $('m-period-l').textContent = T.period; $('m-period').textContent = S.meta.period;
+    $('m-since-l').textContent = T.since; $('m-since').textContent = S.meta.since; $('m-cadence').textContent = S.meta.review_cadence;
+    $('sc-l').textContent = T.score; $('stamp').textContent = S.meta.period+' · '+T.self; $('cap').textContent = S.score.caption;
+    $('dims').innerHTML = S.score.dims.map(function(d){ return '<div class="dim'+(d.low?' low':'')+'" tabindex="0"><span class="nm">'+esc(d.name)+'</span><div class="bar"><i data-w="'+(d.value*10)+'"></i></div><span class="v">'+d.value.toFixed(1)+'</span>'+(d.note?'<span class="tip">'+esc(d.note)+'</span>':'')+'</div>'; }).join('');
+
+    /* strip */
+    var nOut = S.outputs.reduce(function(a,c){ return a+c.items.length+(c.more?c.more.length:0); },0);
+    var nAuto = S.routines.filter(function(r,i){ return i!==S.routines.length-1; }).length;
+    var vals = [S.workflows.length, S.knowledge.length, nOut, nAuto];
+    $('strip').innerHTML = T.strip.map(function(s,i){ return '<div class="st"><div class="n">'+vals[i]+'</div><div class="l">'+esc(s[0])+' · '+esc(s[1].replace('{since}',S.meta.since))+'</div></div>'; }).join('');
+
+    /* section heads */
+    var sec = [['s1',T.s1,'compass'],['s2',[T.s2[0],S.platform_intro],'layers'],['s3',[T.s3[0],S.knowledge_intro],'book'],['s4',T.s4,'activity'],['s5',T.s5,'clock'],['s6',T.s6,'user']];
+    sec.forEach(function(s){ $(s[0]+'-t').innerHTML = ico(s[2])+esc(s[1][0]); if($(s[0]+'-p')) $(s[0]+'-p').textContent = s[1][1]||''; });
+    document.querySelectorAll('.xall').forEach(function(b){ b.textContent = T.expand; b.dataset.state='closed'; });
+
+    /* verdict */
+    $('v-side').textContent = T.verdict; $('v-date').textContent = S.meta.data_date;
+    $('verdict-cols').innerHTML = S.verdict.map(function(v){ return '<p class="f"><b>'+esc(v.lead)+'</b>'+esc(v.text)+'</p>'; }).join('');
+
+    /* workflows */
+    $('workflows').innerHTML = S.workflows.map(function(w){
+      var no=(w.n<10?'0':'')+w.n;
+      return '<article class="wf f rv"><button class="wf-h acc-h" aria-expanded="false"><span class="no">'+no+'</span>'+ico(w.icon)+'<span class="nm"><h3>'+esc(w.name)+'</h3><span class="gist">'+esc(w.gist)+'</span></span><span class="tag'+(w.status==='new'?' new':'')+'">'+(w.status==='new'?T.newt:T.stable)+'</span>'+CHEV+'</button>'+
+        '<div class="acc-b"><div><div class="wf-body"><div class="flow"><div class="cell"><span class="lb">'+T.give+'</span>'+esc(w.input)+'</div><div class="cell ai"><span class="lb">'+T.does+'</span>'+esc(w.ai)+'</div><div class="cell out"><span class="lb">'+T.get+'</span>'+esc(w.output)+'</div></div>'+
+        '<p class="dep"><b>'+esc(w.built_label)+'</b>'+esc(w.built)+'</p></div></div></div></article>';
+    }).join('');
+
+    /* knowledge */
+    $('knowledge-grid').innerHTML = S.knowledge.map(function(k){
+      var items = k.items.map(function(i){ return '<div class="it f"><b>'+esc(i[0])+'</b>'+(i[1]?' <span>— '+esc(i[1])+'</span>':'')+'</div>'; });
+      if (k.foundation){
+        var per=Math.ceil(items.length/3), cols=[items.slice(0,per),items.slice(per,per*2),items.slice(per*2)];
+        return '<div class="card found rv"><button class="card-h acc-h" aria-expanded="false">'+ico(k.icon)+'<h3>'+esc(k.name)+'</h3><span class="k">'+k.items.length+'</span>'+CHEV+'</button><p class="note">'+esc(k.note)+'</p><div class="acc-b"><div><div class="card-body"><div class="cols">'+cols.map(function(c){ return '<div>'+c.join('')+'</div>'; }).join('')+'</div></div></div></div></div>';
+      }
+      var more = k.more ? '<details><summary>'+T.also+'</summary><div class="also f">'+esc(k.more)+'</div></details>' : '';
+      return '<div class="card rv"><button class="card-h acc-h" aria-expanded="false">'+ico(k.icon)+'<h3>'+esc(k.name)+'</h3><span class="k">'+k.items.length+'</span>'+CHEV+'</button><div class="acc-b"><div><div class="card-body">'+items.join('')+more+'</div></div></div></div>';
+    }).join('');
+
+    /* routines */
+    $('r-intro').textContent = S.routines_intro; $('core-legend').textContent = T.coreLegend;
+    var core = S.routines.filter(function(r){ return r.core; }), rest = S.routines.filter(function(r){ return !r.core; });
+    var row = function(r,i,arr,x){ return '<div class="rt f'+(r.core?' core':'')+(x&&i===arr.length-1?' x':'')+(i===arr.length-1?' last':'')+'"><div class="w">'+esc(r.when)+'</div><div class="d">'+esc(r.what)+'</div></div>'; };
+    $('routines').innerHTML = core.map(function(r,i){ return row(r,i,core,false); }).join('') + (rest.length?'<details><summary>'+rest.length+' '+T.more+'</summary>'+rest.map(function(r,i){ return row(r,i,rest,true); }).join('')+'</details>':'');
+
+    /* outputs */
+    $('s4-a').textContent = T.s4a; $('s4-b').textContent = T.s4b; $('o-intro').textContent = S.outputs_intro;
+    $('outputs-grid').innerHTML = S.outputs.map(function(o,idx){
+      var total = o.items.length+(o.more?o.more.length:0);
+      var items = o.items.map(function(i){ return '<div class="it f"><span class="mt">'+esc(i[0])+'</span><b>'+esc(i[1])+'</b></div>'; }).join('');
+      var more = o.more&&o.more.length ? '<details><summary>'+o.more.length+' '+T.more+'</summary>'+o.more.map(function(m){ return '<div class="it f">'+esc(m)+'</div>'; }).join('')+'</details>' : '';
+      return '<div class="card rv"><button class="card-h acc-h" aria-expanded="false">'+ico(OUT_ICONS[idx%OUT_ICONS.length])+'<h3>'+esc(o.name)+'</h3><span class="k">'+total+'</span>'+CHEV+'</button><div class="acc-b"><div><div class="card-body">'+items+more+'</div></div></div></div>';
+    }).join('');
+
+    /* updates */
+    $('updates-list').innerHTML = S.updates.slice().sort(function(a,b){ return a.date<b.date?1:-1; }).map(function(u){ return '<div class="upd f"><div class="dt">'+esc(u.date)+'</div><div><h4>'+esc(u.title)+'</h4><p>'+esc(u.note)+'</p></div></div>'; }).join('');
+    $('rss-l').textContent = T.rss;
+
+    /* about + footer */
+    $('a-side').textContent = T.whoWhy; $('a-who').textContent = S.about.who; $('a-why').textContent = S.about.why_site;
+    $('a-links').innerHTML = (S.about.links||[]).map(function(l){ return '<a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+' ↗</a>'; }).join('');
+    $('principles').innerHTML = S.principles.map(function(p,i){ return '<div class="pr f">'+ico(PR_ICONS[i%3])+'<div><b>'+esc(p.k)+'</b><span>'+esc(p.v)+'</span></div></div>'; }).join('');
+    $('f-name').textContent = S.meta.name; $('f-year').textContent = S.meta.data_date.slice(0,4); $('f-disc').textContent = S.footer.disclaimer; $('f-built').textContent = T.built;
+    $('theme').textContent = T.theme[themeIdx];
+
+    wire();
+  }
+
+  /* ---- behaviours that must re-bind after render ---- */
+  var revealed = false;
+  function wire(){
+    // accordion
+    document.querySelectorAll('.acc-h').forEach(function(h){ h.addEventListener('click',function(){ var c=h.parentNode; c.classList.toggle('open'); h.setAttribute('aria-expanded', c.classList.contains('open')); }); });
+    document.querySelectorAll('.xall').forEach(function(b){ b.onclick=function(){ var open=b.dataset.state!=='open'; document.querySelectorAll('#'+b.dataset.for+' .acc-h').forEach(function(h){ h.parentNode.classList.toggle('open',open); h.setAttribute('aria-expanded',open); }); b.dataset.state=open?'open':'closed'; b.textContent=open?UI[lang].collapse:UI[lang].expand; }; });
+    // reveal + bars
+    var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if(!e.isIntersecting) return; var el=e.target; io.unobserve(el);
+      if (el.id==='big'){ var t=ALL[lang].score.overall, s=performance.now(); (function tick(n){ var p=Math.min(1,(n-s)/900); el.textContent=(t*(1-Math.pow(1-p,3))).toFixed(1); if(p<1) requestAnimationFrame(tick); })(s); document.querySelectorAll('.dim .bar i').forEach(function(b){ b.style.width=b.getAttribute('data-w')+'%'; }); }
+      else el.classList.add('in'); }); },{threshold:.08});
+    if (!revealed){ io.observe($('big')); revealed=true; } else { $('big').textContent=ALL[lang].score.overall.toFixed(1); document.querySelectorAll('.dim .bar i').forEach(function(b){ b.style.transition='none'; b.style.width=b.getAttribute('data-w')+'%'; }); }
+    document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+    // filter re-run if active
+    if ($('q').value) filter();
+  }
+
+  /* ---- filter ---- */
+  function filter(){
+    var q=$('q'), v=q.value.trim().toLowerCase(), n=0;
+    document.body.classList.toggle('searching',!!v);
+    document.querySelectorAll('.f').forEach(function(el){ var hit=!v||el.textContent.toLowerCase().indexOf(v)>-1; el.classList.toggle('nohit',!hit); if(v&&hit) n++; });
+    document.querySelectorAll('.card').forEach(function(c){ var any=!v||c.querySelectorAll('.f:not(.nohit)').length>0; c.classList.toggle('nohit',!any); if(v&&any&&!c.classList.contains('open')){ c.classList.add('open','auto'); } if(!v&&c.classList.contains('auto')){ c.classList.remove('open','auto'); } });
+    document.querySelectorAll('.wf').forEach(function(w){ if(v&&!w.classList.contains('nohit')&&!w.classList.contains('open')){ w.classList.add('open','auto'); } if(!v&&w.classList.contains('auto')){ w.classList.remove('open','auto'); } });
+    document.querySelectorAll('details').forEach(function(d){ d.open=!!v&&d.querySelectorAll('.f:not(.nohit)').length>0; });
+    $('hitbar').classList.toggle('show',!!v); $('hitn').textContent=n; $('hitq').textContent=q.value.trim();
+  }
+  $('q').addEventListener('input',filter);
+  $('hitx').addEventListener('click',function(){ $('q').value=''; filter(); });
+  document.addEventListener('keydown',function(e){ var q=$('q'); if(e.key==='/'&&document.activeElement!==q&&!/input|textarea|select/i.test(document.activeElement.tagName)){ e.preventDefault(); q.focus(); } if(e.key==='Escape'&&document.activeElement===q){ q.value=''; filter(); q.blur(); } });
+
+  /* ---- scroll spy / mobile nav ---- */
+  var links = Array.prototype.slice.call(document.querySelectorAll('nav.main a'));
+  var spy = new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href')==='#'+e.target.id); }); } }); },{rootMargin:'-40% 0px -55% 0px'});
+  links.forEach(function(a){ spy.observe(document.querySelector(a.getAttribute('href'))); });
+  $('mnav').addEventListener('change',function(){ if(this.value){ location.hash=this.value; this.value=''; } });
+
+  /* ---- theme ---- */
+  var order=['auto','light','dark'], cur='auto';
+  try{ cur=localStorage.getItem('theme')||'auto'; }catch(e){}
+  function applyTheme(){ themeIdx=order.indexOf(cur); if(cur==='auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme',cur); $('theme').textContent=UI[lang].theme[themeIdx]; try{ localStorage.setItem('theme',cur); }catch(e){} }
+  $('theme').addEventListener('click',function(){ cur=order[(order.indexOf(cur)+1)%3]; applyTheme(); });
+
+  /* ---- language ---- */
+  $('lang').addEventListener('click',function(){ lang = lang==='en'?'zh':'en'; try{ localStorage.setItem('lang',lang); }catch(e){} render(); });
+
+  applyTheme(); render();
+})();
+</script>
+</body>
+</html>
