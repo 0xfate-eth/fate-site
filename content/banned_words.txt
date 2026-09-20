@@ -1,0 +1,19 @@
+# De-identification guard. build.py refuses to build if any of these appear in content/site.json (case-insensitive).
+# One term per line. Add company, product, partner and colleague names here.
+ellipal
+titan
+paydao
+x card
+xcard
+swaphome
+ledger
+trezor
+tangem
+keystone
+safepal
+onekey
+metamask
+trust wallet
+tapd
+wecom
+企微

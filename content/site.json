@@ -1,0 +1,688 @@
+{
+  "meta": {
+    "site_url": "https://0xfate-eth.github.io/fate-site/",
+    "name": "Fate",
+    "title": "Product lead, crypto wallet company",
+    "tagline": "A product department, rebuilt around one knowledge base and an AI that runs on it.",
+    "lede": "A live map of that work: what the platform can do today, what it knows, what it has produced, and how the score moves each quarter.",
+    "data_date": "2026-09-20",
+    "period": "Q3 2026",
+    "review_cadence": "Re-scored every quarter",
+    "since": "2026-08",
+    "avatar": "avatar.jpg"
+  },
+  "score": {
+    "overall": 7.1,
+    "dims": [
+      {
+        "name": "Knowledge coverage",
+        "value": 8.2,
+        "note": "How much of the department's facts, data and rules live in the base"
+      },
+      {
+        "name": "Business output",
+        "value": 8.0,
+        "note": "Deliverables that were actually used in decisions or sent out"
+      },
+      {
+        "name": "Automation",
+        "value": 7.4,
+        "note": "Share of routine work that runs without me"
+      },
+      {
+        "name": "Data trust",
+        "value": 7.2,
+        "note": "Every number traceable to one source with a stated definition"
+      },
+      {
+        "name": "Maintenance load",
+        "value": 4.8,
+        "note": "The weak spot: the base still needs too many rules to stay healthy",
+        "low": true
+      }
+    ],
+    "caption": "Quarterly self-assessment, 0–10. Lower is worse on every line."
+  },
+  "verdict": [
+    {
+      "lead": "It does real work.",
+      "text": "Give it the input, get the result — and the results feed each other: minutes feed the board, one data source feeds every analysis, one dictionary governs every external word."
+    },
+    {
+      "lead": "It is becoming the department's.",
+      "text": "Progress already flows in from colleagues' meetings, chats and the project tracker; bcc one AI mailbox and it joins any thread. The surface is still narrow."
+    },
+    {
+      "lead": "Next.",
+      "text": "Push it deeper into daily work, hand coordination tasks to AI one by one, and halve the base's own maintenance rules."
+    }
+  ],
+  "workflows": [
+    {
+      "n": 1,
+      "name": "Decision → execution",
+      "status": "stable",
+      "input": "A meeting recording; the transcript dropped into an inbox folder",
+      "ai": "Turns it into standard meeting minutes",
+      "output": "Filed by company / product / department / partner",
+      "built_label": "Built on it",
+      "built": "Action items flow into the department work list and progress board. Some are handed straight to AI to execute and deliver, closing the loop from decision to result. Related knowledge pages update in step.",
+      "gist": "Recording in → filed minutes and action items out",
+      "icon": "mic"
+    },
+    {
+      "n": 2,
+      "name": "Department progress board",
+      "status": "stable",
+      "input": "Meeting minutes · team chat · project tracker · Telegram · email · new material in the base",
+      "ai": "Updates the department work list every week, flagging on-time, off-track and stalled items",
+      "output": "Progress board + stalled-items list + @-mentioned to-dos in the team chat",
+      "built_label": "Built on it",
+      "built": "Department reports come straight from here. I can see anyone's progress at any time, nobody writes a weekly report anymore, and performance reviews use it as evidence.",
+      "gist": "Six sources in → a weekly board of on-time, off-track and stalled",
+      "icon": "board"
+    },
+    {
+      "n": 3,
+      "name": "Partner tracking",
+      "status": "stable",
+      "input": "15 partner Telegram groups · external email",
+      "ai": "Daily briefs; weekly digests distilled into knowledge cards; colleagues' confirmations and corrections collected every two hours",
+      "output": "One page per partner: key facts + progress",
+      "built_label": "Built on it",
+      "built": "Fees, settlement terms and integration details are always at hand. Any later message to that partner can be drafted by AI from that one page.",
+      "gist": "15 partner chats in → one living page per partner",
+      "icon": "link"
+    },
+    {
+      "n": 4,
+      "name": "Product analytics",
+      "status": "stable",
+      "input": "Event tracking · backend reports · push-notification log · swap transaction records",
+      "ai": "Every night, reads user behaviour alongside that day's pushes, releases and market moves",
+      "output": "Daily app-behaviour report · dashboards · deep-dives",
+      "built_label": "Built on it",
+      "built": "Catches product bugs on its own (a feature nobody uses overnight, an error spike), measures every push, explains why swaps rose or fell and which chain is lagging.",
+      "gist": "Nightly read of behaviour, pushes, releases and markets",
+      "icon": "chart"
+    },
+    {
+      "n": 5,
+      "name": "Competitor research",
+      "status": "stable",
+      "input": "A brand name",
+      "ai": "Installs the competitor's app by itself, walks every screen, takes screenshots, checks official figures, scores on a fixed five-dimension framework",
+      "output": "Dimension-by-dimension comparable reports + multi-brand benchmarks",
+      "built_label": "Same method also produced",
+      "built": "Regulatory impact analysis, new-business option selection, vendor evaluation.",
+      "gist": "A brand name in → a scored, comparable report out",
+      "icon": "search"
+    },
+    {
+      "n": 6,
+      "name": "External materials",
+      "status": "stable",
+      "input": "Copy to publish · slide decks · statements · investor materials · patent documents",
+      "ai": "Drafts to the terminology dictionary and brand rules; numbers and product specs come from one source only",
+      "output": "English copy · report decks · customs declarations · patent responses and technical disclosures",
+      "built_label": "Built on it",
+      "built": "One company-wide voice. A script catches wrong wording. Patent materials go straight to the attorney.",
+      "gist": "One dictionary, one data source, every external document",
+      "icon": "file"
+    },
+    {
+      "n": 7,
+      "name": "Reputation & security",
+      "status": "stable",
+      "input": "User reviews · media coverage · suspected impersonation",
+      "ai": "Scans the web before dawn every day, scores and classifies",
+      "output": "Daily sentiment report + archives of negatives and impersonators",
+      "built_label": "When an incident hits",
+      "built": "AI produces the technical brief, the public response and the support scripts.",
+      "gist": "Web scanned daily; incident kit ready when needed",
+      "icon": "shield"
+    },
+    {
+      "n": 8,
+      "name": "Financial modelling",
+      "status": "stable",
+      "input": "Accounts · authoritative shipment and revenue data · ops-meeting conclusions",
+      "ai": "Builds the model, reconciles definitions, re-tunes after each meeting",
+      "output": "Revenue forecast · five-year model · review summaries",
+      "built_label": "Built on it",
+      "built": "Company-level analysis: reviews, forecasts, target-setting, and the numbers in investor materials.",
+      "gist": "Model, reconcile, re-tune after every meeting",
+      "icon": "calc"
+    },
+    {
+      "n": 9,
+      "name": "Support automation",
+      "status": "new",
+      "input": "Support tickets · team email",
+      "ai": "Understands the issue, drafts a reply, files every ticket as structured data",
+      "output": "Sent after human sign-off · ticket archive",
+      "built_label": "Built on it",
+      "built": "The archive supports any statistical cut and surfaces systemic problems automatically.",
+      "gist": "Tickets read, replies drafted, archive built — a human sends",
+      "icon": "headset"
+    },
+    {
+      "n": 10,
+      "name": "Self-maintenance",
+      "status": "stable",
+      "input": "The whole knowledge base",
+      "ai": "Backs up core rules daily, runs a full health check monthly, and after any rule change checks whether existing content still complies",
+      "output": "Health reports · pending suggestions",
+      "built_label": "Principle",
+      "built": "AI proposes. It never deletes. It never decides for me.",
+      "gist": "Daily backup, monthly health check, rule-change audits",
+      "icon": "refresh"
+    }
+  ],
+  "knowledge_intro": "Only base facts, data, standards, principles, settled designs and communication that actually happened. Open a card for its core items.",
+  "knowledge": [
+    {
+      "name": "Authoritative data",
+      "foundation": true,
+      "note": "The single source for every number. Nearly every workflow above and every category below draws from here.",
+      "items": [
+        [
+          "Monthly hardware shipments",
+          "units shipped, by month"
+        ],
+        [
+          "Software revenue, three reconciled definitions",
+          "which number to use, when"
+        ],
+        [
+          "User base",
+          ""
+        ],
+        [
+          "App / firmware release history",
+          "what shipped, when, what changed"
+        ],
+        [
+          "Push-notification log",
+          "every push, its time and content"
+        ],
+        [
+          "Major events affecting data · product code names",
+          ""
+        ],
+        [
+          "Metric catalogue",
+          "definitions and calculation rules"
+        ],
+        [
+          "Backend report field guide",
+          ""
+        ],
+        [
+          "Historical weekly data",
+          ""
+        ]
+      ],
+      "icon": "database"
+    },
+    {
+      "name": "Company & funding",
+      "items": [
+        [
+          "Legal-entity basics",
+          "registration, directors, business definition"
+        ],
+        [
+          "Company & product introduction · fundraising deck",
+          "latest version for investors and clients"
+        ],
+        [
+          "Listing-preparation materials",
+          "drafts and third-party industry reports"
+        ],
+        [
+          "Investor Q&A",
+          "what to say, which numbers"
+        ]
+      ],
+      "more": "Company-level meeting minutes; external AI-transformation cases and peer exchanges.",
+      "icon": "building"
+    },
+    {
+      "name": "App product",
+      "items": [
+        [
+          "App 5.0 scope and rationale",
+          "why, and how big"
+        ],
+        [
+          "Swap feature design",
+          "routing, fees, thresholds, in-house swap"
+        ],
+        [
+          "Product rules",
+          "display rules; how new features are evaluated"
+        ],
+        [
+          "Event-tracking spec",
+          "how events are defined and reviewed"
+        ],
+        [
+          "Privacy policies",
+          "product and website versions"
+        ]
+      ],
+      "more": "Status of retired features; private-transaction proposal; staking mechanics; app-store copy.",
+      "icon": "phone"
+    },
+    {
+      "name": "Hardware product",
+      "items": [
+        [
+          "Product specifications",
+          "the only external reference"
+        ],
+        [
+          "Card-form hardware: progress and issues",
+          "design decisions, security upgrades, known issues"
+        ],
+        [
+          "Error codes · manuals · accessory requirements",
+          ""
+        ],
+        [
+          "Firmware upgrade status",
+          ""
+        ]
+      ],
+      "more": "Customs and certification statements; legacy-device coin support; next-form-factor planning notes; why the backup card was shelved.",
+      "icon": "cpu"
+    },
+    {
+      "name": "Patents",
+      "items": [
+        [
+          "Status of patents and trademarks",
+          "where each stands, what's next"
+        ],
+        [
+          "Examiner opinions, summarised",
+          "grounds and deadlines"
+        ],
+        [
+          "Decisions from attorney discussions",
+          ""
+        ]
+      ],
+      "more": "Every filing and response.",
+      "icon": "award"
+    },
+    {
+      "name": "Partners",
+      "items": [
+        [
+          "Swap providers: key facts",
+          "each one's fees, settlement and integration notes, plus the shared baseline"
+        ],
+        [
+          "On/off-ramp and staking providers",
+          "who, status, what's live"
+        ],
+        [
+          "Communication records",
+          "group digests and full external emails"
+        ]
+      ],
+      "more": "Progress per partner; candidate evaluations; prediction-market trials; vendor research index; due-diligence checklist.",
+      "icon": "link"
+    },
+    {
+      "name": "Payments",
+      "items": [
+        [
+          "Own payment product facts",
+          "fees, tokens, compliance boundaries"
+        ],
+        [
+          "Payment-partner selection",
+          "card and QR providers, by status"
+        ]
+      ],
+      "more": "Payment strategy notes; external materials; audit quotes.",
+      "icon": "card"
+    },
+    {
+      "name": "Security",
+      "items": [
+        [
+          "Security philosophy and public messaging",
+          "one way of talking about security"
+        ],
+        [
+          "Audit and risk-control vendors",
+          ""
+        ],
+        [
+          "Internal and industry incident records",
+          "what happened, response, decisions"
+        ]
+      ],
+      "more": "Current security mechanisms per product line.",
+      "icon": "lock"
+    },
+    {
+      "name": "Marketing & support",
+      "items": [
+        [
+          "How third-party reviews may be quoted",
+          "which words are allowed"
+        ],
+        [
+          "Website rebuild",
+          "final design, dev handoff, contract"
+        ],
+        [
+          "Negative-review taxonomy · case-handling ownership",
+          ""
+        ]
+      ],
+      "more": "User and KOL feedback; sentiment archive.",
+      "icon": "megaphone"
+    },
+    {
+      "name": "Industry & regulation",
+      "items": [
+        [
+          "Regulatory research",
+          "US, EU, Canada, app-store rules"
+        ],
+        [
+          "Crypto payments and card-industry knowledge",
+          ""
+        ],
+        [
+          "Third-party report library",
+          "external reports, by topic"
+        ]
+      ],
+      "more": "Trade-show leads; exchange and institution research; technical explainers; competitors' external materials.",
+      "icon": "scale"
+    },
+    {
+      "name": "Team",
+      "items": [
+        [
+          "Department work list",
+          "the only record of every work item"
+        ],
+        [
+          "Decisions pending my call",
+          ""
+        ],
+        [
+          "Roster · performance · department minutes",
+          ""
+        ]
+      ],
+      "more": "Innovation topic pool; knowledge distilled from team chat.",
+      "icon": "team"
+    },
+    {
+      "name": "Rules & standards",
+      "items": [
+        [
+          "AI working rules",
+          "two levels: personal and project"
+        ],
+        [
+          "Knowledge-base maintenance principles",
+          ""
+        ],
+        [
+          "Product terminology dictionary",
+          "the single standard for external wording"
+        ],
+        [
+          "Corrected conclusions · known-error table · lessons library",
+          ""
+        ]
+      ],
+      "more": "Indexes; minutes-formatting SOP; automation guide and migration checklist.",
+      "icon": "book"
+    }
+  ],
+  "routines_intro": "What runs on its own, and how often.",
+  "routines": [
+    {
+      "when": "Daily",
+      "what": "App-behaviour report · sentiment report · Telegram group briefs · core-rules backup",
+      "core": true
+    },
+    {
+      "when": "Every Monday",
+      "what": "Telegram weekly digest and knowledge cards · department progress update and board regeneration",
+      "core": true
+    },
+    {
+      "when": "1st of month",
+      "what": "Full knowledge-base health check",
+      "core": true
+    },
+    {
+      "when": "Every 2 hours",
+      "what": "Collect colleagues' confirmations and corrections from group chats · process team email"
+    },
+    {
+      "when": "Continuous",
+      "what": "Telegram message capture · event-data capture · department board web service"
+    },
+    {
+      "when": "Manual",
+      "what": "Export team chat on Fridays · review knowledge cards on Mondays · collect colleague corrections on Tuesdays · start the phone emulator when needed"
+    }
+  ],
+  "outputs_intro": "Deliverables produced with the base since August 2026. Open a card to see them.",
+  "outputs": [
+    {
+      "name": "Competitors & positioning",
+      "items": [
+        [
+          "09",
+          "Five-dimension research on three competitors + three-brand benchmark"
+        ],
+        [
+          "08",
+          "Financial and economic model teardown of a listed competitor"
+        ],
+        [
+          "08",
+          "Full company profile and industry positioning"
+        ]
+      ],
+      "more": [
+        "Standard competitor-research template and automation skill"
+      ]
+    },
+    {
+      "name": "Data & event tracking",
+      "items": [
+        [
+          "08",
+          "App status and product-problem diagnosis"
+        ],
+        [
+          "08 · 09",
+          "Swap user analysis, two rounds"
+        ],
+        [
+          "09",
+          "Backend data analysis + authoritative data system"
+        ]
+      ],
+      "more": [
+        "Daily app-behaviour report system",
+        "App 5.0 event-tracking spec and review",
+        "Swap analysis methodology",
+        "Backend report field verification",
+        "App 5.0 tracking-stack decision",
+        "On/off-ramp fee chain teardown"
+      ]
+    },
+    {
+      "name": "Financial models",
+      "items": [
+        [
+          "08",
+          "Five-year forecast model"
+        ],
+        [
+          "08",
+          "Next-fiscal-year software revenue forecast"
+        ]
+      ],
+      "more": [
+        "Core data summary for the product work meeting"
+      ]
+    },
+    {
+      "name": "Patents",
+      "items": [
+        [
+          "08 · 09",
+          "Examiner-opinion review and response strategy"
+        ],
+        [
+          "09",
+          "New patent technical disclosure"
+        ]
+      ]
+    },
+    {
+      "name": "Regulation & new business",
+      "items": [
+        [
+          "09",
+          "Impact of new US rules on a tokenized-stock business"
+        ],
+        [
+          "08",
+          "Tokenized US equities: option selection"
+        ],
+        [
+          "08",
+          "Offline stablecoin payment routes, compared"
+        ]
+      ],
+      "more": [
+        "US stock transfer-agent regime study",
+        "Evaluation and negotiation points for one transfer agent",
+        "US crypto-asset bill, explained in one chart"
+      ]
+    },
+    {
+      "name": "Security",
+      "items": [
+        [
+          "08",
+          "Technical brief and public response to an industry security incident"
+        ],
+        [
+          "09",
+          "Impact assessment and post-mortem of an internal incident"
+        ]
+      ],
+      "more": [
+        "Competitor data-breach study and prevention plan"
+      ]
+    },
+    {
+      "name": "AI transformation",
+      "items": [
+        [
+          "09",
+          "AI transformation report deck"
+        ],
+        [
+          "08",
+          "AI transformation path and action plan"
+        ],
+        [
+          "09",
+          "AI platform map and summary report — the source of this site"
+        ]
+      ],
+      "more": [
+        "Transformation cases from two benchmark companies",
+        "Weekly minutes turned into a social long-form graphic",
+        "Peer exchange notes"
+      ]
+    },
+    {
+      "name": "Team mechanisms",
+      "items": [
+        [
+          "08",
+          "Weekly department progress mechanism launched"
+        ],
+        [
+          "08",
+          "Department work-list baseline confirmed"
+        ],
+        [
+          "08 · 09",
+          "Product terminology dictionary finalised and upgraded"
+        ]
+      ],
+      "more": [
+        "External case-handling ownership",
+        "Weekly progress update and workload review",
+        "Product design-doc structure standard",
+        "AI ticket-handling flow"
+      ]
+    },
+    {
+      "name": "Other",
+      "items": [
+        [
+          "08",
+          "Technical statement for hardware customs clearance"
+        ],
+        [
+          "09",
+          "Sentiment monitoring system built"
+        ]
+      ]
+    }
+  ],
+  "updates": [
+    {
+      "date": "2026-09-20",
+      "title": "Site launched with the Q3 2026 platform map",
+      "note": "Overall 7.1. Ten workflows running, nine stable and one just launched. Weak spot: maintenance load at 4.8."
+    }
+  ],
+  "principles": [
+    {
+      "k": "Give it the input, get the result.",
+      "v": "A workflow counts only when a colleague can trigger it without me in the loop."
+    },
+    {
+      "k": "AI proposes. I decide. Nothing gets deleted.",
+      "v": "Every change to the base is a suggestion until a person signs it off; deletion is never automated."
+    },
+    {
+      "k": "Every number has one source and a stated definition.",
+      "v": "Revenue alone has three definitions. Mixing them is the fastest way to a wrong decision."
+    }
+  ],
+  "about": {
+    "who": "Fate leads product at a crypto wallet company serving consumers in North America and Europe. Since August 2026 the job has had a second half: building the knowledge base and AI platform that a product department can run on — and handing the department's coordination work to it, one piece at a time.",
+    "why_site": "Most of this work is invisible from outside. This page makes it legible: what exists, how well it works, and what changed. It will grow to cover career background, writing and other channels.",
+    "links": [],
+    "email_b64": "ZmF0ZWNsYXdAZ21haWwuY29t"
+  },
+  "footer": {
+    "disclaimer": "De-identified by design: no company, product or partner names appear here. Scores are self-assessed and re-run each quarter. Numbers reflect the stated data date."
+  },
+  "platform_intro": "Ten of the workflows in daily use — a representative sample, not the full list. Open any row: what I give → what the AI does → what comes out, and what has been built on top."
+}
