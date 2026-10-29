@@ -7,6 +7,12 @@ ROOT=Path(__file__).resolve().parent
 ap=argparse.ArgumentParser();ap.add_argument('--output',required=True);ap.add_argument('--publish',action='store_true');opt=ap.parse_args()
 OUT=Path(opt.output).resolve();OUT.mkdir(parents=True,exist_ok=True)
 C=json.loads((ROOT/'site-data.json').read_text());CONTACT=json.loads((ROOT/'site-contact.json').read_text())['email_b64']; EMAIL=base64.b64decode(CONTACT).decode('utf-8')
+banned=ROOT/'content'/'banned_words.txt'
+if banned.exists():
+ content_blob=json.dumps(C,ensure_ascii=False).lower()
+ for term in banned.read_text().splitlines():
+  term=term.strip()
+  if term and not term.startswith('#') and term.lower() in content_blob:raise SystemExit('Content failed public-word check')
 def esc(s):return html.escape(str(s),quote=True)
 def txt(item,lang):return item[lang]
 def name(id,lang):return ('zh-' if lang=='zh' else '')+id+'.html'
