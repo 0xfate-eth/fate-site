@@ -1,0 +1,1983 @@
+{
+  "edition": "2026-10",
+  "preview_date": "2026-10-29",
+  "name": "Fate",
+  "pages": [
+    {
+      "id": "index",
+      "kicker": {
+        "en": "FATE / AI TRANSFORMATION NOTES",
+        "zh": "FATE / AI 轉型工作記錄"
+      },
+      "title": {
+        "en": "Making AI part of how work gets done.",
+        "zh": "讓 AI 融入工作的方式。"
+      },
+      "lede": {
+        "en": "I am Fate, a product leader putting AI to work. My journey runs from personal knowledge to departmental change and company-wide transformation.",
+        "zh": "我是 Fate，一名把 AI 帶入實際工作的產品負責人。從個人知識庫出發，我逐步改造部門的工作方式，並推動公司層面的 AI 轉型。"
+      },
+      "sections": [],
+      "case_ids": [
+        "case-continuity",
+        "case-standards",
+        "case-support"
+      ],
+      "thought_ids": [
+        "thought-growth",
+        "thought-management",
+        "thought-relief"
+      ],
+      "profile": {
+        "statement": {
+          "en": "I design secure crypto wallets. But no wallet is truly secure. Security begins with how you use it.",
+          "zh": "I design secure crypto wallets. But no wallet is truly secure. Security begins with how you use it."
+        },
+        "role": {
+          "en": "Product Director at a crypto wallet company",
+          "zh": "現任加密錢包公司產品總監"
+        },
+        "previous": {
+          "en": "Previously: Product Manager / Solutions Architect at Tencent",
+          "zh": "曾任騰訊產品經理／解決方案架構師"
+        },
+        "tags": [
+          "NFT enthusiast",
+          "E/acc",
+          "Best dad ever"
+        ]
+      },
+      "journey_title": {
+        "en": "From my knowledge base to AI work across the company.",
+        "zh": "從個人知識庫，到部門和公司的 AI 轉型。"
+      },
+      "journey": [
+        {
+          "stage": "01",
+          "title": {
+            "en": "Personal knowledge",
+            "zh": "個人知識庫"
+          },
+          "text": {
+            "en": "Organize my materials, preserve context, and let AI work with accumulated knowledge.",
+            "zh": "從整理自己的材料開始，保存背景，讓 AI 能在積累的知識上工作。"
+          }
+        },
+        {
+          "stage": "02",
+          "title": {
+            "en": "Departmental change",
+            "zh": "重構部門工作"
+          },
+          "text": {
+            "en": "Rebuild how my department tracks work, produces analysis, shares results, and hands work over.",
+            "zh": "改造所管理部門的進展跟進、分析、成果共享與工作交接方式。"
+          }
+        },
+        {
+          "stage": "03",
+          "title": {
+            "en": "Company-wide transformation",
+            "zh": "推動全公司轉型"
+          },
+          "text": {
+            "en": "Bring these lessons to other departments. The goal is an AI Native company, with transformation still underway.",
+            "zh": "開始把經驗複製到各部門。目標是成為 AI Native 公司，轉型仍在推進中。"
+          }
+        }
+      ],
+      "updates_heading": {
+        "en": "Record each iteration.",
+        "zh": "記錄每一次迭代的過程。"
+      },
+      "updates_description": {
+        "en": "Follow the work by date: what we did, what changed, and why.",
+        "zh": "從知識庫整理、部門管理到公司轉型，按日期記下做了什麼、改了什麼，以及為什麼改。"
+      },
+      "principle": {
+        "en": "I care less about how many tools we use than whether work changes and people are freed from repetition.",
+        "zh": "我關心的不是用了多少工具，而是工作是否真正改變，人能否從重複勞動中解放出來。"
+      }
+    },
+    {
+      "id": "practice",
+      "kicker": {
+        "en": "01 / AI PRACTICE",
+        "zh": "01 / AI 實踐"
+      },
+      "title": {
+        "en": "What AI helps us do.",
+        "zh": "AI 具體幫我們做了什麼。"
+      },
+      "lede": {
+        "en": "Eight cases explain how we use AI in departmental management, customer support, research, financial modelling, and other work.",
+        "zh": "從部門管理、客服到調研與財務建模，八個案例介紹我們怎樣把工作交給 AI。"
+      },
+      "sections": [],
+      "case_ids": [
+        "case-continuity",
+        "case-partners",
+        "case-research",
+        "case-presentations",
+        "case-sentiment",
+        "case-finance",
+        "case-support",
+        "case-standards"
+      ],
+      "knowledge": [
+        {
+          "en": "Authoritative facts",
+          "zh": "權威資料"
+        },
+        {
+          "en": "Company & business",
+          "zh": "公司與業務"
+        },
+        {
+          "en": "App products",
+          "zh": "App 產品"
+        },
+        {
+          "en": "Hardware products",
+          "zh": "硬體產品"
+        },
+        {
+          "en": "Intellectual property",
+          "zh": "智慧財產"
+        },
+        {
+          "en": "Partner research",
+          "zh": "合作方研究"
+        },
+        {
+          "en": "Payments",
+          "zh": "支付"
+        },
+        {
+          "en": "Security research",
+          "zh": "安全研究"
+        },
+        {
+          "en": "Marketing & support",
+          "zh": "市場與客服"
+        },
+        {
+          "en": "Industry & regulation",
+          "zh": "行業與法規"
+        },
+        {
+          "en": "Teamwork",
+          "zh": "團隊協作"
+        },
+        {
+          "en": "Rules & standards",
+          "zh": "規則與標準"
+        }
+      ]
+    },
+    {
+      "id": "case-continuity",
+      "kicker": {
+        "en": "CASE 01 / AI AT WORK",
+        "zh": "案例 01 / AI 工作體系"
+      },
+      "title": {
+        "en": "Automate departmental work management.",
+        "zh": "實現部門工作管理自動化。"
+      },
+      "lede": {
+        "en": "AI connects a shared work baseline, new evidence, progress review, and clarification to support departmental coordination.",
+        "zh": "把分散的工作信息連成可持續更新的體系，支持團隊協作與管理判斷。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "The problem and the result",
+            "zh": "要解決的問題與已有成果"
+          },
+          "paragraphs": [
+            {
+              "en": "Work information was scattered across records and conversations. Reviewing progress required people to assemble the context again.",
+              "zh": "工作信息分散在記錄與溝通中，每次回顧進展都需要重新拼湊背景。"
+            },
+            {
+              "en": "A shared work list, progress overview, and focused clarification now support departmental coordination.",
+              "zh": "共同工作清單、進展概覽與針對性確認，已用於部門日常協調。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Start with a shared baseline",
+            "zh": "先確認一份工作項基線"
+          },
+          "paragraphs": [
+            {
+              "en": "AI first assembled candidate work items from existing records. We reviewed them together, merging overlaps and removing unsuitable entries.",
+              "zh": "AI 先從已有記錄整理候選工作項，再由大家一起過，合併重複、刪去不適合作為工作項的內容。"
+            },
+            {
+              "en": "The baseline records the purpose, owner, priority, expected outcome, and relevant timing of each item.",
+              "zh": "基線說清每項工作的目的、負責人、優先順序、預期結果與相關時間要求。"
+            },
+            {
+              "en": "People confirmed that starting point. Subsequent updates refer back to it, rather than creating another disconnected list.",
+              "zh": "這個起點由人確認，後續更新回到同一份清單，而不是不斷另建互不相通的列表。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Bring evidence into the work",
+            "zh": "讓新證據進入工作項"
+          },
+          "paragraphs": [
+            {
+              "en": "Inputs include meeting records, work communications, project records, and completed work. Records are read directly or provided through exports.",
+              "zh": "輸入包括會議記錄、工作溝通、項目記錄與已完成成果，透過直接讀取或導出材料取得。"
+            },
+            {
+              "en": "AI matches new evidence to existing items, summarizes progress and blockers, and retains the supporting context.",
+              "zh": "AI 把新證據歸到既有工作項，整理進展與卡點，保留支撐判斷的背景。"
+            },
+            {
+              "en": "People review new work and conflicting information before changing the shared list.",
+              "zh": "遇到新工作或互相衝突的信息，先核對，再更新共同清單。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Make the same information useful to different readers",
+            "zh": "讓不同的人讀同一套工作事實"
+          },
+          "paragraphs": [
+            {
+              "en": "The work list preserves item-level detail. The overview highlights changes, questions, and decisions needing attention.",
+              "zh": "工作清單保留逐項細節，概覽則突出變化、問題與需要關注的決策。"
+            },
+            {
+              "en": "Department members check their work and dependencies. The manager reviews priorities, coordination, and issues requiring a decision.",
+              "zh": "部門成員查看自己的工作與協作依賴，管理者查看優先順序、協調問題與待決策事項。"
+            },
+            {
+              "en": "The dashboard gives everyone a quick view; the work list provides the detail needed for follow-up.",
+              "zh": "看板方便大家快速查看，工作清單則提供跟進時需要的細節。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Ask about a specific problem, then update the record",
+            "zh": "圍繞具體問題確認，再回到工作記錄"
+          },
+          "paragraphs": [
+            {
+              "en": "When an item needs clarification, AI prepares a focused question using the known facts and asks with the relevant colleagues.",
+              "zh": "某個工作項需要澄清時，AI 結合已知事實提出具體問題，向相關同事確認。"
+            },
+            {
+              "en": "Confirmed answers become evidence for the next update. Commitments and material changes remain subject to human decisions.",
+              "zh": "有效確認成為下一次更新的證據；承諾與重大調整仍由人決定。"
+            },
+            {
+              "en": "Routine checks stay quiet when nothing needs action. Questions and answers remain attached to the relevant work item.",
+              "zh": "例行檢查沒有需要行動的變化時保持安靜，問題與答覆留在對應工作項中，方便繼續跟進。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "My decisions",
+            "zh": "我的關鍵判斷"
+          },
+          "paragraphs": [
+            {
+              "en": "I confirmed the baseline, defined judgment and escalation rules, and review important decisions.",
+              "zh": "我確認工作基線，定義進展判讀和升級處理的規則，並審閱重要決策。"
+            },
+            {
+              "en": "The dashboard is one view of the work. The shared record and human decisions keep it useful.",
+              "zh": "看板只是呈現方式；共同工作記錄與人的判斷，讓它能繼續服務實際工作。"
+            }
+          ]
+        }
+      ],
+      "image": "v4-department.jpg",
+      "related": "thought-management",
+      "case_number": 1,
+      "image_alt": {
+        "en": "Departmental work overview",
+        "zh": "部門工作概覽"
+      }
+    },
+    {
+      "id": "case-partners",
+      "kicker": {
+        "en": "CASE 02 / AI AT WORK",
+        "zh": "案例 02 / AI 工作體系"
+      },
+      "title": {
+        "en": "Keep partner knowledge ready for the next task.",
+        "zh": "把合作溝通整理成下次能用的知識。"
+      },
+      "lede": {
+        "en": "AI turns conversations and materials into an evolving record that supports follow-up, decisions, and communication.",
+        "zh": "AI 將溝通與材料持續整理為活記錄，支撐跟進、決策與後續交流。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "The work to replace",
+            "zh": "要改變的工作"
+          },
+          "paragraphs": [
+            {
+              "en": "Partner knowledge is easily scattered across conversations and documents. Every new question can require someone to reconstruct the history.",
+              "zh": "合作知識容易散落在對話與文檔中，每遇到新問題，就需要有人重新拼起歷史。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "How AI participates",
+            "zh": "AI 如何參與運轉"
+          },
+          "paragraphs": [
+            {
+              "en": "AI reads updates, identifies changed facts and open questions, and connects them to the existing partner record.",
+              "zh": "AI 讀取新內容，識別事實變化與未決問題，接回既有合作檔案。"
+            },
+            {
+              "en": "Confirmed facts, the other party’s claims, proposals, and unresolved issues stay distinguishable. New information does not erase valid history.",
+              "zh": "已確認事實、對方主張、提案與待確認問題分別記錄，新信息不抹去有效歷史。"
+            },
+            {
+              "en": "The accumulated context supports briefings and reply drafts. People approve commitments and external messages.",
+              "zh": "積累的背景可供生成簡報及回覆草稿；承諾與對外發送由人確認。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "The result",
+            "zh": "已有成果"
+          },
+          "paragraphs": [
+            {
+              "en": "Partner fact pages and progress records preserve the context for later research and follow-up.",
+              "zh": "合作方事實頁與進展記錄，為後續研究和跟進保留背景。"
+            },
+            {
+              "en": "The value is continuity: the next task starts from accumulated knowledge instead of another search through old conversations.",
+              "zh": "價值在於接續：下一項工作從已有知識開始，而不是再翻一遍舊對話。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "My contribution",
+            "zh": "我的投入"
+          },
+          "paragraphs": [
+            {
+              "en": "I define which facts matter and review judgments. Colleagues contribute business context; AI organizes and maintains the record.",
+              "zh": "我定義重要信息與判斷標準；同事提供業務背景，AI 協助整理並維護記錄。"
+            }
+          ]
+        }
+      ],
+      "image": "v4-partners.jpg",
+      "related": "thought-value",
+      "case_number": 2,
+      "image_alt": {
+        "en": "Partner knowledge record",
+        "zh": "合作方知識記錄"
+      }
+    },
+    {
+      "id": "case-research",
+      "kicker": {
+        "en": "CASE 03 / AI AT WORK",
+        "zh": "案例 03 / AI 工作體系"
+      },
+      "title": {
+        "en": "Use AI for product research and comparison.",
+        "zh": "讓 AI 完成產品調研與比較。"
+      },
+      "lede": {
+        "en": "A research question becomes evidence collection, product walkthroughs, comparable assessment, and a reviewable report.",
+        "zh": "把調研問題連到證據採集、產品走查、同維度比較與可審閱的報告。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "From a request to an investigation",
+            "zh": "從一句需求，到真正展開調研"
+          },
+          "paragraphs": [
+            {
+              "en": "The starting point is a product or a business question. A shared framework defines what must be examined and evidenced.",
+              "zh": "起點是一個產品或業務問題；共同框架明確要研究哪些方面、用什麼證據支撐。"
+            },
+            {
+              "en": "AI helps locate official material, inspect accessible product flows, capture evidence, and organize findings under the same dimensions.",
+              "zh": "AI 協助查找官方材料、走查可訪問的產品流程、保存證據，並按相同維度整理發現。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Make evidence strength visible",
+            "zh": "讓證據強弱可見"
+          },
+          "paragraphs": [
+            {
+              "en": "Reports label observed behavior, documented facts, vendor claims, and questions to investigate next.",
+              "zh": "報告分別標記實測行為、文件事實、對方自述與下一步要核查的問題。"
+            },
+            {
+              "en": "Comparable sections make later reports reusable in cross-product reviews. Existing evidence can be retained when its relevance is verified.",
+              "zh": "相同章節讓單份報告可用於跨產品比較；已有證據經核對仍適用時，可以繼續沿用。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "The result and handoff",
+            "zh": "已有成果與後續使用"
+          },
+          "paragraphs": [
+            {
+              "en": "Completed product reports, archived screenshots, and comparative reviews support product decisions and further investigation.",
+              "zh": "已形成產品調研報告、截圖證據與橫向比較，支撐產品判斷與後續深挖。"
+            },
+            {
+              "en": "AI handles much of the collection and assembly. People choose the question, judge significance, and accept the recommendation.",
+              "zh": "AI 承擔大量取材與整理；人選擇問題、判斷意義，並決定是否採納建議。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "My contribution",
+            "zh": "我的投入"
+          },
+          "paragraphs": [
+            {
+              "en": "I define the comparison framework and business relevance. AI and participating colleagues perform the research according to the research plan.",
+              "zh": "我定義比較框架與業務相關性，由 AI 及參與同事按調研計劃開展研究。"
+            }
+          ]
+        }
+      ],
+      "image": "v4-research.jpg",
+      "related": "thought-judgment",
+      "case_number": 3,
+      "image_alt": {
+        "en": "Product research comparison",
+        "zh": "產品調研比較"
+      }
+    },
+    {
+      "id": "case-presentations",
+      "kicker": {
+        "en": "CASE 04 / AI AT WORK",
+        "zh": "案例 04 / AI 工作體系"
+      },
+      "title": {
+        "en": "Produce external material from shared facts and standards.",
+        "zh": "讓 AI 依據統一事實與標準製作對外材料。"
+      },
+      "lede": {
+        "en": "Connect accumulated knowledge, audience requirements, terminology, and review to produce consistent material in different formats.",
+        "zh": "把積累的知識、受眾要求、術語及審閱連起來，形成不同格式、口徑一致的對外材料。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "A shared basis for different outputs",
+            "zh": "不同產出，共用同一份依據"
+          },
+          "paragraphs": [
+            {
+              "en": "Copy, presentations, and formal documents should not each invent their own company facts, terminology, or product descriptions.",
+              "zh": "文案、演講與正式文書，不應各自另造一套公司事實、術語或產品描述。"
+            },
+            {
+              "en": "We provide the audience, purpose, constraints, and applicable facts. AI retrieves relevant knowledge and prepares a draft against those standards.",
+              "zh": "先明確受眾、目的、限制與適用事實，再由 AI 取用相關知識，依標準準備初稿。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "From content to a reviewable artifact",
+            "zh": "從內容，到可以審閱的成品"
+          },
+          "paragraphs": [
+            {
+              "en": "AI can develop an outline, draft copy, assemble slides, and check terminology or layout. People review meaning, emphasis, and publication.",
+              "zh": "AI 可協助形成提綱、撰寫文案、組成幻燈片並檢查術語或版式；人審閱含義、重點與發佈。"
+            },
+            {
+              "en": "Quotations link to meeting records, and company facts follow the shared reference material.",
+              "zh": "發言引文附會議來源，公司與產品事實沿用共同資料。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "The result",
+            "zh": "已有成果"
+          },
+          "paragraphs": [
+            {
+              "en": "The work has produced English copy, presentation versions, and other formal material, with reusable facts and language standards.",
+              "zh": "已形成英文文案、演講版本及其他正式材料，並積累可複用的事實與語言標準。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "My contribution",
+            "zh": "我的投入"
+          },
+          "paragraphs": [
+            {
+              "en": "I provide the message, judgments, and audience priorities. AI helps research, structure, draft, format, and check the material.",
+              "zh": "我提供觀點、判斷與受眾重點；AI 協助取材、組織、起草、排版與檢查。"
+            }
+          ]
+        }
+      ],
+      "image": "v4-materials.jpg",
+      "related": "thought-growth",
+      "case_number": 4,
+      "image_alt": {
+        "en": "AI transformation presentation",
+        "zh": "AI 轉型演講材料"
+      }
+    },
+    {
+      "id": "case-sentiment",
+      "kicker": {
+        "en": "CASE 05 / AI AT WORK",
+        "zh": "案例 05 / AI 工作體系"
+      },
+      "title": {
+        "en": "Use AI to organize reviews, coverage, and impersonation reports.",
+        "zh": "用 AI 整理用戶評價、報道與仿冒線索。"
+      },
+      "lede": {
+        "en": "AI-assisted collection, classification, deduplication, and evidence records turn scattered feedback into a reviewable report.",
+        "zh": "透過 AI 輔助採集、分類、去重與證據記錄，把分散反饋轉成可審閱的報告。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "A recurring information task",
+            "zh": "一項重複的信息工作"
+          },
+          "paragraphs": [
+            {
+              "en": "Reviews and coverage are scattered across public sources. Reading them individually makes comparisons and historical follow-up difficult.",
+              "zh": "評價與報道散落在不同公開來源，逐條閱讀不利於比較，也難以追蹤歷史。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "How the work is organized",
+            "zh": "工作如何運轉"
+          },
+          "paragraphs": [
+            {
+              "en": "AI helps collect accessible material, distinguish topics and sentiment, remove duplicates, and retain references for review.",
+              "zh": "AI 協助採集可取得的內容、辨認主題與情感、去除重複，並保留可核對的來源。"
+            },
+            {
+              "en": "Reports separate new feedback, historical context, and leads that need follow-up.",
+              "zh": "報告分別整理新增反饋、歷史背景與需要跟進的線索。"
+            },
+            {
+              "en": "For suspected impersonation, AI helps organize public evidence and prepare communication drafts. People verify the concern and decide the response.",
+              "zh": "對疑似仿冒線索，AI 協助整理公開證據並準備溝通草稿，由人核實問題、決定如何處置。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "The result",
+            "zh": "已有成果"
+          },
+          "paragraphs": [
+            {
+              "en": "The practice produced archived reports and accumulated feedback records. These support communication review and issues requiring further investigation.",
+              "zh": "這項實踐已形成歷史報告與累積反饋記錄，支撐溝通審閱及待進一步核查的問題。"
+            },
+            {
+              "en": "People review important findings and decide what communication or follow-up is needed.",
+              "zh": "人審閱重要發現，決定需要哪些溝通與後續處理。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "My contribution",
+            "zh": "我的投入"
+          },
+          "paragraphs": [
+            {
+              "en": "I set the reporting questions and quality requirements. Colleagues handle business follow-up; AI supports collection, interpretation, and drafting.",
+              "zh": "我確定觀察問題與品質要求，同事推進具體業務處理；AI 參與採集、判讀與起草。"
+            }
+          ]
+        }
+      ],
+      "image": "v4-sentiment.jpg",
+      "related": "thought-value",
+      "case_number": 5,
+      "image_alt": {
+        "en": "Public feedback report",
+        "zh": "外部反饋報告"
+      }
+    },
+    {
+      "id": "case-finance",
+      "kicker": {
+        "en": "CASE 06 / AI AT WORK",
+        "zh": "案例 06 / AI 工作體系"
+      },
+      "title": {
+        "en": "Use AI to build and revise financial models.",
+        "zh": "讓 AI 參與財務模型的建立與修訂。"
+      },
+      "lede": {
+        "en": "Connect authoritative inputs, explicit assumptions, calculation, reconciliation, and human review rather than generating an isolated forecast.",
+        "zh": "把權威輸入、明確假設、計算、對賬與人工審閱連起來，而不是只生成一份孤立預測。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Give the model a grounded starting point",
+            "zh": "讓模型有可信的起點"
+          },
+          "paragraphs": [
+            {
+              "en": "We define periods, metric meanings, actual inputs, and assumptions before building the model.",
+              "zh": "先明確期間、指標含義、實際輸入與假設，再建立模型。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "How AI changes the work",
+            "zh": "AI 如何改變工作"
+          },
+          "paragraphs": [
+            {
+              "en": "AI helps organize inputs, construct scenario models, trace calculation dependencies, and revise the model when assumptions or confirmed inputs change.",
+              "zh": "AI 協助整理輸入、建立情景模型、檢查計算依賴，並隨假設或已確認輸入變化修訂模型。"
+            },
+            {
+              "en": "Reconciliation and historical comparisons test whether the model behaves plausibly. A desired result is not a reason to change assumptions.",
+              "zh": "對賬與歷史比較用來檢查模型是否合理；想得到某個結果，不能成為改假設的理由。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "The result",
+            "zh": "已有成果"
+          },
+          "paragraphs": [
+            {
+              "en": "The work produced models, scenario summaries, and review records. Saved assumptions make later revisions easier.",
+              "zh": "已形成模型、情景摘要與審閱記錄，保留假設，方便後續調整再計算。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "My contribution",
+            "zh": "我的投入"
+          },
+          "paragraphs": [
+            {
+              "en": "I define the business questions and challenge assumptions. AI assists modelling; finance and relevant owners verify their source inputs.",
+              "zh": "我定義業務問題並挑戰假設；AI 協助建模，財務及相關資料負責人核對各自輸入。"
+            }
+          ]
+        }
+      ],
+      "image": "v4-finance.jpg",
+      "related": "thought-judgment",
+      "case_number": 6,
+      "image_alt": {
+        "en": "Financial scenario summary",
+        "zh": "財務情景摘要"
+      }
+    },
+    {
+      "id": "case-support",
+      "kicker": {
+        "en": "CASE 07 / AI AT WORK",
+        "zh": "案例 07 / AI 工作體系"
+      },
+      "title": {
+        "en": "From manual customer support to automation.",
+        "zh": "人工客服向自動化的轉變。"
+      },
+      "lede": {
+        "en": "AI supports replies. Structured case records can also help improve future support and products.",
+        "zh": "AI 協助處理客服問題，沉澱下來的個案資料與經驗，也能用於後續服務和產品改進。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "The problem and the result",
+            "zh": "要解決的問題與已有成果"
+          },
+          "paragraphs": [
+            {
+              "en": "Support involved reading each conversation, finding relevant knowledge, and preparing a reply. Useful experience was hard to reuse.",
+              "zh": "客服需要逐封理解問題、查找知識並組織回覆，處理過的經驗也不容易再次使用。"
+            },
+            {
+              "en": "Reply assistance, structured case knowledge, and support reports now provide a foundation for follow-up.",
+              "zh": "已形成回覆輔助、結構化個案知識與客服報告，為後續工作提供基礎。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "From reading every message to reviewing a draft",
+            "zh": "從逐封處理，到確認 AI 準備的回覆"
+          },
+          "paragraphs": [
+            {
+              "en": "Previously, a support colleague read the conversation, checked product knowledge, found similar cases, and wrote the reply.",
+              "zh": "原來需要客服逐封讀取往來、查產品知識、找相似案例，再組織回覆。"
+            },
+            {
+              "en": "AI now helps classify the issue, use relevant knowledge and earlier conversations, and prepare a draft.",
+              "zh": "現在由 AI 協助分類問題，結合相關知識與歷史往來，先準備回覆草稿。"
+            },
+            {
+              "en": "The support colleague reviews the draft, adds case-specific judgment, and confirms sending. Corrections improve the material used next time.",
+              "zh": "客服同事審閱草稿，補充具體個案的判斷並確認發送；糾正過的內容留作下一次處理的參考。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Turn each case into usable data",
+            "zh": "讓每張工單留下可分析的數據"
+          },
+          "paragraphs": [
+            {
+              "en": "We organize the question, product context, category, handling history, and reply activity into structured case records.",
+              "zh": "把問題、產品背景、分類、處理過程及回覆情況整理為結構化個案記錄。"
+            },
+            {
+              "en": "AI reads these records to prepare reports on new issues, recurring topics, response activity, and questions still awaiting follow-up.",
+              "zh": "AI 根據這些記錄形成報告，整理新增問題、反覆出現的主題、回覆情況與仍需跟進的事項。"
+            },
+            {
+              "en": "Managers can compare periods and topics instead of reading every ticket again.",
+              "zh": "管理者可以按時段和主題比較，不必為每次統計重新讀完所有工單。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Use the experience in future support",
+            "zh": "把處理經驗用在下一次服務"
+          },
+          "paragraphs": [
+            {
+              "en": "Past cases help AI find similar questions and prepare more relevant replies.",
+              "zh": "遇到相似問題時，AI 可以查找既有案例，準備更貼合問題的回覆。"
+            },
+            {
+              "en": "Repeated explanations can inform help articles, reply templates, and onboarding material for colleagues.",
+              "zh": "反覆需要解釋的問題，可以整理為幫助文章、回覆模板與同事的培訓材料。"
+            },
+            {
+              "en": "Corrections and effective solutions provide concrete examples for improving the support knowledge base.",
+              "zh": "被糾正的理解和有效處理方法，則成為完善客服知識庫的具體例子。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Use support evidence to improve products",
+            "zh": "把客服數據用於產品改進"
+          },
+          "paragraphs": [
+            {
+              "en": "Grouped feedback shows which questions recur, which product areas cause confusion, and which issues deserve further investigation.",
+              "zh": "按主題歸納反饋，可以看見哪些問題反覆出現、哪些功能讓用戶困惑，以及哪些事項值得進一步排查。"
+            },
+            {
+              "en": "Product colleagues can use this evidence to prioritize investigation and improve instructions, interaction design, and support content.",
+              "zh": "產品同事可據此安排排查的優先順序，改進操作說明、交互設計與幫助內容。"
+            },
+            {
+              "en": "The same records support later comparisons after a change, making customer support useful beyond the individual reply.",
+              "zh": "改進後仍可用同一套記錄做前後比較，讓客服的價值從回覆一封郵件，延伸到改善產品。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "My role",
+            "zh": "我的投入"
+          },
+          "paragraphs": [
+            {
+              "en": "I define the management questions and reporting standards. Support colleagues contribute service experience; AI assists with preparation and organization.",
+              "zh": "我定義管理問題與報告標準；客服同事提供服務經驗，AI 協助處理與整理。"
+            }
+          ]
+        }
+      ],
+      "image": "v4-support.jpg",
+      "related": "thought-relief",
+      "case_number": 7,
+      "image_alt": {
+        "en": "Customer support report",
+        "zh": "客服報告"
+      }
+    },
+    {
+      "id": "case-standards",
+      "kicker": {
+        "en": "CASE 08 / AI AT WORK",
+        "zh": "案例 08 / AI 工作體系"
+      },
+      "title": {
+        "en": "Write clear instructions and let AI do the work.",
+        "zh": "把工作寫清楚，交給 AI 執行。"
+      },
+      "lede": {
+        "en": "Define the goal, materials, steps, and checks so AI can execute the task and others can take it over.",
+        "zh": "把工作的目標、材料、步驟和檢查標準寫清楚，交給 AI 執行，也方便其他人接手。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Define the work before handing it over",
+            "zh": "先定義工作，再交給 AI"
+          },
+          "paragraphs": [
+            {
+              "en": "We specify the purpose, intended users, required inputs, quality standards, outputs, and acceptance conditions for recurring work.",
+              "zh": "先說清重複工作的目的、使用人、必要輸入、品質標準、輸出與驗收條件。"
+            },
+            {
+              "en": "AI and supporting programs then follow those definitions. Review responsibilities and consequential decisions remain explicit.",
+              "zh": "AI 與配套程序據此執行，審閱責任和重要決策要求一併明確。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Keep the instruction tied to execution",
+            "zh": "讓說明書跟著實際工作變化"
+          },
+          "paragraphs": [
+            {
+              "en": "The instruction includes the supporting rules and materials. When the work changes, the description must change with it.",
+              "zh": "說明書連同配套規則與材料一起維護，工作變了，說明也要跟著變。"
+            },
+            {
+              "en": "Execution records and feedback show what needs changing in the instruction.",
+              "zh": "從執行記錄與使用反饋中找出問題，再修改工作說明書。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "The result",
+            "zh": "已有成果"
+          },
+          "paragraphs": [
+            {
+              "en": "We prepared a recurring-report work instruction, supporting rules, and handover material, then checked them against historical examples.",
+              "zh": "已形成重複報告工作的說明書、配套規則與交接材料，並用歷史樣本檢查。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "My contribution",
+            "zh": "我的投入"
+          },
+          "paragraphs": [
+            {
+              "en": "I define standards and acceptance boundaries. AI prepares the instruction, reusable materials, and checks against the defined requirements.",
+              "zh": "我定義標準與驗收邊界；AI 協助形成說明書、可複用材料，並依要求檢查。"
+            }
+          ]
+        }
+      ],
+      "image": "v4-instructions.jpg",
+      "related": "thought-management",
+      "case_number": 8,
+      "image_alt": {
+        "en": "Work instruction",
+        "zh": "工作說明書"
+      }
+    },
+    {
+      "id": "writing",
+      "kicker": {
+        "en": "02 / THOUGHTS",
+        "zh": "02 / 思考"
+      },
+      "title": {
+        "en": "My views on AI transformation.",
+        "zh": "我對 AI 轉型的判斷。"
+      },
+      "lede": {
+        "en": "How to start, divide the work, and judge whether AI is helping.",
+        "zh": "怎樣推動轉型、怎樣分工，以及怎樣判斷 AI 的工作有沒有用。"
+      },
+      "sections": [],
+      "thought_ids": [
+        "thought-transformation",
+        "thought-growth",
+        "thought-value",
+        "thought-management",
+        "thought-judgment",
+        "thought-relief"
+      ]
+    },
+    {
+      "id": "thought-transformation",
+      "kicker": {
+        "en": "THOUGHTS / FATE",
+        "zh": "思考 / FATE"
+      },
+      "title": {
+        "en": "Buying AI tools is not transformation.",
+        "zh": "只買工具，不等於轉型。"
+      },
+      "lede": {
+        "en": "Transformation begins when the way work is organized changes.",
+        "zh": "轉型從工作組織方式的改變開始。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Look beyond the tool",
+            "zh": "看工具之外的變化"
+          },
+          "paragraphs": [
+            {
+              "en": "A tool can help one person finish faster while leaving everyone else working in the old way.",
+              "zh": "工具可以讓一個人做得更快，其他人卻仍按照舊方式工作。"
+            },
+            {
+              "en": "That improvement matters, but it does not automatically become organizational capability.",
+              "zh": "這種改善有價值，但不會自動變成組織能力。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Ask what changed",
+            "zh": "追問什麼真的變了"
+          },
+          "paragraphs": [
+            {
+              "en": "Who defines the result? How is work reviewed? Can useful knowledge survive the person who first produced it?",
+              "zh": "誰來定義結果？工作如何審閱？有用的知識能不能離開最初產出它的人而繼續存在？"
+            },
+            {
+              "en": "These questions turn AI adoption into a management problem, rather than a shopping list.",
+              "zh": "這些問題，會把 AI 採用變成管理問題，而不只是採購清單。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "My test",
+            "zh": "我的判斷標準"
+          },
+          "paragraphs": [
+            {
+              "en": "I look for changes in responsibilities, shared standards, and how results reach the next person.",
+              "zh": "我會看責任、共同標準，以及成果如何到達下一個人，是否發生改變。"
+            },
+            {
+              "en": "The question is whether better work becomes easier to repeat across the organization.",
+              "zh": "關鍵是：更好的工作，能否在組織中更容易重複發生。"
+            }
+          ]
+        }
+      ],
+      "related": "case-continuity",
+      "quote": {
+        "en": "The change is in mechanisms, organization, and work processes, not merely in buying tools.",
+        "zh": "轉型的改變在機制、組織與工作流程，不只是購買工具。"
+      },
+      "source": {
+        "en": "Fate, internal AI transformation kickoff, October 16, 2026, section 2.",
+        "zh": "Fate，2026-10-16 AI 轉型啟動會紀要，§二「轉型的核心」。"
+      },
+      "quote_kind": {
+        "en": "From my meeting notes",
+        "zh": "會議觀點"
+      },
+      "quote_type": "summary"
+    },
+    {
+      "id": "thought-growth",
+      "kicker": {
+        "en": "THOUGHTS / FATE",
+        "zh": "思考 / FATE"
+      },
+      "title": {
+        "en": "Start with one task, then expand.",
+        "zh": "先做好一件事，再逐步推廣。"
+      },
+      "lede": {
+        "en": "Set the goal and standards, start with a real task, then apply what works to the next one.",
+        "zh": "先定目標和標準，從一項具體工作開始，做成後再用到下一項工作。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Direction and detail are different",
+            "zh": "方向與細節是兩回事"
+          },
+          "paragraphs": [
+            {
+              "en": "People need a shared purpose and clear boundaries. Detailed methods can develop through real tasks and feedback.",
+              "zh": "人需要共同目的和清楚邊界，具體做法則可以在真實工作與反饋中形成。"
+            },
+            {
+              "en": "An early plan should create room for learning, rather than pretend every useful application is already known.",
+              "zh": "早期規劃應為學習留出空間，而不是假設所有有用場景都已經知道。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Begin with something real",
+            "zh": "從真實工作起步"
+          },
+          "paragraphs": [
+            {
+              "en": "My path began with personal materials. It then grew into working methods, departmental coordination, and a broader company ambition.",
+              "zh": "我的路徑從整理個人材料開始，逐步長成工作方法、部門協作，再走向公司層面的目標。"
+            },
+            {
+              "en": "Each completed task revealed another problem worth solving. That is how the scope gradually expanded.",
+              "zh": "每做成一項工作，就發現下一個值得解決的問題，範圍因此逐步擴大。"
+            },
+            {
+              "en": "Departmental work followed the same idea: agree on a baseline, then improve the work as new evidence arrives.",
+              "zh": "部門工作的做法也一樣：先確認工作基線，再隨新證據不斷改進。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Keep the ability to revise",
+            "zh": "保留修正能力"
+          },
+          "paragraphs": [
+            {
+              "en": "A useful method needs evidence that it helps. When circumstances change, the method should be open to revision.",
+              "zh": "方法是否有用，需要實踐證據。情況變化時，方法也應允許修正。"
+            },
+            {
+              "en": "I would expand only after the first task has a clear use and people can review its results.",
+              "zh": "我會先看第一項工作是否有明確用途、結果能否被人檢視，再決定如何擴展。"
+            }
+          ]
+        }
+      ],
+      "related": "case-continuity",
+      "quote": {
+        "en": "Start with a real business task. Set direction and standards, then expand after the process works.",
+        "zh": "由真正在做業務的人從小事起步，負責人提供方向與標準，跑通後再擴展。"
+      },
+      "source": {
+        "en": "Fate, internal AI transformation kickoff, October 16, 2026, sections 1.2 and 2.",
+        "zh": "Fate，2026-10-16 AI 轉型啟動會紀要，§1.2 及§二。"
+      },
+      "quote_kind": {
+        "en": "From my meeting notes",
+        "zh": "會議觀點"
+      },
+      "quote_type": "summary"
+    },
+    {
+      "id": "thought-value",
+      "kicker": {
+        "en": "THOUGHTS / FATE",
+        "zh": "思考 / FATE"
+      },
+      "title": {
+        "en": "A polished output still needs a purpose.",
+        "zh": "產出再漂亮，也要有人因此改變行動。"
+      },
+      "lede": {
+        "en": "The value of AI output depends on what happens because of it.",
+        "zh": "AI 產出的價值，要看它讓什麼事情發生了變化。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Output is easy to count",
+            "zh": "產出很容易被計數"
+          },
+          "paragraphs": [
+            {
+              "en": "Documents, summaries, and dashboards are visible. Their number can grow without making a decision easier or a task better.",
+              "zh": "文檔、摘要、看板都很容易被看見，數量增加卻未必讓決策更容易、工作更好。"
+            },
+            {
+              "en": "I want to know who uses a result, what they do with it, and what improves afterward.",
+              "zh": "我想知道誰在使用成果、用它做什麼，以及之後改善了什麼。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "A reader is not always the destination",
+            "zh": "讀者未必是終點"
+          },
+          "paragraphs": [
+            {
+              "en": "Some outputs support another process rather than a person reading every word. They still need a clear role and quality standard.",
+              "zh": "有些產出是供下一個環節使用，未必需要人逐字閱讀，但仍要有清楚用途與品質標準。"
+            },
+            {
+              "en": "Producing more material for people to inspect can simply move the workload instead of reducing it.",
+              "zh": "把更多材料交給人檢查，可能只是轉移工作量，而不是減輕負擔。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Revisit recurring outputs",
+            "zh": "定期回看重複產出"
+          },
+          "paragraphs": [
+            {
+              "en": "If an output has no useful destination, revise it, combine it, or consider stopping it.",
+              "zh": "如果產出找不到有價值的去處，就應考慮調整、合併，或停止。"
+            }
+          ]
+        }
+      ],
+      "related": "case-continuity",
+      "quote": {
+        "en": "I know AI will generate a pile of junk. I do not want junk.",
+        "zh": "我知道 AI 会生成一堆垃圾，我不想要垃圾。"
+      },
+      "source": {
+        "en": "Fate, operations and innovation meeting, August 25, 2026, section 5: AI work loops.",
+        "zh": "Fate，2026-08-25 運營會＋創新會紀要，§五「AI 閉環建設」，Fate 的回應。"
+      },
+      "quote_kind": {
+        "en": "Meeting quotation",
+        "zh": "會議引文"
+      },
+      "quote_type": "excerpt"
+    },
+    {
+      "id": "thought-management",
+      "kicker": {
+        "en": "THOUGHTS / FATE",
+        "zh": "思考 / FATE"
+      },
+      "title": {
+        "en": "Management becomes more explicit.",
+        "zh": "管理，是把工作定義清楚。"
+      },
+      "lede": {
+        "en": "AI makes unclear goals and acceptance standards harder to ignore.",
+        "zh": "AI 讓模糊的目標與驗收標準更難被忽略。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "A request contains hidden choices",
+            "zh": "一句要求裡，藏著很多取捨"
+          },
+          "paragraphs": [
+            {
+              "en": "A task can sound clear while leaving its scope, evidence requirements, and quality threshold unstated.",
+              "zh": "一項任務聽起來很清楚，範圍、證據要求與品質門檻卻可能仍未說明。"
+            },
+            {
+              "en": "When those choices remain implicit, the result depends on someone guessing correctly.",
+              "zh": "這些取捨如果一直隱含著，結果就依賴別人猜得對不對。"
+            },
+            {
+              "en": "For a recurring report, a request for a summary is not enough. Its audience, inputs, and review standard matter too.",
+              "zh": "例如一份重複報告，只說「整理摘要」還不夠；給誰看、依據什麼材料、怎樣審閱，同樣需要定義。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Make the judgment reusable",
+            "zh": "讓判斷可以被複用"
+          },
+          "paragraphs": [
+            {
+              "en": "Explain the purpose, constraints, and acceptance conditions. Record the reasoning that another person needs to continue.",
+              "zh": "說清目的、限制與驗收條件，記下下一個人接續工作需要理解的理由。"
+            },
+            {
+              "en": "This is management work. AI creates a stronger reason to do it well.",
+              "zh": "這本身就是管理工作，而 AI 讓做好它變得更重要。"
+            },
+            {
+              "en": "A work instruction puts those choices where people and AI can use them again. It should change when the work changes.",
+              "zh": "工作說明書把這些取捨留下來，讓人與 AI 都能再次使用；工作變了，說明也要跟著變。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Responsibility stays with people",
+            "zh": "責任仍然在人"
+          },
+          "paragraphs": [
+            {
+              "en": "Clear definitions help execution. People still choose the priorities, resolve trade-offs, and accept the consequences.",
+              "zh": "清楚定義有助執行；優先順序、重要取捨及其後果，仍由人負責。"
+            }
+          ]
+        }
+      ],
+      "related": "case-standards",
+      "quote": {
+        "en": "The core work shifts from doing each task to defining how each task should be done.",
+        "zh": "核心工作從做具體的活，轉向定義每項活怎麼幹。"
+      },
+      "source": {
+        "en": "Fate, product department meeting, October 20–21, 2026, topic 2: work instructions.",
+        "zh": "Fate，2026-10-20—21 產品部門會紀要，議題二「工作說明書」。"
+      },
+      "quote_kind": {
+        "en": "From my meeting notes",
+        "zh": "會議觀點"
+      },
+      "quote_type": "summary"
+    },
+    {
+      "id": "thought-judgment",
+      "kicker": {
+        "en": "THOUGHTS / FATE",
+        "zh": "思考 / FATE"
+      },
+      "title": {
+        "en": "Knowing what matters becomes more valuable.",
+        "zh": "更稀缺的，是知道該做什麼。"
+      },
+      "lede": {
+        "en": "Execution support increases the importance of choosing a worthwhile question.",
+        "zh": "執行能力被放大之後，選對問題變得更重要。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Activity does not choose a direction",
+            "zh": "忙碌不會自動選出方向"
+          },
+          "paragraphs": [
+            {
+              "en": "Faster production does not tell us which question deserves attention. Judgment decides what evidence is needed and what can wait.",
+              "zh": "更快產出，不會自動告訴我們哪個問題值得關注。判斷決定需要什麼證據、哪些事情可以等待。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Be willing to challenge the story",
+            "zh": "願意挑戰好聽的解釋"
+          },
+          "paragraphs": [
+            {
+              "en": "An attractive explanation needs comparison and alternative hypotheses. The useful result may be a narrower conclusion than we expected.",
+              "zh": "有吸引力的解釋，需要比較與替代假設。真正有用的結果，可能是比預期更克制的結論。"
+            },
+            {
+              "en": "I treat analysis as a way to strengthen judgment, including when it changes my original view.",
+              "zh": "我把分析當成加強判斷的方法，包括它推翻我原來想法的時候。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Develop the ability to ask",
+            "zh": "培養提出問題的能力"
+          },
+          "paragraphs": [
+            {
+              "en": "Learn to state the problem, identify missing evidence, and explain why the answer would change an action.",
+              "zh": "練習說清問題、辨認缺失證據，以及解釋答案會如何改變行動。"
+            }
+          ]
+        }
+      ],
+      "related": "case-research",
+      "quote": {
+        "en": "People define the requirements, make confirmations, and expand and manage their boundaries.",
+        "zh": "人負責輸出需求、做確認，並拓展和管理邊界。"
+      },
+      "source": {
+        "en": "Fate, product department meeting, August 13, 2026, topic 2: boundaries between people and AI.",
+        "zh": "Fate，2026-08-13 產品部門周會紀要，議題二「AI 時代的人機邊界」。"
+      },
+      "quote_kind": {
+        "en": "From my meeting notes",
+        "zh": "會議觀點"
+      },
+      "quote_type": "summary"
+    },
+    {
+      "id": "thought-relief",
+      "kicker": {
+        "en": "THOUGHTS / FATE",
+        "zh": "思考 / FATE"
+      },
+      "title": {
+        "en": "Transformation should reduce the burden.",
+        "zh": "轉型應該解放人。"
+      },
+      "lede": {
+        "en": "A new way of working needs to help people with work they actually face.",
+        "zh": "新的工作方式，要能幫人處理眼前真實的工作。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "Begin with a real burden",
+            "zh": "從真實負擔開始"
+          },
+          "paragraphs": [
+            {
+              "en": "A first experiment should help someone finish work they already need to do. Its benefit should be recognizable to that person.",
+              "zh": "第一個試驗，應該幫一個人完成本來就需要完成的工作，而且他能感受到其中的幫助。"
+            },
+            {
+              "en": "Another report about using AI can become an extra task unless it replaces something less useful.",
+              "zh": "如果沒有替代低價值工作，多一份「使用 AI 的報告」可能只是增加一項任務。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Relief must include review",
+            "zh": "減負也包括審閱"
+          },
+          "paragraphs": [
+            {
+              "en": "Time spent checking, correcting, and moving results belongs in the evaluation. A faster draft alone is not the whole outcome.",
+              "zh": "檢查、糾錯與轉交成果所花的時間，也應納入評估。初稿更快，不是全部結果。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Give people a reason to continue",
+            "zh": "讓人有理由繼續"
+          },
+          "paragraphs": [
+            {
+              "en": "A useful result creates trust. Shared standards make that result easier to repeat and improve.",
+              "zh": "有用的結果建立信任，共同標準則讓結果更容易重複與改善。"
+            },
+            {
+              "en": "I start with a task that helps someone, then use the result to decide what to try next.",
+              "zh": "我會先找一件能幫到人的工作，再根據結果決定下一步做什麼。"
+            }
+          ]
+        }
+      ],
+      "related": "case-standards",
+      "quote": {
+        "en": "The test is whether this creates more work for people. The goal is to reduce time spent, not increase it.",
+        "zh": "判斷標準是有沒有讓大家更累；目標是減少時間消耗，而不是增加。"
+      },
+      "source": {
+        "en": "Fate, product department meeting, August 13, 2026, topic 1: departmental work management.",
+        "zh": "Fate，2026-08-13 產品部門周會紀要，議題一結論。"
+      },
+      "quote_kind": {
+        "en": "From my meeting notes",
+        "zh": "會議觀點"
+      },
+      "quote_type": "summary"
+    },
+    {
+      "id": "updates",
+      "kicker": {
+        "en": "03 / FIELD NOTES",
+        "zh": "03 / 進展札記"
+      },
+      "title": {
+        "en": "What I did at each stage.",
+        "zh": "每個階段，我做了哪些事。"
+      },
+      "lede": {
+        "en": "A monthly record of knowledge-base work, departmental changes, and company-wide AI transformation.",
+        "zh": "按月份記錄知識庫整理、部門工作改變，以及公司 AI 轉型的進展。"
+      },
+      "sections": [],
+      "timeline": [
+        {
+          "date": "2026-07-18",
+          "title": {
+            "en": "A structured knowledge base",
+            "zh": "把材料整理成知識體系"
+          },
+          "text": {
+            "en": "Established a subject structure, entry points, and initial maintenance principles.",
+            "zh": "建立主題結構、閱讀入口與最初的維護原則。"
+          }
+        },
+        {
+          "date": "2026-07-20",
+          "title": {
+            "en": "Bring conversations into context",
+            "zh": "讓溝通內容成為可積累的背景"
+          },
+          "text": {
+            "en": "Began organizing communication records alongside working materials.",
+            "zh": "開始把溝通記錄與工作材料一起整理。"
+          }
+        },
+        {
+          "date": "2026-07-28",
+          "title": {
+            "en": "Extract reusable knowledge",
+            "zh": "提煉可複用的知識"
+          },
+          "text": {
+            "en": "Defined how conclusions become reviewed, reusable knowledge.",
+            "zh": "建立從材料提煉結論、經審閱後沉澱知識的方法。"
+          }
+        },
+        {
+          "date": "2026-07-28",
+          "title": {
+            "en": "Prepare for continuity",
+            "zh": "讓知識可以被接續"
+          },
+          "text": {
+            "en": "Added explanatory material so the knowledge base can be understood beyond one conversation.",
+            "zh": "補充使用與維護說明，讓知識庫不只依賴一次對話。"
+          }
+        },
+        {
+          "date": "2026-07-31",
+          "title": {
+            "en": "Connect work and outcomes",
+            "zh": "把工作與成果連起來"
+          },
+          "text": {
+            "en": "Created an outcome record and made structured knowledge part of organizing new material.",
+            "zh": "建立成果記錄，讓新增材料的整理同時產生結構化知識。"
+          }
+        },
+        {
+          "date": "2026-07-31",
+          "title": {
+            "en": "Clarify metric definitions",
+            "zh": "把資料口徑說清楚"
+          },
+          "text": {
+            "en": "Began recording metric scope and conflicting definitions together.",
+            "zh": "開始統一記錄指標範圍與口徑衝突。"
+          }
+        },
+        {
+          "date": "2026-08-04",
+          "title": {
+            "en": "Organize meeting knowledge",
+            "zh": "整理會議知識"
+          },
+          "text": {
+            "en": "Established clearer conventions for meeting records and their context.",
+            "zh": "為會議記錄及其背景建立更清楚的整理規範。"
+          }
+        },
+        {
+          "date": "2026-08-05",
+          "title": {
+            "en": "Require traceable sources",
+            "zh": "讓結論帶著來源"
+          },
+          "text": {
+            "en": "Formalized source attribution and verification requirements.",
+            "zh": "明確結論的來源標註與核查要求。"
+          }
+        },
+        {
+          "date": "2026-08-06",
+          "title": {
+            "en": "Review the knowledge base",
+            "zh": "檢查知識庫的品質"
+          },
+          "text": {
+            "en": "Completed an initial health review of structure, naming, and records.",
+            "zh": "完成對結構、命名與記錄的首次月度檢查。"
+          }
+        },
+        {
+          "date": "2026-08-10",
+          "title": {
+            "en": "From personal knowledge to department work",
+            "zh": "從個人知識走向部門工作"
+          },
+          "text": {
+            "en": "Established departmental progress records and a proposal for easier progress review.",
+            "zh": "建立部門進展記錄，設計更容易跟進工作的方式。"
+          }
+        },
+        {
+          "date": "2026-08-11",
+          "title": {
+            "en": "Make quality rules explicit",
+            "zh": "把品質要求變成共同規則"
+          },
+          "text": {
+            "en": "Strengthened fact checking and checks against established standards.",
+            "zh": "完善事實核查與既有材料的標準檢查。"
+          }
+        },
+        {
+          "date": "2026-08-13",
+          "title": {
+            "en": "Make progress visible",
+            "zh": "讓進展可以被共同看見"
+          },
+          "text": {
+            "en": "A departmental progress board became available for review.",
+            "zh": "部門進展看板形成可供共同查看的成果。"
+          }
+        },
+        {
+          "date": "2026-08-29",
+          "title": {
+            "en": "Connect originals and usable knowledge",
+            "zh": "連接原件與可用知識"
+          },
+          "text": {
+            "en": "Made text extraction from common working documents part of regular knowledge organization.",
+            "zh": "把常見工作文檔的文字提取納入日常知識整理。"
+          }
+        },
+        {
+          "date": "2026-09-03",
+          "title": {
+            "en": "Share the transformation experience",
+            "zh": "整理 AI 轉型經驗分享"
+          },
+          "text": {
+            "en": "Prepared a presentation connecting personal practice, management changes, and broader transformation.",
+            "zh": "形成連接個人實踐、管理改變與更大轉型方向的演講材料。"
+          }
+        },
+        {
+          "date": "2026-09-10",
+          "title": {
+            "en": "Distinguish current and historical material",
+            "zh": "區分現行與歷史材料"
+          },
+          "text": {
+            "en": "Refined navigation and separation of active material from historical reference.",
+            "zh": "優化閱讀入口，區分現行材料與歷史參考。"
+          }
+        },
+        {
+          "date": "2026-09-11",
+          "title": {
+            "en": "Turn mistakes into learning",
+            "zh": "讓錯誤成為可複用的教訓"
+          },
+          "text": {
+            "en": "Created a fact-based review record to preserve lessons from important mistakes.",
+            "zh": "建立基於事實的復盤記錄，保存重要錯誤帶來的教訓。"
+          }
+        },
+        {
+          "date": "2026-09-14",
+          "title": {
+            "en": "Improve knowledge navigation",
+            "zh": "改善知識導航"
+          },
+          "text": {
+            "en": "Expanded directory indexes to connect knowledge documents and their subject structure.",
+            "zh": "完善目錄索引，連接知識文件與主題結構。"
+          }
+        },
+        {
+          "date": "2026-09-16",
+          "title": {
+            "en": "Reorganize around useful subjects",
+            "zh": "按工作主題重整內容"
+          },
+          "text": {
+            "en": "Consolidated research and product material around clearer reading paths.",
+            "zh": "按更清楚的閱讀路徑重整研究與產品材料。"
+          }
+        },
+        {
+          "date": "2026-09-20",
+          "title": {
+            "en": "Make the work public",
+            "zh": "讓實踐被外界看見"
+          },
+          "text": {
+            "en": "The first website presented a public overview of the work and its progress.",
+            "zh": "首版網站把已有工作與進展整理成公開概覽。"
+          }
+        },
+        {
+          "date": "2026-10-12",
+          "title": {
+            "en": "Keep knowledge independent of tools",
+            "zh": "讓知識不依附單一工具"
+          },
+          "text": {
+            "en": "Organized instructions and knowledge for continuity across AI tools.",
+            "zh": "整理跨 AI 工具接續所需的指令與知識。"
+          }
+        },
+        {
+          "date": "2026-10-15",
+          "title": {
+            "en": "Prepare the internal transformation talk",
+            "zh": "準備公司內部轉型分享"
+          },
+          "text": {
+            "en": "Adapted the transformation material for an internal launch discussion.",
+            "zh": "將轉型經驗整理為內部啟動討論的分享材料。"
+          }
+        },
+        {
+          "date": "2026-10-16",
+          "title": {
+            "en": "Begin company-wide expansion",
+            "zh": "開始向公司層面推進"
+          },
+          "text": {
+            "en": "The internal launch brought departmental experience into a wider company transformation effort.",
+            "zh": "內部啟動把部門經驗帶入更大範圍的公司轉型工作。"
+          }
+        },
+        {
+          "date": "2026-10-19",
+          "title": {
+            "en": "Write work for handover",
+            "zh": "把工作寫成可交接的說明"
+          },
+          "text": {
+            "en": "Prepared a recurring-report work instruction and supporting handover materials.",
+            "zh": "形成重複報告工作的說明書與配套交接材料。"
+          }
+        },
+        {
+          "date": "2026-10-26",
+          "title": {
+            "en": "Make recurring work easier to continue",
+            "zh": "讓重複工作更容易接續"
+          },
+          "text": {
+            "en": "Organized reporting requirements, supporting material, and handover records so colleagues can continue the work.",
+            "zh": "整理報告的工作要求、配套材料與交接記錄，方便其他同事接手。"
+          }
+        },
+        {
+          "date": "2026-10-28",
+          "title": {
+            "en": "Unify meeting archives",
+            "zh": "統一會議知識歸檔"
+          },
+          "text": {
+            "en": "Consolidated meeting materials while preserving originals and subject references.",
+            "zh": "集中整理會議材料，保留原件與業務主題的引用。"
+          }
+        },
+        {
+          "date": "2026-10-29",
+          "title": {
+            "en": "Prepare cases, thoughts, and a timeline for the website",
+            "zh": "為網站整理案例、思考與時間軸"
+          },
+          "text": {
+            "en": "Organized practice cases and meeting-based reflections into separate pages, with a timeline linking the main milestones.",
+            "zh": "把實踐案例和來自會議記錄的思考整理為獨立頁面，並用時間軸串起重要事件。"
+          }
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "kicker": {
+        "en": "04 / ABOUT & CONTACT",
+        "zh": "04 / 關於與聯絡"
+      },
+      "title": {
+        "en": "Product, curiosity, and the work in between.",
+        "zh": "產品、好奇心，與其間的實踐。"
+      },
+      "lede": {
+        "en": "I am Fate. Product Director at a crypto wallet company. Previously, a Product Manager and Solutions Architect at Tencent.",
+        "zh": "我是 Fate，現任加密錢包公司產品總監，曾任騰訊產品經理／解決方案架構師。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About me",
+            "zh": "關於我"
+          },
+          "paragraphs": [
+            {
+              "en": "Fate leads product at a crypto wallet company serving consumers in North America and Europe.",
+              "zh": "Fate 在一家面向北美與歐洲消費者的加密錢包公司負責產品。"
+            },
+            {
+              "en": "Since August 2026, the role has also involved building a knowledge base and AI platform for the product department.",
+              "zh": "2026 年 8 月起，這份工作多了另一半：搭建一個產品部門能跑在上面的知識庫與 AI 平台。"
+            },
+            {
+              "en": "Departmental coordination is gradually moving into this way of working, one piece at a time.",
+              "zh": "並把部門的組織協調工作，一件一件交給它。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why this website",
+            "zh": "這個網站為什麼存在"
+          },
+          "paragraphs": [
+            {
+              "en": "Most of this work is invisible from outside. This website makes it legible: what exists, how it works, and what changed.",
+              "zh": "這些工作從外面幾乎看不見。這個網站把它變得可讀：有什麼、做得怎樣、改了什麼。"
+            },
+            {
+              "en": "It will grow to cover career background, writing, and other channels.",
+              "zh": "之後會逐步加入職業背景、寫作與其他渠道。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Beyond the job title",
+            "zh": "工作之外，也都是我"
+          },
+          "paragraphs": [
+            {
+              "en": "NFT enthusiast. E/acc. Best dad ever.",
+              "zh": "NFT enthusiast · E/acc · Best dad ever。"
+            },
+            {
+              "en": "I design secure crypto wallets. But no wallet is truly secure. Security begins with how you use it.",
+              "zh": "我設計安全的加密錢包。但沒有錢包能保證絕對安全，安全始於你的使用方式。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Conversations worth having",
+            "zh": "歡迎交流"
+          },
+          "paragraphs": [
+            {
+              "en": "I welcome conversations about crypto products, practical AI transformation, collaboration, and professional opportunities.",
+              "zh": "歡迎交流加密產品、AI 轉型實踐、合作與職業機會。"
+            },
+            {
+              "en": "If you are bringing AI into team work, I would be glad to exchange experiences.",
+              "zh": "如果你也在探索如何讓 AI 進入團隊的真實工作，歡迎交流實踐中的經驗與問題。"
+            }
+          ]
+        }
+      ],
+      "social": [
+        {
+          "label": "X · @BakaNakamoto",
+          "url": "https://x.com/BakaNakamoto"
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "home": {
+      "en": "Home",
+      "zh": "首頁"
+    },
+    "practice": {
+      "en": "AI practice",
+      "zh": "AI 實踐"
+    },
+    "writing": {
+      "en": "Thoughts",
+      "zh": "思考"
+    },
+    "updates": {
+      "en": "Field notes",
+      "zh": "進展札記"
+    },
+    "about": {
+      "en": "About & contact",
+      "zh": "關於與聯絡"
+    },
+    "preview": {
+      "en": "Local preview · Not published",
+      "zh": "本地預覽 · 尚未發佈"
+    },
+    "skip": {
+      "en": "Skip to content",
+      "zh": "跳到主要內容"
+    },
+    "search": {
+      "en": "Search the site",
+      "zh": "搜尋本站"
+    },
+    "close": {
+      "en": "Close search",
+      "zh": "關閉搜尋"
+    },
+    "empty": {
+      "en": "No matching pages. Try another word.",
+      "zh": "未找到相關頁面，請試其他關鍵詞。"
+    },
+    "search_hint": {
+      "en": "Search ideas, cases, and field notes.",
+      "zh": "搜尋觀點、案例與進展札記。"
+    },
+    "search_start": {
+      "en": "Start with judgment, standards, or knowledge.",
+      "zh": "可以從「判斷」「標準」或「知識」開始。"
+    },
+    "theme": {
+      "en": "Theme",
+      "zh": "主題"
+    },
+    "auto": {
+      "en": "Auto",
+      "zh": "自動"
+    },
+    "light": {
+      "en": "Light",
+      "zh": "淺色"
+    },
+    "dark": {
+      "en": "Dark",
+      "zh": "深色"
+    },
+    "read": {
+      "en": "Read the case",
+      "zh": "閱讀案例"
+    },
+    "explore": {
+      "en": "Explore the practice",
+      "zh": "探索實踐"
+    },
+    "all": {
+      "en": "All field notes",
+      "zh": "全部進展札記"
+    },
+    "back": {
+      "en": "Back to AI practice",
+      "zh": "返回 AI 實踐"
+    },
+    "footer": {
+      "en": "A personal field journal on work, judgment, and AI.",
+      "zh": "關於工作、判斷與 AI 的個人實踐記錄。"
+    },
+    "edition": {
+      "en": "OCTOBER 2026",
+      "zh": "2026 年 10 月"
+    },
+    "selected": {
+      "en": "SELECTED PRACTICE",
+      "zh": "實踐選讀"
+    },
+    "email": {
+      "en": "Get in touch",
+      "zh": "聯絡我"
+    },
+    "contact_note": {
+      "en": "For conversations about crypto products, AI transformation, and better ways of working.",
+      "zh": "歡迎交流加密產品、AI 轉型，以及更好的工作方式。"
+    },
+    "knowledge": {
+      "en": "Knowledge",
+      "zh": "知識"
+    },
+    "judgment": {
+      "en": "Judgment",
+      "zh": "判斷"
+    },
+    "work": {
+      "en": "Practice",
+      "zh": "實踐"
+    },
+    "learning": {
+      "en": "Learning",
+      "zh": "學習"
+    },
+    "line1": {
+      "en": "Give context.",
+      "zh": "提供背景。"
+    },
+    "line2": {
+      "en": "Make choices.",
+      "zh": "作出取捨。"
+    },
+    "line3": {
+      "en": "Check the result.",
+      "zh": "驗證結果。"
+    },
+    "line4": {
+      "en": "Carry it forward.",
+      "zh": "積累經驗。"
+    },
+    "selected_thoughts": {
+      "en": "SELECTED THOUGHTS",
+      "zh": "思考選讀"
+    },
+    "more_practice": {
+      "en": "More practice",
+      "zh": "更多實踐"
+    },
+    "more_thoughts": {
+      "en": "More thoughts",
+      "zh": "更多思考"
+    },
+    "sources": {
+      "en": "Source",
+      "zh": "出處"
+    },
+    "back_thoughts": {
+      "en": "Back to thoughts",
+      "zh": "返回思考"
+    },
+    "knowledge_title": {
+      "en": "What it knows",
+      "zh": "它知道什麼"
+    },
+    "knowledge_note": {
+      "en": "Product facts, partner research, feedback, and work standards give AI context for specific tasks.",
+      "zh": "產品事實、合作研究、用戶反饋與工作標準等資料，供 AI 在處理具體工作時查用。"
+    }
+  },
+  "revision": "2026-10-29-v4"
+}
