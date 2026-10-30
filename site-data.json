@@ -28,25 +28,6 @@
         "thought-management",
         "thought-relief"
       ],
-      "profile": {
-        "statement": {
-          "en": "I design secure crypto wallets. But no wallet is truly secure. Security begins with how you use it.",
-          "zh": "I design secure crypto wallets. But no wallet is truly secure. Security begins with how you use it."
-        },
-        "role": {
-          "en": "Product Director at a crypto wallet company",
-          "zh": "現任加密錢包公司產品總監"
-        },
-        "previous": {
-          "en": "Previously: Product Manager / Solutions Architect at Tencent",
-          "zh": "曾任騰訊產品經理／解決方案架構師"
-        },
-        "tags": [
-          "NFT enthusiast",
-          "E/acc",
-          "Best dad ever"
-        ]
-      },
       "journey_title": {
         "en": "From my knowledge base to AI work across the company.",
         "zh": "從個人知識庫，到部門和公司的 AI 轉型。"
@@ -1814,7 +1795,26 @@
           "label": "X · @BakaNakamoto",
           "url": "https://x.com/BakaNakamoto"
         }
-      ]
+      ],
+      "profile": {
+        "statement": {
+          "en": "I design secure crypto wallets. But no wallet is truly secure. Security begins with how you use it.",
+          "zh": "I design secure crypto wallets. But no wallet is truly secure. Security begins with how you use it."
+        },
+        "role": {
+          "en": "Product Director at a crypto wallet company",
+          "zh": "現任加密錢包公司產品總監"
+        },
+        "previous": {
+          "en": "Previously: Product Manager / Solutions Architect at Tencent",
+          "zh": "曾任騰訊產品經理／解決方案架構師"
+        },
+        "tags": [
+          "NFT enthusiast",
+          "E/acc",
+          "Best dad ever"
+        ]
+      }
     }
   ],
   "ui": {

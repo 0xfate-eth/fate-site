@@ -43,15 +43,21 @@ for lang in ['en','zh']:
   nav=''.join(f'<a href="{link(n)}"'+(' aria-current="page"' if id==n or (n=='practice' and id.startswith('case-')) or (n=='writing' and id.startswith('thought-')) else '')+f'>{esc(U[n])}</a>' for n in ['practice','writing','updates','about'])
   sections=''.join(f'<section id="section-{i}"><h2>{esc(txt(s["title"],lang))}</h2>'+''.join(f'<p>{esc(txt(v,lang))}</p>' for v in s['paragraphs'])+'</section>' for i,s in enumerate(p['sections']))
   toc=''.join(f'<a href="#section-{i}">{esc(txt(s["title"],lang))}</a>' for i,s in enumerate(p['sections']))
+  if id=='about':
+   profile=p['profile']; about_section=p['sections'][2]
+   old=f'<section id="section-2"><h2>{esc(txt(about_section["title"],lang))}</h2>'+''.join(f'<p>{esc(txt(v,lang))}</p>' for v in about_section['paragraphs'])+'</section>'
+   trans=('<p class="profile-translation">'+esc(about_section['paragraphs'][1]['zh'])+'</p>') if lang=='zh' else ''
+   new='<section id="section-2"><h2>'+esc(txt(about_section['title'],lang))+'</h2><div class="about-profile"><blockquote lang="en">'+esc(profile['statement']['en'])+'</blockquote>'+trans+'<div class="profile-tags">'+''.join('<span>'+esc(tag)+'</span>' for tag in profile['tags'])+'</div></div></section>'
+   assert old in sections
+   sections=sections.replace(old,new)
   if p.get('source'):toc+=f'<a href="#sources">{esc(U["sources"])}</a>'
   header=(('' if opt.publish else f'<div class="preview">{esc(U["preview"])}</div>')+f'<header class="header"><div class="wrap header-inner"><a class="brand" href="{link("index")}" aria-label="Fate · {esc(U["home"])}"><img src="avatar.jpg" alt="" width="36" height="36">Fate<span style="color:var(--accent)">.</span></a><nav class="links" aria-label="{esc(U["home"])}">{nav}</nav><div class="tools"><button data-search-open class="search-open" aria-label="{esc(U["search"])}">/</button><a href="{name(id,"zh" if lang=="en" else "en")}" lang="{"zh-Hant" if lang=="en" else "en"}">{"繁中" if lang=="en" else "EN"}</a><button data-theme-button>{esc(U["theme"])}</button></div></div></header>')
   kicker=esc(txt(p['kicker'],lang))
   title_html='<span class="title-line">讓 AI 融入</span><span class="title-line">工作的方式。</span>' if id=='index' and lang=='zh' else esc(title)
   if id=='index':
-   f=p['profile'];art='<aside class="profile-note" aria-label="'+('Personal profile' if lang=='en' else '個人標籤')+'"><p class="editorial-head">A FEW THINGS ABOUT ME</p><blockquote>'+esc(txt(f['statement'],lang))+'</blockquote><p class="profile-role">'+esc(txt(f['role'],lang))+'</p><p class="profile-previous">'+esc(txt(f['previous'],lang))+'</p><div class="profile-tags">'+''.join('<span>'+esc(t)+'</span>' for t in f['tags'])+'</div></aside>'
-   body=f'<main id="main" class="wrap"><section class="hero"><div><p class="kicker">{kicker}</p><h1>{title_html}</h1><p class="lede">{esc(lede)}</p><p class="hero-principle">{esc(txt(p["principle"],lang))}</p><a class="hero-cta" href="{link("practice")}">{esc(U["explore"])}<b aria-hidden="true">↗</b></a><div class="edition">{esc(U["edition"])}</div></div>{art}</section>'
-   body+=label(U['selected'],'practice',U['more_practice'])+case_rows(p['case_ids'])
+   body=f'<main id="main" class="wrap"><section class="hero"><div><p class="kicker">{kicker}</p><h1>{title_html}</h1><p class="lede">{esc(lede)}</p><p class="hero-principle">{esc(txt(p["principle"],lang))}</p><a class="hero-cta" href="{link("practice")}">{esc(U["explore"])}<b aria-hidden="true">↗</b></a><div class="edition">{esc(U["edition"])}</div></div></section>'
    body+='<section class="journey"><div class="section-label"><span>THE JOURNEY / '+('AI TRANSFORMATION' if lang=='en' else 'AI 轉型歷程')+'</span></div><h2>'+esc(txt(p['journey_title'],lang))+'</h2><ol>'+''.join('<li><span class="stage">'+x['stage']+'</span><h3>'+esc(txt(x['title'],lang))+'</h3><p>'+esc(txt(x['text'],lang))+'</p></li>' for x in p['journey'])+'</ol></section>'
+   body+=label(U['selected'],'practice',U['more_practice'])+case_rows(p['case_ids'])
    body+=label(U['selected_thoughts'],'writing',U['more_thoughts'])+thought_rows(p['thought_ids'])
    recent=P['updates']['timeline'][-3:][::-1]
    body+='<section class="feature-note"><div><p class="kicker">'+esc(U['updates'])+'</p><h2>'+esc(txt(p['updates_heading'],lang))+'</h2></div><div><p>'+esc(txt(p['updates_description'],lang))+'</p><a class="text-link" href="'+link('updates')+'">'+esc(U['all'])+' ↗</a><ul class="recent-notes">'+''.join('<li><time datetime="'+x['date']+'">'+x['date']+'</time> <span>'+esc(txt(x['title'],lang))+'</span></li>' for x in recent)+'</ul></div></section>'
