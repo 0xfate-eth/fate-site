@@ -1815,6 +1815,704 @@
           "Best dad ever"
         ]
       }
+    },
+    {
+      "id": "reading",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "Books that stay with me.",
+        "zh": "讀過的書，留下的想法。"
+      },
+      "lede": {
+        "en": "Books I have read, and the ideas I keep coming back to.",
+        "zh": "讀過的書，以及那些值得反覆思考的觀點。"
+      },
+      "sections": [],
+      "book_ids": [
+        "book-principles",
+        "book-guns",
+        "book-lawrence",
+        "book-israel",
+        "book-satoshi",
+        "book-promised"
+      ]
+    },
+    {
+      "id": "book-principles",
+      "kicker": {
+        "en": "READING / BOOK 01",
+        "zh": "READING / 讀書筆記 01"
+      },
+      "title": {
+        "en": "Principles",
+        "zh": "《原則》"
+      },
+      "lede": {
+        "en": "Ray Dalio · My rating: 9.5 / 10",
+        "zh": "瑞・達利歐 · 我的評分：9.5 / 10"
+      },
+      "cover": "principles-cover.jpg",
+      "book_intro": {
+        "en": "Ray Dalio shares the principles he developed through life and work. He explores how reflection, transparency, and clear decision-making can help people and organizations improve.",
+        "zh": "瑞・達利歐分享他在生活與工作中逐漸形成的原則。這本書探討如何透過反思、透明和清晰的決策，讓個人與組織持續進步。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "Ray Dalio shares the principles he developed through life and work. He explores how reflection, transparency, and clear decision-making can help people and organizations improve.",
+              "zh": "瑞・達利歐分享他在生活與工作中逐漸形成的原則。這本書探討如何透過反思、透明和清晰的決策，讓個人與組織持續進步。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "Long before AI, Dalio built and managed a company around transparent, structured principles. He applied them to both work and life.",
+              "zh": "在沒有 AI 的年代，達利歐就用透明、程序化、結構化的原則建立和管理公司，並把它們貫徹到工作與生活中。"
+            },
+            {
+              "en": "Many people have similar ideas, but turning them into a working organization is rare. That ability to make principles real is what I admire most.",
+              "zh": "有這類想法的人不少，真正能把原則落實，並據此建立一家有規模的企業，卻很少見。這種把想法變成現實的能力，讓我非常佩服。"
+            },
+            {
+              "en": "I consider Principles an essential guide to AI transformation. If knowledge, experience, and processes are already structured, moving them to AI becomes much easier.",
+              "zh": "我認為《原則》是指導 AI 轉型的最佳工具書。當知識、經驗和流程已經被梳理成清晰的原則，將它們遷移到 AI 上就會容易得多。"
+            },
+            {
+              "en": "Before reading it, I already valued radical transparency, truth, and continuous self-correction. I held myself and my team to the same standards.",
+              "zh": "讀這本書之前，我就本能地追求極度透明、極度求真、持續自我迭代，也經常否定自己。無論對自己還是對所管理的團隊，我都走在這條路上。"
+            },
+            {
+              "en": "That approach was often painful because many organizations and colleagues did not think it could work. The book gave my instincts a complete framework.",
+              "zh": "這樣做時常讓我感到痛苦：這套方法在很多組織裡格格不入，也不容易被認為是可行的。這本書第一次讓我的直覺有了完整的框架。"
+            },
+            {
+              "en": "It strengthened my confidence that this path works. My team and I have felt its value in the AI era. I strongly recommend it to anyone pursuing AI transformation.",
+              "zh": "它讓我更加確信這條路走得通。我和團隊已經在 AI 時代感受到按這些原則行事的價值，因此強烈推薦給所有正在考慮或推動 AI 轉型的人。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "我并不关心正确的答案是不是来源于我",
+          "translation": "I do not care whether the right answer comes from me.",
+          "source": {
+            "en": "Principles · Life story · Finding a way",
+            "zh": "《原則》 · 人生歷程 · 尋找方法"
+          }
+        },
+        {
+          "original": "痛苦+反思=进步",
+          "translation": "Pain + reflection = progress.",
+          "source": {
+            "en": "Principles · Life principles · Pain and reflection",
+            "zh": "《原則》 · 生活原則 · 痛苦與反思"
+          }
+        },
+        {
+          "original": "绝不能允许\"想要自己正确\"的需求压倒\"找出真相\"的需求",
+          "translation": "Never let the desire to be right outweigh the desire to find the truth.",
+          "source": {
+            "en": "Principles · Life principles · Open-mindedness",
+            "zh": "《原則》 · 生活原則 · 保持開放"
+          }
+        },
+        {
+          "original": "让每个人都有权利和责任提出自己的看法",
+          "translation": "Everyone has the right and responsibility to express their views.",
+          "source": {
+            "en": "Principles · Work principles · Idea meritocracy",
+            "zh": "《原則》 · 工作原則 · 創意擇優"
+          }
+        },
+        {
+          "original": "用系统化、可复制的方式把你的所有决策做好",
+          "translation": "Make decisions systematically and in a repeatable way.",
+          "source": {
+            "en": "Principles · Life principles · Decision-making",
+            "zh": "《原則》 · 生活原則 · 有效決策"
+          }
+        }
+      ],
+      "author": {
+        "en": "Ray Dalio",
+        "zh": "瑞・達利歐"
+      },
+      "rating": "9.5"
+    },
+    {
+      "id": "book-guns",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "Guns, Germs, and Steel",
+        "zh": "《槍炮、病菌與鋼鐵》"
+      },
+      "lede": {
+        "en": "Jared Diamond · My rating: 8.5 / 10",
+        "zh": "賈雷德・戴蒙德 · 我的評分：8.5 / 10"
+      },
+      "author": {
+        "en": "Jared Diamond",
+        "zh": "賈雷德・戴蒙德"
+      },
+      "rating": "8.5",
+      "cover": "guns-cover.jpg",
+      "book_intro": {
+        "en": "Jared Diamond asks why societies followed different historical paths. He traces the influence of geography, food production, technology, and disease.",
+        "zh": "賈雷德・戴蒙德探討不同社會為何走上不同的歷史道路。他從地理、糧食生產、技術和疾病出發，追溯文明發展的深層原因。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "Jared Diamond asks why societies followed different historical paths. He traces the influence of geography, food production, technology, and disease.",
+              "zh": "賈雷德・戴蒙德探討不同社會為何走上不同的歷史道路。他從地理、糧食生產、技術和疾病出發，追溯文明發展的深層原因。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "I agree with most of the book’s central ideas. It gives a detailed account of how geography shapes the broad direction of history.",
+              "zh": "我非常認同這本書的大部分核心觀點。它把時間尺度拉長，從地理與環境出發，詳細解釋了人類歷史為什麼會走向不同的方向。"
+            },
+            {
+              "en": "If history began again, I think much of the same pattern would probably recur. Among books with this perspective, this is the most complete account I have read.",
+              "zh": "順著這個邏輯推想：如果人類歷史重來一次，大概率還會重演類似的劇本。持這種視角的書並不少，但這一本講得最完整、最詳盡，我也認為它的結論大概率是對的。"
+            },
+            {
+              "en": "I find the framework useful for organizations too. Their initial resources and founders’ backgrounds can shape how far they can go.",
+              "zh": "我認為這套框架也能用來理解商業和組織：創立時擁有的核心資源，以及創始人的背景，很大程度上會影響一家企業能走多遠。"
+            },
+            {
+              "en": "Large companies are hard to displace, yet innovation often emerges elsewhere. I see a similar pattern in the history described here.",
+              "zh": "大企業雖然很難倒下，創新卻往往不從巨頭內部長出來；我在這裡看到了與人類歷史相似的規律。"
+            },
+            {
+              "en": "The same applies to personal growth. Family, environment, and the complexity of experience can profoundly influence a person’s path.",
+              "zh": "個人成長也是一樣：家庭背景、成長環境和經歷的複雜度，都會在很大程度上影響一個人未來的高度。"
+            },
+            {
+              "en": "Its arguments about European fragmentation and the role of writing and language also stayed with me.",
+              "zh": "書中關於歐洲的成功與長期分裂之間的關係，以及文字、語言在文明演化中的作用，也都值得反覆思考。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "不是源自这些民族本身的天生差异，而是源自他们环境的差异",
+          "translation": "The differences arose from their environments, not innate differences between peoples.",
+          "source": {
+            "en": "Guns, Germs, and Steel · Epilogue · Environmental differences",
+            "zh": "《槍炮、病菌與鋼鐵》 · 尾聲 · 環境差異"
+          }
+        },
+        {
+          "original": "粮食生产是枪炮、病菌和钢铁发展的一个先决条件",
+          "translation": "Food production was a prerequisite for guns, germs, and steel.",
+          "source": {
+            "en": "Guns, Germs, and Steel · Origins of food production",
+            "zh": "《槍炮、病菌與鋼鐵》 · 糧食生產的起源"
+          }
+        },
+        {
+          "original": "大多数社会从其他社会获得的要比它们自己发明的多得多",
+          "translation": "Most societies obtain far more from other societies than they invent themselves.",
+          "source": {
+            "en": "Guns, Germs, and Steel · Epilogue · Diffusion",
+            "zh": "《槍炮、病菌與鋼鐵》 · 尾聲 · 傳播與交流"
+          }
+        },
+        {
+          "original": "创新在带有最优中间程度分裂的社会里发展得最快",
+          "translation": "Innovation develops fastest in societies with an intermediate degree of fragmentation.",
+          "source": {
+            "en": "Guns, Germs, and Steel · Epilogue · Optimal fragmentation",
+            "zh": "《槍炮、病菌與鋼鐵》 · 尾聲 · 最優分裂原則"
+          }
+        },
+        {
+          "original": "环境改变了，过去是第一并不能保证将来也是第一",
+          "translation": "When environments change, past leadership does not guarantee future leadership.",
+          "source": {
+            "en": "Guns, Germs, and Steel · Epilogue · Changing environments",
+            "zh": "《槍炮、病菌與鋼鐵》 · 尾聲 · 環境與變化"
+          }
+        }
+      ]
+    },
+    {
+      "id": "book-lawrence",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "Lawrence in Arabia",
+        "zh": "《阿拉伯的勞倫斯》"
+      },
+      "lede": {
+        "en": "Scott Anderson · My rating: 8 / 10",
+        "zh": "斯科特・安德森 · 我的評分：8 / 10"
+      },
+      "author": {
+        "en": "Scott Anderson",
+        "zh": "斯科特・安德森"
+      },
+      "rating": "8",
+      "cover": "lawrence-cover.jpg",
+      "book_intro": {
+        "en": "Scott Anderson follows four people through the Middle East during World War I. Their stories reveal how war and competing ambitions shaped the modern region.",
+        "zh": "斯科特・安德森以四個人的經歷，串起第一次世界大戰中的中東。戰爭、列強的交易與彼此衝突的理想，共同塑造了現代中東的輪廓。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "Scott Anderson follows four people through the Middle East during World War I. Their stories reveal how war and competing ambitions shaped the modern region.",
+              "zh": "斯科特・安德森以四個人的經歷，串起第一次世界大戰中的中東。戰爭、列強的交易與彼此衝突的理想，共同塑造了現代中東的輪廓。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "This book helped me understand how wartime promises and bargains shaped the modern Middle East.",
+              "zh": "這本書第一次讓我更清楚地理解現代中東是如何被塑造出來的。"
+            },
+            {
+              "en": "British promises, the Sykes–Picot Agreement, and the Balfour Declaration formed overlapping commitments. Their consequences helped shape the region’s later history.",
+              "zh": "麥克馬洪的許諾、《賽克斯—皮科協定》和《貝爾福宣言》等承諾與交易層層交疊，逐步塑造了後來的中東格局。"
+            },
+            {
+              "en": "What moved me most was how ordinary people in Western powers saw themselves and the world. Many believed they could change it.",
+              "zh": "最打動我的是，書中那些英國等西方列強的普通人如何看待自己和世界：他們充滿自信，相信自己能改變世界。"
+            },
+            {
+              "en": "That sense of mission came at a personal cost. Families could spend decades apart as people traveled to distant imperial outposts.",
+              "zh": "但這種改天換地的使命感也有代價：人們遠赴帝國的前哨，許多家庭長年離散，有的甚至大半生無法團聚。"
+            },
+            {
+              "en": "I was struck by how idealism could gradually give way to disillusionment. The contrast between historical attitudes toward Western powers and those I see today also stayed with me.",
+              "zh": "理想主義在具體執行中一步步幻滅，也讓我印象深刻。當時部分中東人對西方的期待，與我今天看到的態度形成反差，這種歷史的回聲值得反覆琢磨。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "现代中东大体上是英国人创建的",
+          "translation": "The modern Middle East was largely created by the British.",
+          "source": {
+            "en": "Lawrence in Arabia · Introduction",
+            "zh": "《阿拉伯的勞倫斯》 · 引言"
+          }
+        },
+        {
+          "original": "在战争中，真相是人们被引导着去相信的东西",
+          "translation": "In war, truth is what people are led to believe.",
+          "source": {
+            "en": "Lawrence in Arabia · War and the shaping of truth",
+            "zh": "《阿拉伯的勞倫斯》 · 戰爭與真相"
+          }
+        },
+        {
+          "original": "承认自己错了是不可能的，现状又是维持不下去的",
+          "translation": "Admitting error seemed impossible, yet the situation could not continue.",
+          "source": {
+            "en": "Lawrence in Arabia · War and escalation",
+            "zh": "《阿拉伯的勞倫斯》 · 戰爭與加碼"
+          }
+        },
+        {
+          "original": "只有在阿拉伯人自己解放的地区，他们的独立才会得到保证",
+          "translation": "Arab independence would be assured only in areas Arabs liberated themselves.",
+          "source": {
+            "en": "Lawrence in Arabia · The struggle for independence",
+            "zh": "《阿拉伯的勞倫斯》 · 爭取獨立"
+          }
+        },
+        {
+          "original": "历史不是在和谈桌上决定的，而是由议和过程之前的交战期间的行动所决定",
+          "translation": "History is decided by actions during the fighting before peace negotiations, not at the negotiating table.",
+          "source": {
+            "en": "Lawrence in Arabia · War and peace negotiations",
+            "zh": "《阿拉伯的勞倫斯》 · 戰爭與和談"
+          }
+        }
+      ]
+    },
+    {
+      "id": "book-israel",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "Israel: A Concise History of a Nation Reborn",
+        "zh": "《以色列：一個民族的重生》"
+      },
+      "lede": {
+        "en": "Daniel Gordis · My rating: 8.5 / 10",
+        "zh": "丹尼爾・戈迪斯 · 我的評分：8.5 / 10"
+      },
+      "author": {
+        "en": "Daniel Gordis",
+        "zh": "丹尼爾・戈迪斯"
+      },
+      "rating": "8.5",
+      "cover": "israel-cover.jpg",
+      "book_intro": {
+        "en": "Daniel Gordis traces the modern history of the Jewish people and the State of Israel. He follows the ideas, conflicts, and choices that shaped the nation.",
+        "zh": "丹尼爾・戈迪斯梳理近現代猶太人與以色列的歷史。從思想的興起到建國後的衝突與抉擇，書中呈現了一個國家的形成與發展。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "Daniel Gordis traces the modern history of the Jewish people and the State of Israel. He follows the ideas, conflicts, and choices that shaped the nation.",
+              "zh": "丹尼爾・戈迪斯梳理近現代猶太人與以色列的歷史。從思想的興起到建國後的衝突與抉擇，書中呈現了一個國家的形成與發展。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "This is a clear, accessible history with a remarkable amount of information. It reads like a history textbook without feeling difficult.",
+              "zh": "這本書像一本通俗易懂的歷史課本：信息量很大，歷史脈絡卻非常清晰，讀起來並不費力。"
+            },
+            {
+              "en": "As a Chinese reader, I had few opportunities to understand Israel in depth. This book let me see its modern history from a Jewish perspective.",
+              "zh": "作為中國人，我此前很少有機會深入了解以色列。這本書讓我第一次得以從猶太人的視角，較完整地審視它從建國到今天的歷程。"
+            },
+            {
+              "en": "I admire what people achieved with limited resources under difficult conditions. Their experience reminds me of another people who have endured and worked through hardship.",
+              "zh": "我佩服這個民族在有限資源和重重困境下取得的成就。這也讓我想到中國人同樣在苦難中奮鬥的經歷。"
+            },
+            {
+              "en": "I do not want to reduce history to a simple judgment of right and wrong. The same events look different from different perspectives.",
+              "zh": "我不想把歷史簡單歸結為對錯。同一段歷史從不同視角看，呈現的樣貌必然不同；我也希望有一天讀到阿拉伯視角的相關歷史。"
+            },
+            {
+              "en": "The book also challenged my assumptions about relationships with Western countries. It made me appreciate the difficult choices faced by a small country.",
+              "zh": "書中也糾正了我不少認知盲區，包括以色列與西方國家的關係並非始終順遂。它讓我更深刻地感受到小國在複雜處境中的生存壓力。"
+            },
+            {
+              "en": "My most important takeaway is that environments shape nations and people. Growth through adversity can also be a trait of resilient organizations and individuals.",
+              "zh": "最重要的體會是：環境造就民族，也造就人。在逆境中成長，往往也是有韌性的組織與個人的共同點。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "犹太复国主义是对古老犹太教的反叛",
+          "translation": "Zionism was a rebellion against ancient Judaism.",
+          "source": {
+            "en": "Israel: A Concise History of a Nation Reborn · Foreword · A new identity",
+            "zh": "《以色列：一個民族的重生》 · 序言 · 新的身份"
+          }
+        },
+        {
+          "original": "六日战争不但让以色列人内部出现分裂，还让战败的巴勒斯坦阿拉伯人变得空前团结",
+          "translation": "The Six-Day War divided Israelis while uniting defeated Palestinian Arabs.",
+          "source": {
+            "en": "Israel: A Concise History of a Nation Reborn · Chapter 13 · The aftermath of war",
+            "zh": "《以色列：一個民族的重生》 · 第十三章 · 戰爭的後果"
+          }
+        },
+        {
+          "original": "我们仍将像没有恐怖袭击一样继续和平进程",
+          "translation": "We will continue the peace process as if there were no terrorist attacks.",
+          "source": {
+            "en": "Israel: A Concise History of a Nation Reborn · Chapter 17 · Rabin and the peace process",
+            "zh": "《以色列：一個民族的重生》 · 第十七章 · 拉賓與和平進程"
+          }
+        },
+        {
+          "original": "如果以色列不是民主国家，就会失去存在的合法性",
+          "translation": "Without democracy, Israel would lose the legitimacy of its existence.",
+          "source": {
+            "en": "Israel: A Concise History of a Nation Reborn · Chapter 18 · Democracy and identity",
+            "zh": "《以色列：一個民族的重生》 · 第十八章 · 民主與身份"
+          }
+        },
+        {
+          "original": "历史不会帮助我们，历史只帮助那些尝试帮助自己的人",
+          "translation": "History helps those who try to help themselves.",
+          "source": {
+            "en": "Israel: A Concise History of a Nation Reborn · Chapter 17 · The need for self-reliance",
+            "zh": "《以色列：一個民族的重生》 · 第十七章 · 自助"
+          }
+        }
+      ]
+    },
+    {
+      "id": "book-satoshi",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "The Book of Satoshi",
+        "zh": "《中本聰文集》"
+      },
+      "lede": {
+        "en": "Phil Champagne, editor · My rating: 8.5 / 10",
+        "zh": "菲爾・尚帕涅 編 · 我的評分：8.5 / 10"
+      },
+      "author": {
+        "en": "Phil Champagne, editor",
+        "zh": "菲爾・尚帕涅 編"
+      },
+      "rating": "8.5",
+      "cover": "satoshi-cover.jpg",
+      "book_intro": {
+        "en": "Phil Champagne collects Satoshi Nakamoto’s writings and early discussions about Bitcoin. The book follows its ideas and development through the creator’s own words.",
+        "zh": "菲爾・尚帕涅編集了中本聰的文字與早期討論。讀者可以從創造者的文字中，看到比特幣的理念與發展過程。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "Phil Champagne collects Satoshi Nakamoto’s writings and early discussions about Bitcoin. The book follows its ideas and development through the creator’s own words.",
+              "zh": "菲爾・尚帕涅編集了中本聰的文字與早期討論。讀者可以從創造者的文字中，看到比特幣的理念與發展過程。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "For anyone interested in crypto, I believe the Bitcoin white paper is essential reading. I see this collection as a companion to it.",
+              "zh": "我認為，對加密領域的從業者和愛好者來說，比特幣白皮書是必讀的。這本文集則可以看作白皮書的延伸閱讀。"
+            },
+            {
+              "en": "It gathers Satoshi Nakamoto’s posts and discussions, showing how Bitcoin’s ideas were put into practice.",
+              "zh": "它把中本聰散落在網絡各處的文字編集起來，記錄了比特幣的理念如何一步步付諸實踐。"
+            },
+            {
+              "en": "My biggest takeaway is that Bitcoin did not appear fully formed. It began with an extraordinary design and grew through many people’s contributions.",
+              "zh": "我最大的收穫是看清比特幣並非一蹴而就：它來自一個天才頭腦和出色的初始設計，也來自許多人持續的完善與進步。"
+            },
+            {
+              "en": "The early discussions, disagreements, and fixes are part of its history. They show how a community helped an idea develop.",
+              "zh": "早期論壇中的討論、爭論和修補，本身就是比特幣誕生史的一部分。"
+            },
+            {
+              "en": "I have seen many criticisms about mining, resource use, and Bitcoin’s value. The collection preserves early answers and reasoning behind those questions.",
+              "zh": "我見過很多人質疑挖礦的意義、資源消耗和比特幣的價值。書中保留了對這些問題的早期思考與回答，值得回到原始討論中閱讀。"
+            },
+            {
+              "en": "If you have read the white paper and want to understand Bitcoin’s origins, this book is worth reading. Some technical background helps.",
+              "zh": "如果讀過白皮書後還想了解比特幣的起源，這本書值得一讀；有一點技術背景會更容易理解。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "比特币是一种使用密码技术以及分布式网络替代中央可信服务器的数字货币",
+          "translation": "Bitcoin uses cryptography and a distributed network instead of a trusted central server.",
+          "source": {
+            "en": "The Book of Satoshi · Bitcoin 0.3 announcement",
+            "zh": "《中本聰文集》 · 比特幣 0.3 版本發布"
+          }
+        },
+        {
+          "original": "货币不一定（需要）具有任何固有价值",
+          "translation": "Money need not have any inherent value.",
+          "source": {
+            "en": "The Book of Satoshi · Chapter 55 · Money and value",
+            "zh": "《中本聰文集》 · 第五十五章 · 貨幣與價值"
+          }
+        },
+        {
+          "original": "最长的链是由谁告诉您的并不重要，工作量证明本身就是事实",
+          "translation": "Who tells you about the longest chain does not matter; proof of work speaks for itself.",
+          "source": {
+            "en": "The Book of Satoshi · Chapter 55 · Proof of work",
+            "zh": "《中本聰文集》 · 第五十五章 · 工作量證明"
+          }
+        },
+        {
+          "original": "应该把焦点引导到比特币是开源项目的方向",
+          "translation": "The focus should be on Bitcoin as an open-source project.",
+          "source": {
+            "en": "The Book of Satoshi · Final correspondence",
+            "zh": "《中本聰文集》 · 最後的私人信件"
+          }
+        },
+        {
+          "original": "网络唯一的工作就是判断输出项的支付是否为第一次",
+          "translation": "The network’s job is to determine whether an output is being spent for the first time.",
+          "source": {
+            "en": "The Book of Satoshi · Chapter 56 · The network",
+            "zh": "《中本聰文集》 · 第五十六章 · 網絡"
+          }
+        }
+      ]
+    },
+    {
+      "id": "book-promised",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "My Promised Land",
+        "zh": "《我的應許之地》"
+      },
+      "lede": {
+        "en": "Ari Shavit · My rating: 8.5 / 10",
+        "zh": "阿里・沙維特 · 我的評分：8.5 / 10"
+      },
+      "author": {
+        "en": "Ari Shavit",
+        "zh": "阿里・沙維特"
+      },
+      "rating": "8.5",
+      "cover": "promised-cover.jpg",
+      "book_intro": {
+        "en": "Journalist Ari Shavit tells Israel’s story through family history, interviews, and individual lives. His account explores both the country’s achievements and its tragedies.",
+        "zh": "記者阿里・沙維特通過家族故事、訪談與個人經歷講述以色列的歷史。這本書既寫國家的成就，也直面其中的悲劇與矛盾。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "Journalist Ari Shavit tells Israel’s story through family history, interviews, and individual lives. His account explores both the country’s achievements and its tragedies.",
+              "zh": "記者阿里・沙維特通過家族故事、訪談與個人經歷講述以色列的歷史。這本書既寫國家的成就，也直面其中的悲劇與矛盾。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "Compared with the more detached Israel, this book is emotional and openly takes a position. I found it hard to put down.",
+              "zh": "與冷靜的《以色列：一個民族的重生》相比，這本書更有感情、更有立場，甚至有點煽動；但它也更好看，讓我讀得停不下來。"
+            },
+            {
+              "en": "The author comes from a Zionist family, so his perspective is part of the story. His journalism also makes room for difficult questions.",
+              "zh": "作者出身於復國主義精英家庭，有自己的立場很正常；這恰恰也是理解這段歷史需要的一個視角。難得的是，他的記者身份讓他沒有一味只講一方的對錯。"
+            },
+            {
+              "en": "My strongest impression is that both sides have their own suffering and reasons. Understanding their experiences requires changing perspectives.",
+              "zh": "讀完最大的感受是：換位去看，雙方都有自己的苦難和道理。至於誰對誰錯，或許永遠不會有一個簡單答案。"
+            },
+            {
+              "en": "I also admire the country’s resilience. To me, strength is not something a people are born with; hardship can shape it.",
+              "zh": "拋開對錯，我依然佩服這個國家在困境中的韌性。我認為沒有天生強大的民族，很多強大是在苦難中被塑造出來的。"
+            },
+            {
+              "en": "Another thought stayed with me: struggle can make you resemble your enemy. Survival may lead people to do things they once could not imagine.",
+              "zh": "另一個印象最深的體會是：鬥爭可能讓你越來越像你的敵人。為了活下去，人可能會做出自己從前絕不會做的事；國家、組織和個人都可能面對這樣的處境。"
+            },
+            {
+              "en": "I recommend reading Israel first for the historical background. Then read this book to see how major events affected ordinary lives.",
+              "zh": "我建議先讀《以色列》補全歷史脈絡，再讀這本書，看看大時代中的事件如何落到一個個普通人身上。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "吕大就是我们的黑匣子，里面盛放着犹太复国主义的黑暗隐私",
+          "translation": "Lydda is our black box, containing Zionism’s dark secrets.",
+          "source": {
+            "en": "My Promised Land · Chapter 4 · Lydda",
+            "zh": "《我的應許之地》 · 第四章 · 呂大"
+          }
+        },
+        {
+          "original": "它打算以驱逐一个民族的方式拯救另一个民族的生命",
+          "translation": "It sought to save one people’s lives by displacing another.",
+          "source": {
+            "en": "My Promised Land · Occupation and its contradictions",
+            "zh": "《我的應許之地》 · 佔領與矛盾"
+          }
+        },
+        {
+          "original": "这些人可在几年后谴责他们在吕大做下的事情，却享受他们行动的成果",
+          "translation": "Years later, people could condemn what they did in Lydda while enjoying its fruits.",
+          "source": {
+            "en": "My Promised Land · Chapter 4 · Lydda",
+            "zh": "《我的應許之地》 · 第四章 · 呂大"
+          }
+        },
+        {
+          "original": "我们在灾难之中繁衍壮大",
+          "translation": "We grew and flourished amid catastrophe.",
+          "source": {
+            "en": "My Promised Land · Living between wars",
+            "zh": "《我的應許之地》 · 戰火之間"
+          }
+        },
+        {
+          "original": "它并不是用恐惧回应恐怖，而是用建设回应恐惧",
+          "translation": "It responds to fear with building, not to terror with fear.",
+          "source": {
+            "en": "My Promised Land · Conclusion · Responding to fear",
+            "zh": "《我的應許之地》 · 結語 · 回應恐懼"
+          }
+        }
+      ]
     }
   ],
   "ui": {
@@ -1977,6 +2675,30 @@
     "knowledge_note": {
       "en": "Product facts, partner research, feedback, and work standards give AI context for specific tasks.",
       "zh": "產品事實、合作研究、用戶反饋與工作標準等資料，供 AI 在處理具體工作時查用。"
+    },
+    "reading": {
+      "en": "Reading",
+      "zh": "讀書筆記"
+    },
+    "selected_reading": {
+      "en": "SELECTED READING",
+      "zh": "READING / 讀書選讀"
+    },
+    "more_reading": {
+      "en": "All reading notes",
+      "zh": "全部讀書筆記"
+    },
+    "back_reading": {
+      "en": "All reading notes",
+      "zh": "返回讀書筆記"
+    },
+    "book_quotes": {
+      "en": "Lines from the book",
+      "zh": "書中原句"
+    },
+    "read_book": {
+      "en": "Read the notes",
+      "zh": "閱讀筆記"
     }
   },
   "revision": "2026-10-29-v4"

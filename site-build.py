@@ -37,10 +37,12 @@ for lang in ['en','zh']:
   return '<div class="case-grid">'+''.join(f'<a class="case-card" href="{link(id)}"><img src="{esc(P[id]["image"])}" alt="{esc(txt(P[id]["image_alt"],lang))}" loading="lazy" width="1280" height="720"><div class="card-meta">CASE {P[id]["case_number"]:02d} <span aria-hidden="true">↗</span></div><h3>{esc(txt(P[id]["title"],lang))}</h3><p>{esc(txt(P[id]["lede"],lang))}</p></a>' for i,id in enumerate(ids))+'</div>'
  def thought_rows(ids):
   return '<div class="thought-list">'+''.join(f'<a class="case-row" href="{link(id)}"><span class="number">0{i+1}</span><h3>{esc(txt(P[id]["title"],lang))}</h3><p>{esc(txt(P[id]["lede"],lang))}</p><span class="arrow" aria-hidden="true">↗</span></a>' for i,id in enumerate(ids))+'</div>'
+ def book_rows(ids):
+  return '<div class="book-list">'+''.join('<a class="book-card" href="'+link(bid)+'"><img src="'+esc(P[bid]['cover'])+'" alt="'+esc(txt(P[bid]['title'],lang))+'"><div class="book-copy"><p class="book-author">'+esc(txt(P[bid]['author'],lang))+' <span> / '+esc(P[bid]['rating'])+'</span></p><h3>'+esc(txt(P[bid]['title'],lang))+'</h3><p>'+esc(txt(P[bid]['book_intro'],lang))+'</p><span class="book-action">'+esc(U['read_book'])+' ↗</span></div></a>' for bid in ids)+'</div>'
  def label(title,dest,more):return f'<div class="section-label"><span>{esc(title)}</span><a href="{link(dest)}">{esc(more)}{(' <span lang="en">/ More</span>' if lang=='zh' else '')} ↗</a></div>'
  for id,p in P.items():
   title=txt(p['title'],lang);lede=txt(p['lede'],lang)
-  nav=''.join(f'<a href="{link(n)}"'+(' aria-current="page"' if id==n or (n=='practice' and id.startswith('case-')) or (n=='writing' and id.startswith('thought-')) else '')+f'>{esc(U[n])}</a>' for n in ['practice','writing','updates','about'])
+  nav=''.join(f'<a href="{link(n)}"'+(' aria-current="page"' if id==n or (n=='practice' and id.startswith('case-')) or (n=='writing' and id.startswith('thought-')) or (n=='reading' and id.startswith('book-')) else '')+f'>{esc(U[n])}</a>' for n in ['practice','writing','reading','updates','about'])
   sections=''.join(f'<section id="section-{i}"><h2>{esc(txt(s["title"],lang))}</h2>'+''.join(f'<p>{esc(txt(v,lang))}</p>' for v in s['paragraphs'])+'</section>' for i,s in enumerate(p['sections']))
   toc=''.join(f'<a href="#section-{i}">{esc(txt(s["title"],lang))}</a>' for i,s in enumerate(p['sections']))
   if id=='about':
@@ -50,6 +52,7 @@ for lang in ['en','zh']:
    new='<section id="section-2"><h2>'+esc(txt(about_section['title'],lang))+'</h2><div class="about-profile"><blockquote lang="en">'+esc(profile['statement']['en'])+'</blockquote>'+trans+'<div class="profile-tags">'+''.join('<span>'+esc(tag)+'</span>' for tag in profile['tags'])+'</div></div></section>'
    assert old in sections
    sections=sections.replace(old,new)
+  if p.get('book_quotes'):toc+='<a href="#book-quotes">'+esc(U['book_quotes'])+'</a>'
   if p.get('source'):toc+=f'<a href="#sources">{esc(U["sources"])}</a>'
   header=(('' if opt.publish else f'<div class="preview">{esc(U["preview"])}</div>')+f'<header class="header"><div class="wrap header-inner"><a class="brand" href="{link("index")}" aria-label="Fate · {esc(U["home"])}"><img src="avatar.jpg" alt="" width="36" height="36">Fate<span style="color:var(--accent)">.</span></a><nav class="links" aria-label="{esc(U["home"])}">{nav}</nav><div class="tools"><button data-search-open class="search-open" aria-label="{esc(U["search"])}">/</button><a href="{name(id,"zh" if lang=="en" else "en")}" lang="{"zh-Hant" if lang=="en" else "en"}">{"繁中" if lang=="en" else "EN"}</a><button data-theme-button>{esc(U["theme"])}</button></div></div></header>')
   kicker=esc(txt(p['kicker'],lang))
@@ -59,15 +62,18 @@ for lang in ['en','zh']:
    body+='<section class="journey"><div class="section-label"><span>THE JOURNEY / '+('AI TRANSFORMATION' if lang=='en' else 'AI 轉型歷程')+'</span></div><h2>'+esc(txt(p['journey_title'],lang))+'</h2><ol>'+''.join('<li><span class="stage">'+x['stage']+'</span><h3>'+esc(txt(x['title'],lang))+'</h3><p>'+esc(txt(x['text'],lang))+'</p></li>' for x in p['journey'])+'</ol></section>'
    body+=label(U['selected'],'practice',U['more_practice'])+case_rows(p['case_ids'])
    body+=label(U['selected_thoughts'],'writing',U['more_thoughts'])+thought_rows(p['thought_ids'])
+   body+=label(U['selected_reading'],'reading',U['more_reading'])+book_rows(['book-principles'])
    recent=P['updates']['timeline'][-3:][::-1]
    body+='<section class="feature-note"><div><p class="kicker">'+esc(U['updates'])+'</p><h2>'+esc(txt(p['updates_heading'],lang))+'</h2></div><div><p>'+esc(txt(p['updates_description'],lang))+'</p><a class="text-link" href="'+link('updates')+'">'+esc(U['all'])+' ↗</a><ul class="recent-notes">'+''.join('<li><time datetime="'+x['date']+'">'+x['date']+'</time> <span>'+esc(txt(x['title'],lang))+'</span></li>' for x in recent)+'</ul></div></section>'
   else:
    back=f'<a class="backlink" href="{link("practice")}">← {esc(U["back"])}</a>' if id.startswith('case-') else (f'<a class="backlink" href="{link("writing")}">← {esc(U["back_thoughts"])}</a>' if id.startswith('thought-') else '')
+   if id.startswith('book-'):back=f'<a class="backlink" href="{link("reading")}">← {esc(U["back_reading"])}</a>'
    body=f'<main id="main" class="wrap">{back}<section class="page-hero"><p class="kicker">{kicker}</p><h1>{title_html}</h1><p class="lede">{esc(lede)}</p></section>'
    if id in ('case-continuity','case-support'):
     first=p['sections'][0]
     body+='<section class="case-intro" id="section-0"><h2>'+esc(txt(first['title'],lang))+'</h2>'+''.join('<p>'+esc(txt(v,lang))+'</p>' for v in first['paragraphs'])+'</section>'
     sections=''.join(f'<section id="section-{i}"><h2>{esc(txt(item["title"],lang))}</h2>'+''.join(f'<p>{esc(txt(v,lang))}</p>' for v in item['paragraphs'])+'</section>' for i,item in enumerate(p['sections']) if i>0)
+   if p.get('cover'):body+='<div class="book-detail-cover"><img src="'+esc(p['cover'])+'" alt="'+esc(title)+'"></div>'
    if p.get('image'):body+=f'<figure class="artifact"><a href="{esc(p["image"])}" aria-label="{esc(txt(p["image_alt"],lang))}"><img src="{esc(p["image"])}" alt="{esc(txt(p["image_alt"],lang))}" width="1280" height="720"></a></figure>'
    if p.get('quote'):
     quote_tag='blockquote' if p['quote_type']=='excerpt' else 'div class="viewpoint-text"'
@@ -75,12 +81,20 @@ for lang in ['en','zh']:
     body+='<figure class="pullquote"><p class="quote-kind">'+esc(txt(p.get('quote_kind',{'en':'','zh':''}),lang))+'</p><'+quote_tag+'>'+esc(txt(p['quote'],lang))+'</'+quote_close+'><figcaption id="sources">'+esc(txt(p['source'],lang))+'</figcaption></figure>'
    if sections:
     body+=f'<div class="article-layout"><nav class="toc" aria-label="{"On this page" if lang=="en" else "本頁目錄"}">{toc}</nav><article class="prose">{sections}'
+    if p.get('book_quotes'):
+     body+='<section id="book-quotes"><h2>'+esc(U['book_quotes'])+'</h2><div class="book-quotes">'
+     for q in p['book_quotes']:
+      quotation=q['translation'] if lang=='en' else q['original']
+      body+='<figure><blockquote lang="'+('en' if lang=='en' else 'zh-Hans')+'">'+('“' if lang=='en' else '「')+esc(quotation)+('”' if lang=='en' else '」')+'</blockquote>'
+      body+='<figcaption>'+esc(txt(q['source'],lang))+'</figcaption></figure>'
+     body+='</div></section>'
     if p.get('social'):body+='<div class="social-links"><a href="mailto:'+esc(EMAIL)+'">'+esc(EMAIL)+'</a>'+''.join('<a href="'+esc(s['url'])+'" rel="noopener noreferrer">'+esc(s['label'])+' ↗</a>' for s in p['social'])+'</div>'
     if p.get('related'):
      r=p['related'];body+=f'<div class="related"><p class="kicker">{esc(U["practice"] if r.startswith("case-") else U["writing"])}</p><a href="{link(r)}">{esc(txt(P[r]["title"],lang))} ↗</a></div>'
     body+='</article></div>'
    if p.get('case_ids'):body+=case_rows(p['case_ids'])
    if p.get('thought_ids'):body+=thought_rows(p['thought_ids'])
+   if p.get('book_ids'):body+=book_rows(p['book_ids'])
    if p.get('knowledge'):body+='<section class="knowledge" id="knowledge"><div class="section-label"><span>KNOWLEDGE / '+esc(U['knowledge_title'])+'</span></div><h2>'+esc(U['knowledge_title'])+'</h2><p>'+esc(U['knowledge_note'])+'</p><ul>'+''.join('<li><span>'+f'{i+1:02}'+'</span>'+esc(txt(x,lang))+'</li>' for i,x in enumerate(p['knowledge']))+'</ul></section>'
    if p.get('timeline'):
     months=sorted(set(x['date'][:7] for x in p['timeline']));body+='<div class="timeline-layout"><nav class="toc" aria-label="'+('Months' if lang=='en' else '月份')+'">'+''.join('<a href="#month-'+m+'">'+m+'</a>' for m in months)+'</nav><div class="timeline">'
@@ -100,7 +114,7 @@ for lang in ['en','zh']:
   beacon=('<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token": "681672e48627417ba21e8e42f246ca91"}\'></script>' if opt.publish else '')
   page=f'<!doctype html><html lang="{"en" if lang=="en" else "zh-Hant"}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">{robots}{metadata}<meta name="description" content="{esc(lede)}"><title>Fate — {esc(title)}</title><link rel="icon" href="favicon.png"><link rel="stylesheet" href="styles.css"><link rel="alternate" type="application/rss+xml" title="Field notes" href="feed.xml"></head><body data-page="{id}"><a class="skip" href="#main">{esc(U["skip"])}</a>{header}{body}{footer}{dialog}<script id="ui-data" type="application/json">{dump(U)}</script><script id="search-data" type="application/json">{dump(search)}</script><script src="site.js" defer></script>{beacon}</body></html>'
   (OUT/name(id,lang)).write_text(page)
-for a in ['site.js','avatar.jpg','favicon.png']+[p['image'] for p in P.values() if p.get('image')]:
+for a in ['site.js','avatar.jpg','favicon.png']+[p['image'] for p in P.values() if p.get('image')]+[p['cover'] for p in P.values() if p.get('cover')]:
  if (ROOT/a).resolve()!=(OUT/a).resolve():shutil.copy2(ROOT/a,OUT/a)
 shutil.copy2(ROOT/'site-source.css',OUT/'styles.css')
 feed='<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel><title>Fate — Field notes</title><link>https://0xfate.me/</link><description>A personal field journal.</description>'

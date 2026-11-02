@@ -1,37 +1,57 @@
 # Fate — personal website
 
-Fate 的个人网站：[0xfate.me](https://0xfate.me/) · [繁體中文](https://0xfate.me/zh-index.html) · [English](https://0xfate.me/index.html)
+Fate 的个人网站：[0xfate.me](https://0xfate.me/) · [繁體中文](https://0xfate.me/zh-index.html) · [English](https://0xfate.me/index.html)。网站使用 Python 生成中英文静态页面，通过 GitHub Pages 发布。
 
-网站源码保存在本仓库，使用 Python 生成中英文静态页面，并通过 GitHub Pages 发布。
+## 网站目标与栏目
+
+网站记录 Fate 推动 AI 转型的实践、判断和成果，帮助访客了解其经验并促进交流、咨询与合作；长期逐步加入职业、阅读及其他个人内容。首页先介绍 AI 转型历程，再精选各栏目的内容并链接到完整列表；新增主题时按内容增长调整结构，不强行堆成一个长页面。
+
+- **AI 实践**：写具体做了什么、如何运作和取得什么成果，说明业务目标、AI 的作用与使用方式。案例使用经安全检查的成果图片，图片文字使用英文。
+- **思考**：写 Fate 的判断、总结和观点。引用其原话时核对实际会议、记录或其他原始材料；逐字引用与整理后的观点须区分，不把演示文稿当成原话来源。
+- **读书笔记**：只展示 Fate 已给出评分的书。每本书包含书名、作者、真实书籍封面、两至三句简介、Fate 的评分，以及充分保留个人观点和推理的读后感；精选五条最能体现全书核心观点或价值观的书中原句，并标注书名和可核实的章节或主题。书籍简介、作者观点、Fate 本人的评价分别呈现；引文须核对原始阅读笔记及可用书籍资料，不把划线当成 Fate 认同。中英文页面分别使用相应语言。英文译文与核实过的英文原文需在维护资料中区分；页面不额外增加翻译说明。书籍图片注意使用权限和来源；不要猜测评分、作者、页码或出处。
+- **进展札记**：以时间轴记录可核实的重大事件，按月组织，通常每月约 5—10 项；没有依据不编造时间或凑数量。
+- **关于与联络**：介绍 Fate 的职业经历、个人特质和联系方式；内容可以适当体现个人风格，不编造经历或荣誉。
+
+写作具体、易懂、有内容，业务内容避免空泛口号；个人介绍可以适当包装。首页实践选读和思考选读各展示三项并提供更多入口；读书栏目在首页保留选读入口。资料来源、内部过程及个人原始笔记不等于授权公开的内容，不能自动上传。
+
+## 工作流程与公开安全
+
+Fate 主动发起迭代后，先了解当前版本与可访问的资料，再自行判断需要更新的内容和形式；保留必要事实和上下文。默认先制作本地预览，供 Fate 审阅；只有其明确要求更新真实网站或发布时才发布。当前不启用自动扫描和自动发布。
+
+公开前审查网页内容、双语、搜索数据、图片、文件元数据、源码和提交内容。不得公开内部系统入口、凭据、私人数据、具体安全机制或可用于推断内部工作环节及开展针对性攻击的信息；也要考虑与已有公开资料组合后的风险。无法安全表达的内容不发布。不要把内部知识库、原始读书笔记、私密会议记录或凭据提交到公开仓库。仓库公开，修改或删除文件不能抹除既有提交历史。
+
+其他 AI 可通过本仓库获取代码和这些维护要求；如需个人原始资料，应由 Fate 在相应工具中提供或授权，不要假定不同工具共享登录态或知识库权限。
 
 ## 源码与文件
 
 | 文件 | 用途 |
 | --- | --- |
-| `site-data.json` | 中英文页面内容、案例、思考和时间轴 |
-| `site-build.py` | 生成页面及相关资源 |
-| `build.py` | 正式版本构建入口 |
+| `site-data.json` | 中英文页面、案例、思考、读书笔记和时间轴内容 |
+| `site-build.py` | 多页面生成器；使用 `--publish` 构建正式页面 |
+| `build.py` | 正式构建入口 |
 | `site-source.css`、`site.js` | 样式与交互 |
 | `site-contact.json` | 现有公开联系邮箱的编码 |
-| `v4-*.jpg`、`avatar.jpg`、`og.png` | 案例图片、头像和分享图片 |
+| `*-cover.jpg`、`v4-*.jpg`、`avatar.jpg`、`og.png` | 书籍封面、案例图片、头像与分享图片 |
 | `.github/workflows/build.yml` | 自动构建流程 |
 | `content/banned_words.txt` | 构建时使用的现有内容检查清单 |
 
-根目录的 HTML、`styles.css`、`feed.xml`、`sitemap.xml` 和 `robots.txt` 是生成文件。旧版单页使用的 `content/site.json`、`content/site.zh.json` 和 `src/index.template.html` 保留作历史文件，不是当前多页面网站的内容源。
+HTML、`styles.css`、`feed.xml`、`sitemap.xml` 和 `robots.txt` 是生成文件。旧版单页使用的 `content/site.json`、`content/site.zh.json` 和 `src/index.template.html` 保留作历史文件，不是当前内容源。
+
+读书页面位于 `site-data.json` 的 `pages` 列表：`reading` 的 `book_ids` 控制书目列表，`book-*` 记录书籍内容、作者、评分、封面、简介、段落和五条引文。各引文保存已核对的中文摘录、英文呈现及中英文出处；更新两种语言并复查含义。封面文件放在仓库根目录；首页读书选读由 `site-build.py` 控制。
 
 ## 本地预览
 
-需要 Python 3.12 或更新版本，不需要安装额外 Python 包。在仓库目录运行：
+需要 Python 3.12 或更新版本，无需额外 Python 包。在仓库目录运行：
 
 ```bash
 python3 -B site-build.py --output /tmp/fate-site-preview
 python3 -B -m http.server 8767 --bind 127.0.0.1 --directory /tmp/fate-site-preview
 ```
 
-浏览器打开 `http://127.0.0.1:8767/zh-index.html` 或 `http://127.0.0.1:8767/index.html`。预览版本带有预览标记，并禁止搜索引擎收录。
+打开 `http://127.0.0.1:8767/zh-index.html` 或 `http://127.0.0.1:8767/index.html`。预览带有本地标记并禁止搜索引擎收录。检查中英文、桌面和移动端、导航、语言切换、搜索、图片和链接；英文每句不超过 20 词。
 
 ## 构建与部署
 
-在仓库目录执行 `python3 -B build.py`，会在仓库根目录生成正式版页面及资源。`main` 分支的相关源码变更会触发 [GitHub Actions](https://github.com/0xfate-eth/fate-site/actions) 构建；GitHub Pages 从该分支发布网站。提交后需分别查看该次构建、Pages 部署及线上页面。
+执行 `python3 -B build.py` 会在仓库根目录生成正式页面。`main` 分支的相关源码变更触发 [GitHub Actions](https://github.com/0xfate-eth/fate-site/actions)；GitHub Pages 从该分支发布。仅更换封面时，也须更新 `site-data.json` 或手动触发构建。发布后分别检查提交、当次 Actions 构建、Pages 部署及中英文线上页面。
 
-读取公开仓库不需要登录。修改仓库需要当前工具具备该仓库的写入权限；浏览器登录状态与其他 AI 工具或命令行的授权不一定共享。
+读取公开仓库不需要登录。修改需要工具实际具备本仓库写入权限；浏览器登录状态不自动共享给其他 AI 工具或命令行。
