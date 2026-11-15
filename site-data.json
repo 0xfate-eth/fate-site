@@ -1,6 +1,6 @@
 {
-  "edition": "2026-10",
-  "preview_date": "2026-10-29",
+  "edition": "2026-11",
+  "preview_date": "2026-11-15",
   "name": "Fate",
   "pages": [
     {
@@ -1703,6 +1703,17 @@
             "en": "Organized practice cases and meeting-based reflections into separate pages, with a timeline linking the main milestones.",
             "zh": "把實踐案例和來自會議記錄的思考整理為獨立頁面，並用時間軸串起重要事件。"
           }
+        },
+        {
+          "date": "2026-11-15",
+          "title": {
+            "en": "Added reading notes on two payments books",
+            "zh": "新增兩本支付書的讀書筆記"
+          },
+          "text": {
+            "en": "Published notes for The Pay Off and Paying with Plastic, two books on how payments really work.",
+            "zh": "上架《支付的故事》與《銀行卡時代》的讀書筆記，兩本講支付如何運轉的書。"
+          }
         }
       ]
     },
@@ -1832,6 +1843,8 @@
       },
       "sections": [],
       "book_ids": [
+        "book-payoff",
+        "book-plastic",
         "book-principles",
         "book-guns",
         "book-lawrence",
@@ -2513,6 +2526,224 @@
           }
         }
       ]
+    },
+    {
+      "id": "book-payoff",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "The Pay Off: How Changing the Way We Pay Changes Everything",
+        "zh": "《支付的故事》"
+      },
+      "lede": {
+        "en": "Gottfried Leibbrandt & Natasha de Terán · My rating: 9 / 10",
+        "zh": "戈特弗里德・萊伯蘭特 / 娜塔莎・德・特蘭 · 我的評分：9 / 10"
+      },
+      "author": {
+        "en": "Gottfried Leibbrandt, Natasha de Terán",
+        "zh": "戈特弗里德・萊伯蘭特、娜塔莎・德・特蘭"
+      },
+      "rating": "9",
+      "cover": "payoff-cover.jpg",
+      "book_intro": {
+        "en": "A panoramic biography of payments: money's purpose, card economics, invisible plumbing, and sanctions.",
+        "zh": "支付體系的全景傳記：從貨幣的本質，到卡的經濟引擎、隱形管道與制裁武器化。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "Two payment insiders explain how payments really work: where money came from, and how cards and SWIFT move it. They also show who pays for every step.",
+              "zh": "兩位支付業內資深人士講解支付究竟如何運轉：貨幣從何而來，卡、清算所與 SWIFT 如何搬動資金，每一步由誰買單。"
+            },
+            {
+              "en": "The story runs from London clearing houses to India's UPI, from the four-party card model to sanctions and digital currencies.",
+              "zh": "主線從倫敦清算所講到印度 UPI 即時支付，從信用卡四角模式講到制裁武器化與央行數字貨幣。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "I came to it as a complete outsider who works on payment-related products. It exceeded expectations: clear, fun, and dense with facts. I highlighted nearly every page.",
+              "zh": "我是帶著工作裡的疑問入門的門外漢。這本書遠超預期：看得懂，還津津有味，概念與數據密度極高，我幾乎每一頁都做了標註。"
+            },
+            {
+              "en": "Payments concern everyone, yet almost nobody understands them. We rarely know what each transaction costs, or how much banks earn from it.",
+              "zh": "支付人人相關，卻幾乎沒人真正了解。你不知道自己每天都在為每一筆付費，也不知道銀行從支付裡賺走了多少。"
+            },
+            {
+              "en": "As a product person, the key lesson stuck: people do not want to pay. A great payment is invisible—the best payment is no payment at all.",
+              "zh": "對做產品的我，最大的啟示是：人們不想支付，只想要支付更方便。好用的支付就是沒有支付。"
+            },
+            {
+              "en": "If I had read it earlier, it would have given me a framework for this world much sooner. For a first book on payments, this is the one.",
+              "zh": "如果更早讀到，它會幫我更早搭起理解這個世界的框架。要挑一本支付入門書，選它不會錯。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "货币的终极目的是使用，即用来支付",
+          "translation": "The ultimate purpose of money is to use it — to pay.",
+          "source": {
+            "en": "The Pay Off · Part I · The purpose of money",
+            "zh": "《支付的故事》· 第一編 · 貨幣的終極目的"
+          }
+        },
+        {
+          "original": "支付系统所能企盼的最大荣誉就是被遗忘。",
+          "translation": "The greatest honour a payment system can aspire to is to be forgotten.",
+          "source": {
+            "en": "The Pay Off · The invisible plumbing",
+            "zh": "《支付的故事》· 隱形管道"
+          }
+        },
+        {
+          "original": "信用卡的费用是由持卡人支付的，但我们认为自己没有支付。",
+          "translation": "Credit card costs are paid by cardholders, yet we believe we are not paying.",
+          "source": {
+            "en": "The Pay Off · The economics of cards",
+            "zh": "《支付的故事》· 卡的經濟引擎"
+          }
+        },
+        {
+          "original": "人们不想进行支付，他们想让支付变得更加方便",
+          "translation": "People do not want to make payments. They want paying to be more convenient.",
+          "source": {
+            "en": "The Pay Off · Seamless payments",
+            "zh": "《支付的故事》· 無縫支付"
+          }
+        },
+        {
+          "original": "支付和货币的核心是信任，或者说，对彼此的信誉缺乏信任——我们不信任彼此，但我们信任这个系统。",
+          "translation": "The core of payments and money is trust — or rather, a lack of trust in each other. We do not trust each other, but we trust the system.",
+          "source": {
+            "en": "The Pay Off · The core of payments is trust",
+            "zh": "《支付的故事》· 支付的核心是信任"
+          }
+        }
+      ]
+    },
+    {
+      "id": "book-plastic",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "Paying with Plastic: The Digital Revolution in Buying and Borrowing (Second Edition)",
+        "zh": "《銀行卡時代》"
+      },
+      "lede": {
+        "en": "David S. Evans & Richard Schmalensee · My rating: 8 / 10",
+        "zh": "戴維・S. 埃文斯 / 理查德・斯默蘭 · 我的評分：8 / 10"
+      },
+      "author": {
+        "en": "David S. Evans, Richard Schmalensee",
+        "zh": "戴維・S. 埃文斯、理查德・斯默蘭"
+      },
+      "rating": "8",
+      "cover": "plastic-cover.jpg",
+      "book_intro": {
+        "en": "An economics classic on the card industry: two-sided markets, co-opetition, interchange fees, and antitrust battles.",
+        "zh": "支付卡產業的專業之作：以雙邊市場與競合組織兩大理論框架，剖析支付卡的誕生、演變與競爭格局。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "First published in 1999, this is a deep, focused study of the payment card industry. It runs from the 1950 Diners card to Visa, Mastercard, Amex, and Discover.",
+              "zh": "1999 年初版的專業著作，聚焦卡支付領域：從 1950 年大萊卡，講到維薩、萬事達、運通與發現卡的競爭格局。"
+            },
+            {
+              "en": "Its two analytic pillars are two-sided markets and co-opetition. Card networks balance issuers and merchants, share a platform, and still compete.",
+              "zh": "全書以雙邊市場與競合組織兩大框架展開：卡組織如何平衡發卡與收單兩側、共享平台又彼此競爭。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "It pairs well with The Pay Off: that book is broad, this one goes deep on cards. In the West, cards are the backbone of payments.",
+              "zh": "它與《支付的故事》正好互補：那本廣而泛，這本專業且垂直。在西方世界，卡支付就是支付領域最重要的組成部分。"
+            },
+            {
+              "en": "Everyday questions get answered here: debit versus credit, how much I actually pay to pay, and what Visa really is.",
+              "zh": "普通人的問題讀完都會明白：借記卡和信用卡的區別、我為支付付出了多少費用、VISA 到底是家什麼樣的組織。"
+            },
+            {
+              "en": "It is less beginner-friendly: some parts are dense. With a little background in payments first, it takes you one level deeper.",
+              "zh": "它不夠新手友好，有些地方略晦澀；先讀過《支付的故事》再讀它，理解會更深一層。"
+            },
+            {
+              "en": "The industry direction I took away: cash fades, payments go invisible, and intermediaries shrink. Crypto may be the best tool to push that trend.",
+              "zh": "我帶走的行業判斷：現金消亡、無感支付、減少中介都是確定的演變方向，加密也許是推動這個趨勢的最佳工具。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "货币不过是记录在没有价值的纸张或金属上的有保证的数字。它最终会演变成一种以微电子和光子形式进行排列的有保证的数据（guaranteed data），并以光速在整个世界流通运转。",
+          "translation": "Money is nothing but guaranteed numbers recorded on worthless paper or metal. It will become guaranteed data, arranged in electrons and photons, moving around the world at light speed.",
+          "source": {
+            "en": "Paying with Plastic · Epigraph by Dee Hock, founder of Visa",
+            "zh": "《銀行卡時代》· 迪・霍克題辭（維薩創始人）"
+          }
+        },
+        {
+          "original": "货币对社会来说并不是免费的，因为它需要消耗资源",
+          "translation": "Money is not free for society, because it consumes resources.",
+          "source": {
+            "en": "Paying with Plastic · The cost of money",
+            "zh": "《銀行卡時代》· 貨幣的成本"
+          }
+        },
+        {
+          "original": "信用交易比原始货币出现得要早",
+          "translation": "Credit transactions appeared earlier than primitive money.",
+          "source": {
+            "en": "Paying with Plastic · Credit before money",
+            "zh": "《銀行卡時代》· 信用早於貨幣"
+          }
+        },
+        {
+          "original": "会员们几乎在其他的每一个方面展开竞争——例如利率、费用、服务以及新型产品的创新方面。这被称为竞合（co-opetition）",
+          "translation": "Members compete in almost every other respect — rates, fees, services, and innovation. This is called co-opetition.",
+          "source": {
+            "en": "Paying with Plastic · Co-opetition",
+            "zh": "《銀行卡時代》· 競合組織"
+          }
+        },
+        {
+          "original": "对大多数人来说，他们最大的资产就是自己本身以及工作和赚钱的能力。",
+          "translation": "For most people, their greatest asset is themselves — their ability to work and to earn.",
+          "source": {
+            "en": "Paying with Plastic · The joys and sorrows of lending",
+            "zh": "《銀行卡時代》· 放貸的苦與樂"
+          }
+        }
+      ]
     }
   ],
   "ui": {
@@ -2701,5 +2932,5 @@
       "zh": "閱讀筆記"
     }
   },
-  "revision": "2026-10-29-v4"
+  "revision": "2026-11-15-v5"
 }
