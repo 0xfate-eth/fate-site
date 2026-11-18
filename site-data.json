@@ -1868,6 +1868,17 @@
             "en": "Established a subject structure, entry points, and initial maintenance principles.",
             "zh": "建立主題結構、閱讀入口與最初的維護原則。"
           }
+        },
+        {
+          "date": "2026-11-18",
+          "title": {
+            "en": "Added reading notes on four more books",
+            "zh": "新增四本書的讀書筆記"
+          },
+          "text": {
+            "en": "Published notes for Why Nations Fail, The Wealth of Nations, Layered Money, and The Federal Reserve and the Financial Crisis.",
+            "zh": "上架《國家為什麼會失敗》《國富論》《貨幣金字塔》與《金融的本質》的讀書筆記。"
+          }
         }
       ]
     },
@@ -1997,6 +2008,10 @@
       },
       "sections": [],
       "book_ids": [
+        "book-wealth-nations",
+        "book-layered-money",
+        "book-fed-crisis",
+        "book-nations-fail",
         "book-payoff",
         "book-plastic",
         "book-principles",
@@ -2682,6 +2697,422 @@
       ]
     },
     {
+      "id": "book-nations-fail",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "Why Nations Fail: The Origins of Power, Prosperity and Poverty",
+        "zh": "《國家為什麼會失敗》"
+      },
+      "lede": {
+        "en": "Daron Acemoglu & James A. Robinson · My rating: 9 / 10",
+        "zh": "德隆・阿西莫格魯 / 詹姆斯・A. 羅賓遜 · 我的評分：9 / 10"
+      },
+      "author": {
+        "en": "Daron Acemoglu, James A. Robinson",
+        "zh": "德隆・阿西莫格魯、詹姆斯・A. 羅賓遜"
+      },
+      "rating": "9",
+      "cover": "nationsfail-cover.jpg",
+      "book_intro": {
+        "en": "Institutional economics at its best. Rich nations differ from poor ones not by geography or culture, but by inclusive versus extractive institutions.",
+        "zh": "制度經濟學代表作：國家間的貧富差距不在地理或文化，而在包容性制度與汲取性制度之分。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "Why are some nations rich and others poor? The authors answer with one word: institutions. Inclusive systems spread power and reward innovation. Extractive ones let a few live off the many.",
+              "zh": "為什麼有的國家富、有的國家窮？作者的答案是制度。包容性制度分散權力、獎勵創新；汲取性制度讓少數人靠多數人過活。"
+            },
+            {
+              "en": "The proof is a sweep of world history: from the two Nogales to the Black Death. Then on to the Glorious Revolution and the Industrial Revolution.",
+              "zh": "論證材料是一整部世界史：從諾加利斯同城兩岸，到黑死病、光榮革命與工業革命。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "If you want a way to predict the future, you will be disappointed: the authors insist history turns on contingency. But as an explanation of history, it is convincing.",
+              "zh": "想從中找到預測未來的公式，你會失望：作者強調歷史轉折充滿偶然。但作為對歷史的解釋，它令人信服。"
+            },
+            {
+              "en": "Reading it feels like reading the history of world civilization. You come away understanding why the world looks the way it does today.",
+              "zh": "讀它相當於讀了一整部世界文明史。讀完你會明白，當今世界為什麼是現在這個樣子。"
+            },
+            {
+              "en": "It pairs well with Guns, Germs, and Steel: one explains history by geography, this one by institutions.",
+              "zh": "它與《槍炮、病菌與鋼鐵》正好構成對照：一本用地理解釋歷史，一本用制度解釋歷史。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "是自由让世界富裕。",
+          "translation": "It is freedom that makes the world rich.",
+          "source": {
+            "en": "Why Nations Fail · Institutions and prosperity",
+            "zh": "《國家為什麼會失敗》· 制度與繁榮"
+          }
+        },
+        {
+          "original": "关键是经济增长能否持续，能否实现长期经济增长，只有包容性制度才能够实现长期经济增长",
+          "translation": "What matters is whether growth can last. Only inclusive institutions can sustain growth over the long run.",
+          "source": {
+            "en": "Why Nations Fail · Inclusive institutions",
+            "zh": "《國家為什麼會失敗》· 包容性制度"
+          }
+        },
+        {
+          "original": "包容性制度的建立具有偶然性",
+          "translation": "The rise of inclusive institutions is a matter of contingency.",
+          "source": {
+            "en": "Why Nations Fail · History and contingency",
+            "zh": "《國家為什麼會失敗》· 歷史與偶然"
+          }
+        },
+        {
+          "original": "对创造性破坏的担心是造成新石器革命和工业革命之间生活水平没有持续提高的主要原因。",
+          "translation": "Fear of creative destruction is the main reason living standards did not keep rising between the Neolithic and Industrial Revolutions.",
+          "source": {
+            "en": "Why Nations Fail · Creative destruction",
+            "zh": "《國家為什麼會失敗》· 創造性破壞"
+          }
+        },
+        {
+          "original": "像英国、美国这些国家之所以富裕是因为他们的人民推翻了控制权力的精英，并创造出了政治权力广泛分散的社会",
+          "translation": "Countries like Britain and America grew rich because their people overturned ruling elites and built societies with widely dispersed political power.",
+          "source": {
+            "en": "Why Nations Fail · Critical junctures",
+            "zh": "《國家為什麼會失敗》· 關鍵節點"
+          }
+        }
+      ]
+    },
+    {
+      "id": "book-wealth-nations",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "The Wealth of Nations",
+        "zh": "《國富論》"
+      },
+      "lede": {
+        "en": "Adam Smith · My rating: 9 / 10",
+        "zh": "亞當・斯密 · 我的評分：9 / 10"
+      },
+      "author": {
+        "en": "Adam Smith",
+        "zh": "亞當・斯密"
+      },
+      "rating": "9",
+      "cover": "wealth-cover.jpg",
+      "book_intro": {
+        "en": "The founding work of economics, published in 1776: labor, division of work, prices, and the invisible hand. I read it abridged, not in full.",
+        "zh": "1776 年問世的經濟學奠基之作：勞動、分工、價格與看不見的手。我讀的是節選，非全本。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "Everyone has heard of it; almost no one has read it. The world has changed beyond recognition in 250 years, yet so many core principles here still hold.",
+              "zh": "人人都聽說過它，卻幾乎沒人真正讀過它。250 年間世界早已改頭換面，但書中如此多的核心原則至今依然成立。"
+            },
+            {
+              "en": "The nature of wealth, the division of labor, the invisible hand, free markets, capital and profit. My abridged reading covered the five core books, ending on taxes.",
+              "zh": "財富的本質、分工、看不見的手、自由市場、資本與利潤。我的節選覆蓋五篇核心，止於賦稅。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "If you want to be rational, objective, and able to think independently, this is required reading. The core ideas cannot be overemphasized.",
+              "zh": "想成為理性、客觀、有獨立思考能力的人，這是必讀書目。這些核心思想怎麼強調都不為過。"
+            },
+            {
+              "en": "Smith wrote in the early days of central bank money. So his account of how money emerges is vivid and full of detail.",
+              "zh": "斯密親歷央行發行貨幣的早期時代，所以他對貨幣起源的描述格外有畫面感、細節豐富。"
+            },
+            {
+              "en": "The later parts on taxes and land rent are dry and dated. Even so, the first half alone is enough.",
+              "zh": "後半部分論稅收與地租較為晦澀，且與如今情況差異較大；但即使只讀前半部分，也足夠起作用了。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "使用价值很大的东西，往往交换价值极小，甚至没有；反之，交换价值很大的东西，亦往往使用价值极小，甚至没有。",
+          "translation": "Things with great value in use often have little or no value in exchange; and things with great value in exchange often have little or no value in use.",
+          "source": {
+            "en": "The Wealth of Nations · Book I · Value in use and in exchange",
+            "zh": "《國富論》· 第一篇 · 使用價值與交換價值"
+          }
+        },
+        {
+          "original": "所有人都成了商人，而社会也渐渐成为所谓的商业社会。",
+          "translation": "When everyone becomes a trader, society itself becomes what we call a commercial society.",
+          "source": {
+            "en": "The Wealth of Nations · Book I · The origin of money",
+            "zh": "《國富論》· 第一篇 · 論貨幣的起源"
+          }
+        },
+        {
+          "original": "社会财富、国民财富和私人财富能够得以产生的重要因素是每个人改善自身状况的共同的、经常的、不懈的努力。",
+          "translation": "The wealth of society and of individuals arises from the constant, universal effort of every person to better their own condition.",
+          "source": {
+            "en": "The Wealth of Nations · Book II · On capital",
+            "zh": "《國富論》· 第二篇 · 論資本"
+          }
+        },
+        {
+          "original": "所有铸币的价值都由其中最贵重的那种金属的价值来支配。",
+          "translation": "The value of all coinage is governed by the value of the dearest metal among them.",
+          "source": {
+            "en": "The Wealth of Nations · Book I · The value of coinage",
+            "zh": "《國富論》· 第一篇 · 鑄幣的價值"
+          }
+        },
+        {
+          "original": "中产及富有阶级的人如果真的明白自己的利益，就应该反对对生活必需品征税，反对对劳动工资直接征税。",
+          "translation": "The middle classes and the rich, if they understood their own interest, would oppose taxes on necessities and on the wages of labor.",
+          "source": {
+            "en": "The Wealth of Nations · Book V · On taxes",
+            "zh": "《國富論》· 第五篇 · 論賦稅"
+          }
+        }
+      ]
+    },
+    {
+      "id": "book-layered-money",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "Layered Money: From Gold and Dollars to Bitcoin and Central Bank Digital Currencies",
+        "zh": "《貨幣金字塔》"
+      },
+      "lede": {
+        "en": "Nik Bhatia · My rating: 8 / 10",
+        "zh": "尼克・巴蒂亞 · 我的評分：8 / 10"
+      },
+      "author": {
+        "en": "Nik Bhatia",
+        "zh": "尼克・巴蒂亞"
+      },
+      "rating": "8",
+      "cover": "layered-cover.jpg",
+      "book_intro": {
+        "en": "A short history of money through one lens: layered hierarchy. First-layer money has no counterparty; second-layer money is a promise that can default.",
+        "zh": "用「分層」框架讀通整部貨幣史：第一層貨幣沒有交易對手方，第二層貨幣是可能違約的承諾。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "The author traces money from Florentine florins and bills of exchange, through the gold standard and the dollar. He ends with Bitcoin and central bank digital currencies.",
+              "zh": "作者從佛羅倫薩弗羅林與匯票講起，經金本位與美元，一直講到比特幣與央行數字貨幣。"
+            },
+            {
+              "en": "His central claim is controversial: Bitcoin will become the only first-layer money, sitting at the top of the pyramid.",
+              "zh": "他的核心論點爭議很大：比特幣將成為唯一的第一層貨幣，站在金字塔尖。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "I work in crypto, and I side with the author. This book gave me a framework to place that view. Money is layered, and first-layer money is the money of money.",
+              "zh": "我是加密從業者，傾向於認可作者的觀點。這本書給了我安放這個觀點的框架：貨幣是分層的，第一層貨幣就是貨幣的貨幣。"
+            },
+            {
+              "en": "Many scholars disagree, arguing Bitcoin is too volatile and has no state backing. Reading both sides is exactly why this book is worth your time.",
+              "zh": "很多學者不買賬，認為比特幣波動太大、沒有國家背書。把兩邊論點都讀一遍，正是這本書的價值所在。"
+            },
+            {
+              "en": "Whatever your country or industry, you should understand money. What it is, where it came from, and why it holds value.",
+              "zh": "無論什麼國家、什麼行業、什麼背景，人都應該了解錢：它是什麼、從哪裡來、為什麼有價值。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "第一层货币是“无交易对手方”的",
+          "translation": "First-layer money has no counterparty.",
+          "source": {
+            "en": "Layered Money · First-layer money",
+            "zh": "《貨幣金字塔》· 第一層貨幣"
+          }
+        },
+        {
+          "original": "第二层货币汇票是一种承诺，有违约的风险。",
+          "translation": "Second-layer money, like the bill of exchange, is a promise — and promises can default.",
+          "source": {
+            "en": "Layered Money · Second-layer money",
+            "zh": "《貨幣金字塔》· 第二層貨幣"
+          }
+        },
+        {
+          "original": "货币不仅具有流通和价值储藏的功能，它还是一种记账单位。",
+          "translation": "Money is not only a medium of exchange and a store of value — it is also a unit of account.",
+          "source": {
+            "en": "Layered Money · The three functions of money",
+            "zh": "《貨幣金字塔》· 貨幣的三重職能"
+          }
+        },
+        {
+          "original": "政府无法抵挡为自己不受约束地创造货币的诱惑。",
+          "translation": "No government can resist the temptation to create money for itself without restraint.",
+          "source": {
+            "en": "Layered Money · Chapter 1 · The debasement of coinage",
+            "zh": "《貨幣金字塔》· 第一章 · 政府造币的诱惑"
+          }
+        },
+        {
+          "original": "比特币是一种不产生于中央银行资产负债表、价值能够自我保证的新资产，它们是银行发行数字现金的储备货币，因而具备成为第一层货币的资格。",
+          "translation": "Bitcoin is a new asset born outside central bank balance sheets, with value that guarantees itself — qualifying it as reserve money for banks' digital cash, and as first-layer money.",
+          "source": {
+            "en": "Layered Money · The Renaissance of money",
+            "zh": "《貨幣金字塔》· 貨幣的文藝復興"
+          }
+        }
+      ]
+    },
+    {
+      "id": "book-fed-crisis",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "The Federal Reserve and the Financial Crisis",
+        "zh": "《金融的本質》"
+      },
+      "lede": {
+        "en": "Ben S. Bernanke · My rating: 7.5 / 10",
+        "zh": "本・伯南克 · 我的評分：7.5 / 10"
+      },
+      "author": {
+        "en": "Ben S. Bernanke",
+        "zh": "本・伯南克"
+      },
+      "rating": "7.5",
+      "cover": "fed-cover.jpg",
+      "book_intro": {
+        "en": "Four lectures by the Fed chair who lived through 2008. Central banking history, the gold standard, the crisis, and unconventional policy.",
+        "zh": "親歷 2008 危機的美聯儲主席的四次講座：央行史、金本位、危機復盤與非常規政策。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "Strictly a collection of four public lectures, not a book. Some background in finance and economics helps.",
+              "zh": "嚴格說是四次公開講座的合集，不是著作。最好有一點金融和經濟學背景。"
+            },
+            {
+              "en": "It covers the birth of central banks and why the gold standard failed. Then how the 2008 crisis unfolded, and how the Fed responded.",
+              "zh": "內容覆蓋央行的誕生、金本位為何失敗、2008 危機如何演變，以及美聯儲如何應對。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "The most valuable part is Bernanke's firsthand account of 2008. Not many authors can write about a crisis from inside the command room.",
+              "zh": "最有價值的是伯南克對 2008 的親歷視角。能在危機指揮室內部寫危機的作者，屈指可數。"
+            },
+            {
+              "en": "For finance, learning about crises always pays off: it sharpens your vigilance. The last global one was 2008, and there will be more.",
+              "zh": "對金融而言，多了解危機總有好處：它能提高你的警惕。上一次席捲全球的是 2008，但不會是最後一次。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "根据“白芝浩原则”，缓解金融恐慌的最佳方式就是为那些缺乏资金的机构提供流动性。",
+          "translation": "By Bagehot's rule, the best way to calm a financial panic is to supply liquidity to institutions that lack funding.",
+          "source": {
+            "en": "The Federal Reserve and the Financial Crisis · The lender of last resort",
+            "zh": "《金融的本質》· 最後貸款人"
+          }
+        },
+        {
+          "original": "试图通过货币政策来维持过低的失业率，最终会引发通货膨胀。",
+          "translation": "Trying to hold unemployment too low through monetary policy will ultimately ignite inflation.",
+          "source": {
+            "en": "The Federal Reserve and the Financial Crisis · Lecture 2 · The Fed after WWII",
+            "zh": "《金融的本質》· 第二講 · 戰後的美聯儲"
+          }
+        },
+        {
+          "original": "在金本位制下，经济产出和通胀水平的波动性都更大",
+          "translation": "Under the gold standard, both output and inflation were more volatile.",
+          "source": {
+            "en": "The Federal Reserve and the Financial Crisis · The cost of gold",
+            "zh": "《金融的本質》· 金本位的代價"
+          }
+        },
+        {
+          "original": "真正的金本位制会创造出一个自我管理的货币体系，而这样的货币体系至少能部分替代央行的职能",
+          "translation": "A true gold standard creates a self-managing monetary system that could partly replace the central bank.",
+          "source": {
+            "en": "The Federal Reserve and the Financial Crisis · The gold standard",
+            "zh": "《金融的本質》· 金本位"
+          }
+        },
+        {
+          "original": "伯南克主张设定一个明确的通胀目标，并清晰地向公众传达政策目标和计划行为，以引导市场通胀预期",
+          "translation": "Bernanke argues for a clear inflation target, communicated openly to the public, to guide market expectations.",
+          "source": {
+            "en": "The Federal Reserve and the Financial Crisis · Central bank communication",
+            "zh": "《金融的本質》· 央行溝通"
+          }
+        }
+      ]
+    },
+    {
       "id": "book-payoff",
       "kicker": {
         "en": "READING / BOOK NOTES",
@@ -3242,5 +3673,5 @@
       "zh": "閱讀筆記"
     }
   },
-  "revision": "2026-11-15-v5"
+  "revision": "2026-11-18-v6"
 }
