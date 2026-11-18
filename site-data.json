@@ -21,7 +21,7 @@
       "case_ids": [
         "case-continuity",
         "case-partners",
-        "case-support"
+        "case-hub"
       ],
       "thought_ids": [
         "thought-growth",
@@ -91,8 +91,8 @@
         "zh": "AI 具體幫我們做了什麼。"
       },
       "lede": {
-        "en": "Eight cases explain how we use AI in departmental management, customer support, research, financial modelling, and other work.",
-        "zh": "從部門管理、客服到調研與財務建模，八個案例介紹我們怎樣把工作交給 AI。"
+        "zh": "從部門管理、客服到調研與 AI 中台，九個案例介紹我們怎樣把工作交給 AI。",
+        "en": "Nine cases explain how we use AI in departmental management, support, research, and a shared work platform."
       },
       "sections": [],
       "case_ids": [
@@ -103,7 +103,8 @@
         "case-sentiment",
         "case-finance",
         "case-support",
-        "case-standards"
+        "case-standards",
+        "case-hub"
       ],
       "knowledge": [
         {
@@ -414,71 +415,75 @@
         "zh": "案例 03 / AI 工作體系"
       },
       "title": {
-        "en": "Use AI for product research and comparison.",
-        "zh": "讓 AI 完成產品調研與比較。"
+        "en": "Let AI test what products can actually do.",
+        "zh": "讓 AI 走進真實產品流程，核對功能到底能不能用。"
       },
       "lede": {
-        "en": "A research question becomes evidence collection, product walkthroughs, comparable assessment, and a reviewable report.",
-        "zh": "把調研問題連到證據採集、產品走查、同維度比較與可審閱的報告。"
+        "en": "People define the question. AI checks real product flows, compares evidence, and builds a reviewable assessment.",
+        "zh": "人提出業務問題，AI 操作真實產品流程、核對資料並保存證據，再由人判斷對產品有什麼影響。"
       },
       "sections": [
         {
           "title": {
-            "en": "From a request to an investigation",
-            "zh": "從一句需求，到真正展開調研"
+            "en": "Start with a real question",
+            "zh": "從真實的產品問題開始"
           },
           "paragraphs": [
             {
-              "en": "The starting point is a product or a business question. A shared framework defines what must be examined and evidenced.",
-              "zh": "起點是一個產品或業務問題；共同框架明確要研究哪些方面、用什麼證據支撐。"
-            },
-            {
-              "en": "AI helps locate official material, inspect accessible product flows, capture evidence, and organize findings under the same dimensions.",
-              "zh": "AI 協助查找官方材料、走查可訪問的產品流程、保存證據，並按相同維度整理發現。"
+              "en": "A shared framework defines the research scope. We ask what users can accomplish, what conditions apply, and where difficulties arise.",
+              "zh": "共同框架定義調研範圍。先問用戶能完成什麼、需要哪些條件、會在哪裡遇到困難，再決定查什麼資料、測哪些流程。"
             }
           ]
         },
         {
           "title": {
-            "en": "Make evidence strength visible",
-            "zh": "讓證據強弱可見"
+            "en": "Move from documentation to product use",
+            "zh": "從查資料，走到實際操作"
           },
           "paragraphs": [
             {
-              "en": "Reports label observed behavior, documented facts, vendor claims, and questions to investigate next.",
-              "zh": "報告分別標記實測行為、文件事實、對方自述與下一步要核查的問題。"
+              "en": "AI operates a mobile app on a real device, checking receiving flows, swap quotes, minimum amounts, and error recovery.",
+              "zh": "AI 在真實手機上操作 App，檢查收款流程、兌換報價、最低額、限制提示與異常恢復。"
             },
             {
-              "en": "Comparable sections make later reports reusable in cross-product reviews. Existing evidence can be retained when its relevance is verified.",
-              "zh": "相同章節讓單份報告可用於跨產品比較；已有證據經核對仍適用時，可以繼續沿用。"
+              "en": "Recent research tested accessible flows without funds. Screenshots record the observed behavior alongside official documentation.",
+              "zh": "近期研究已完成無資金條件下可操作流程的檢查，保存實測截圖，並與官方說明逐項對照。"
+            },
+            {
+              "en": "A listed feature becomes a concrete question: can users reach it, obtain a quote, and understand the next step?",
+              "zh": "功能清單上的一項能力，會變成具體問題：用戶能否找到入口、取得報價，並理解下一步怎麼做？"
             }
           ]
         },
         {
           "title": {
-            "en": "The result and handoff",
-            "zh": "已有成果與後續使用"
+            "en": "Keep evidence comparable",
+            "zh": "把發現整理成可比較的證據"
           },
           "paragraphs": [
             {
-              "en": "Completed product reports, archived screenshots, and comparative reviews support product decisions and further investigation.",
-              "zh": "已形成產品調研報告、截圖證據與橫向比較，支撐產品判斷與後續深挖。"
+              "en": "Reports distinguish observed behavior, documented facts, vendor claims, and untested steps. Consistent dimensions support comparison across products.",
+              "zh": "報告區分實際操作、文件事實、廠商主張與未測步驟，按一致維度整理，方便跨產品比較。"
             },
             {
-              "en": "AI handles much of the collection and assembly. People choose the question, judge significance, and accept the recommendation.",
-              "zh": "AI 承擔大量取材與整理；人選擇問題、判斷意義，並決定是否採納建議。"
+              "en": "When a product changes, AI checks affected evidence and updates the findings while retaining relevant history.",
+              "zh": "產品變化後，AI 核對受影響的證據並更新發現；仍然有效的歷史材料繼續保留，不必每次從頭調研。"
             }
           ]
         },
         {
           "title": {
-            "en": "My contribution",
-            "zh": "我的投入"
+            "en": "Turn findings into product judgment",
+            "zh": "讓實測服務產品判斷"
           },
           "paragraphs": [
             {
-              "en": "I define the comparison framework and business relevance. AI and participating colleagues perform the research according to the research plan.",
-              "zh": "我定義比較框架與業務相關性，由 AI 及參與同事按調研計劃開展研究。"
+              "en": "Product reports and screenshots show the difference between advertised capability and accessible experience. People decide which differences matter.",
+              "zh": "已有調研報告和實測截圖，呈現宣傳能力與實際體驗之間的差異。人判斷哪些差異影響用戶，哪些值得繼續深挖。"
+            },
+            {
+              "en": "I define the business questions and comparison standards. AI gathers evidence; colleagues and I evaluate its implications for product decisions.",
+              "zh": "我定義業務問題與比較標準；AI 負責操作、取材與整理，我和相關同事判斷其產品意義，決定是否採納建議。"
             }
           ]
         }
@@ -891,6 +896,10 @@
             {
               "en": "AI and supporting programs then follow those definitions. Review responsibilities and consequential decisions remain explicit.",
               "zh": "AI 與配套程序據此執行，審閱責任和重要決策要求一併明確。"
+            },
+            {
+              "en": "A work instruction also explains ownership, verification, and recovery, so another person or AI can continue the work.",
+              "zh": "工作說明書還要交代誰負責、怎樣算完成、遇到問題如何接續，讓另一個人或 AI 讀完後能繼續做。"
             }
           ]
         },
@@ -912,13 +921,49 @@
         },
         {
           "title": {
+            "en": "Carry the work beyond its first operator",
+            "zh": "讓個人跑通的工作可以交接"
+          },
+          "paragraphs": [
+            {
+              "en": "The handover includes current standards, useful history, unfinished work, and checks against real outputs.",
+              "zh": "交接時一併保留現行標準、有效歷史、未完成事項及實際成果的檢查方式，讓接手者知道工作做到哪裡。"
+            },
+            {
+              "en": "Support reporting and partner assessment now run on the shared AI platform. Their instructions preserve how the work should continue.",
+              "zh": "客服工單日報與伙伴評估已交由 AI 中台運行，工作說明書讓已驗證的做法能被持續使用，而不只留在最初執行者的經驗裡。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Give different tasks a shared factual basis",
+            "zh": "讓不同 AI 工作使用同一套事實"
+          },
+          "paragraphs": [
+            {
+              "en": "We established shared sources for important business facts. Research and reports refer to the same current records.",
+              "zh": "我們為重要業務事實建立共同來源，讓研究、報告與協作引用同一套現行記錄。"
+            },
+            {
+              "en": "New information is checked for scope and version before updates. Shared records have been synchronized and checked against their sources.",
+              "zh": "新資料先核對口徑與版本，再更新共同記錄；已完成共享入口、版本同步與來源核對。"
+            },
+            {
+              "en": "Work instructions specify which sources to use, helping different AI tasks continue from consistent facts.",
+              "zh": "工作說明書明確指定該引用哪些來源，讓不同 AI 任務接續時有一致的事實基礎。"
+            }
+          ]
+        },
+        {
+          "title": {
             "en": "The result",
             "zh": "已有成果"
           },
           "paragraphs": [
             {
-              "en": "We prepared a recurring-report work instruction, supporting rules, and handover material, then checked them against historical examples.",
-              "zh": "已形成重複報告工作的說明書、配套規則與交接材料，並用歷史樣本檢查。"
+              "en": "Work instructions, supporting materials, and handover checks now support recurring work beyond its original operator.",
+              "zh": "工作說明書、配套材料與交接檢查已用於重複工作，將個人驗證過的做法接續為團隊可使用的能力。"
             }
           ]
         },
@@ -944,7 +989,8 @@
       },
       "related_ids": [
         "thought-management",
-        "case-partners"
+        "case-partners",
+        "case-hub"
       ]
     },
     {
@@ -968,7 +1014,8 @@
         "thought-value",
         "thought-management",
         "thought-judgment",
-        "thought-relief"
+        "thought-relief",
+        "thought-boundaries"
       ]
     },
     {
@@ -1265,6 +1312,46 @@
         },
         {
           "title": {
+            "en": "Define what people do next",
+            "zh": "既要定義 AI 做什麼，也要定義人接下來做什麼"
+          },
+          "paragraphs": [
+            {
+              "en": "A useful instruction connects AI output to the person who will act on it. Otherwise, work can stop at another report.",
+              "zh": "一份有用的工作說明書，要把 AI 的產出接到人的下一步行動。只說怎樣生成結果，工作仍可能停在多一份報告。"
+            },
+            {
+              "en": "In partner assessment, AI maintains evidence and judgments. People advance conversations, obtain feedback, coordinate resources, and make trade-offs.",
+              "zh": "例如伙伴評估：AI 持續整理證據、更新評估；人推動溝通、爭取反饋、協調資源並作出取捨。"
+            },
+            {
+              "en": "Clear responsibilities give people more attention for actions that advance the business. Individual speed is only part of the value.",
+              "zh": "清晰的分工，讓人能把注意力投入推動業務的行動。個人做得更快只是部分價值，工作能否繼續向前才是關鍵。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "讓團隊按共同標準工作",
+            "en": "Give the team shared standards"
+          },
+          "paragraphs": [
+            {
+              "zh": "「時刻注意定義和維護工作說明書，思考每一項工作的標準，不能再依賴每個人各自為戰了。」",
+              "en": "“Keep defining and maintaining work instructions. Consider standards for every task, instead of relying on everyone working independently.”"
+            },
+            {
+              "zh": "Fate，2026-11-09 部門工作交流，11:48。",
+              "en": "Fate, departmental work chat, November 9, 2026, 11:48."
+            },
+            {
+              "zh": "工作說明書的價值也在於協作：讓不同人和 AI 對同一項工作的要求有共同理解，並把發現的問題修進大家共同使用的方法。",
+              "en": "Instructions also support collaboration. People and AI share expectations, and lessons improve the method everyone uses."
+            }
+          ]
+        },
+        {
+          "title": {
             "en": "Responsibility stays with people",
             "zh": "責任仍然在人"
           },
@@ -1289,7 +1376,11 @@
         "en": "From my meeting notes",
         "zh": "會議觀點"
       },
-      "quote_type": "summary"
+      "quote_type": "summary",
+      "related_ids": [
+        "case-standards",
+        "case-partners"
+      ]
     },
     {
       "id": "thought-judgment",
@@ -1470,47 +1561,246 @@
       "sections": [],
       "timeline": [
         {
-          "date": "2026-07-18",
+          "date": "2026-11-17",
           "title": {
-            "en": "A structured knowledge base",
-            "zh": "把材料整理成知識體系"
+            "en": "Improved continuity between personal and team AI work",
+            "zh": "完善個人與團隊之間的 AI 工作交接"
           },
           "text": {
-            "en": "Established a subject structure, entry points, and initial maintenance principles.",
-            "zh": "建立主題結構、閱讀入口與最初的維護原則。"
+            "en": "Aligned shared facts, working standards, and responsibilities so ongoing work can continue from consistent records.",
+            "zh": "對齊共同事實、工作標準與責任分工，讓持續工作能從一致的記錄接續。"
           }
         },
         {
-          "date": "2026-07-20",
+          "date": "2026-11-13",
           "title": {
-            "en": "Bring conversations into context",
-            "zh": "讓溝通內容成為可積累的背景"
+            "en": "Extended AI research to real devices",
+            "zh": "將 AI 產品調研推進到真機操作"
           },
           "text": {
-            "en": "Began organizing communication records alongside working materials.",
-            "zh": "開始把溝通記錄與工作材料一起整理。"
+            "en": "Tested accessible mobile product flows and captured evidence to compare actual behavior with product documentation.",
+            "zh": "操作手機上可測的產品流程，保存實測證據，對照官方說明與用戶實際體驗。"
           }
         },
         {
-          "date": "2026-07-28",
+          "date": "2026-11-02",
           "title": {
-            "en": "Extract reusable knowledge",
-            "zh": "提煉可複用的知識"
+            "en": "Established shared business facts",
+            "zh": "為團隊建立共同的業務事實來源"
           },
           "text": {
-            "en": "Defined how conclusions become reviewed, reusable knowledge.",
-            "zh": "建立從材料提煉結論、經審閱後沉澱知識的方法。"
+            "en": "Published shared factual records and a common reading entry point for research, reports, and collaboration.",
+            "zh": "建立共同事實記錄與閱讀入口，供研究、報告及協作引用同一套業務事實。"
           }
         },
         {
-          "date": "2026-07-28",
+          "date": "2026-11",
+          "display_date": "11",
           "title": {
-            "en": "Prepare for continuity",
-            "zh": "讓知識可以被接續"
+            "en": "Standardized partner assessment and moved it onto the AI platform",
+            "zh": "將伙伴評估標準化，交由 AI 中台持續運行"
           },
           "text": {
-            "en": "Added explanatory material so the knowledge base can be understood beyond one conversation.",
-            "zh": "補充使用與維護說明，讓知識庫不只依賴一次對話。"
+            "en": "A shared framework now supports ongoing assessment updates. People focus on advancing cooperation and making consequential decisions.",
+            "zh": "完成跨領域伙伴評估框架與人機分工，遷入 AI 中台持續更新評估；同事專注推動合作，並負責重要取捨。"
+          }
+        },
+        {
+          "date": "2026-10-28",
+          "title": {
+            "en": "Unify meeting archives",
+            "zh": "統一會議知識歸檔"
+          },
+          "text": {
+            "en": "Consolidated meeting materials while preserving originals and subject references.",
+            "zh": "集中整理會議材料，保留原件與業務主題的引用。"
+          }
+        },
+        {
+          "date": "2026-10-21",
+          "title": {
+            "zh": "建立部門 AI 中台，逐步承接通用工作",
+            "en": "Established a departmental AI platform for shared workflows"
+          },
+          "text": {
+            "zh": "確立統一的部門工作平台，將已驗證的通用工作按說明書逐步交給 AI 執行；人負責定義、監測與升級。",
+            "en": "Established a shared work platform to take on proven workflows. People define instructions, monitor execution, and improve the methods."
+          }
+        },
+        {
+          "date": "2026-10-19",
+          "title": {
+            "en": "Write work for handover",
+            "zh": "把工作寫成可交接的說明"
+          },
+          "text": {
+            "en": "Prepared a recurring-report work instruction and supporting handover materials.",
+            "zh": "形成重複報告工作的說明書與配套交接材料。"
+          }
+        },
+        {
+          "date": "2026-10-16",
+          "title": {
+            "en": "Begin company-wide expansion",
+            "zh": "開始向公司層面推進"
+          },
+          "text": {
+            "en": "The internal launch brought departmental experience into a wider company transformation effort.",
+            "zh": "內部啟動把部門經驗帶入更大範圍的公司轉型工作。"
+          }
+        },
+        {
+          "date": "2026-10-15",
+          "title": {
+            "en": "Prepare the internal transformation talk",
+            "zh": "準備公司內部轉型分享"
+          },
+          "text": {
+            "en": "Adapted the transformation material for an internal launch discussion.",
+            "zh": "將轉型經驗整理為內部啟動討論的分享材料。"
+          }
+        },
+        {
+          "date": "2026-10-12",
+          "title": {
+            "en": "Keep knowledge independent of tools",
+            "zh": "讓知識不依附單一工具"
+          },
+          "text": {
+            "en": "Organized instructions and knowledge for continuity across AI tools.",
+            "zh": "整理跨 AI 工具接續所需的指令與知識。"
+          }
+        },
+        {
+          "date": "2026-09-16",
+          "title": {
+            "en": "Reorganize around useful subjects",
+            "zh": "按工作主題重整內容"
+          },
+          "text": {
+            "en": "Consolidated research and product material around clearer reading paths.",
+            "zh": "按更清楚的閱讀路徑重整研究與產品材料。"
+          }
+        },
+        {
+          "date": "2026-09-14",
+          "title": {
+            "en": "Improve knowledge navigation",
+            "zh": "改善知識導航"
+          },
+          "text": {
+            "en": "Expanded directory indexes to connect knowledge documents and their subject structure.",
+            "zh": "完善目錄索引，連接知識文件與主題結構。"
+          }
+        },
+        {
+          "date": "2026-09-11",
+          "title": {
+            "en": "Turn mistakes into learning",
+            "zh": "讓錯誤成為可複用的教訓"
+          },
+          "text": {
+            "en": "Created a fact-based review record to preserve lessons from important mistakes.",
+            "zh": "建立基於事實的復盤記錄，保存重要錯誤帶來的教訓。"
+          }
+        },
+        {
+          "date": "2026-09-10",
+          "title": {
+            "en": "Distinguish current and historical material",
+            "zh": "區分現行與歷史材料"
+          },
+          "text": {
+            "en": "Refined navigation and separation of active material from historical reference.",
+            "zh": "優化閱讀入口，區分現行材料與歷史參考。"
+          }
+        },
+        {
+          "date": "2026-09-03",
+          "title": {
+            "en": "Share the transformation experience",
+            "zh": "整理 AI 轉型經驗分享"
+          },
+          "text": {
+            "en": "Prepared a presentation connecting personal practice, management changes, and broader transformation.",
+            "zh": "形成連接個人實踐、管理改變與更大轉型方向的演講材料。"
+          }
+        },
+        {
+          "date": "2026-08-29",
+          "title": {
+            "en": "Connect originals and usable knowledge",
+            "zh": "連接原件與可用知識"
+          },
+          "text": {
+            "en": "Made text extraction from common working documents part of regular knowledge organization.",
+            "zh": "把常見工作文檔的文字提取納入日常知識整理。"
+          }
+        },
+        {
+          "date": "2026-08-13",
+          "title": {
+            "en": "Make progress visible",
+            "zh": "讓進展可以被共同看見"
+          },
+          "text": {
+            "en": "A departmental progress board became available for review.",
+            "zh": "部門進展看板形成可供共同查看的成果。"
+          }
+        },
+        {
+          "date": "2026-08-11",
+          "title": {
+            "en": "Make quality rules explicit",
+            "zh": "把品質要求變成共同規則"
+          },
+          "text": {
+            "en": "Strengthened fact checking and checks against established standards.",
+            "zh": "完善事實核查與既有材料的標準檢查。"
+          }
+        },
+        {
+          "date": "2026-08-10",
+          "title": {
+            "en": "From personal knowledge to department work",
+            "zh": "從個人知識走向部門工作"
+          },
+          "text": {
+            "en": "Established departmental progress records and a proposal for easier progress review.",
+            "zh": "建立部門進展記錄，設計更容易跟進工作的方式。"
+          }
+        },
+        {
+          "date": "2026-08-06",
+          "title": {
+            "en": "Review the knowledge base",
+            "zh": "檢查知識庫的品質"
+          },
+          "text": {
+            "en": "Completed an initial health review of structure, naming, and records.",
+            "zh": "完成對結構、命名與記錄的首次月度檢查。"
+          }
+        },
+        {
+          "date": "2026-08-05",
+          "title": {
+            "en": "Require traceable sources",
+            "zh": "讓結論帶著來源"
+          },
+          "text": {
+            "en": "Formalized source attribution and verification requirements.",
+            "zh": "明確結論的來源標註與核查要求。"
+          }
+        },
+        {
+          "date": "2026-08-04",
+          "title": {
+            "en": "Organize meeting knowledge",
+            "zh": "整理會議知識"
+          },
+          "text": {
+            "en": "Established clearer conventions for meeting records and their context.",
+            "zh": "為會議記錄及其背景建立更清楚的整理規範。"
           }
         },
         {
@@ -1536,246 +1826,47 @@
           }
         },
         {
-          "date": "2026-08-04",
+          "date": "2026-07-28",
           "title": {
-            "en": "Organize meeting knowledge",
-            "zh": "整理會議知識"
+            "en": "Extract reusable knowledge",
+            "zh": "提煉可複用的知識"
           },
           "text": {
-            "en": "Established clearer conventions for meeting records and their context.",
-            "zh": "為會議記錄及其背景建立更清楚的整理規範。"
+            "en": "Defined how conclusions become reviewed, reusable knowledge.",
+            "zh": "建立從材料提煉結論、經審閱後沉澱知識的方法。"
           }
         },
         {
-          "date": "2026-08-05",
+          "date": "2026-07-28",
           "title": {
-            "en": "Require traceable sources",
-            "zh": "讓結論帶著來源"
+            "en": "Prepare for continuity",
+            "zh": "讓知識可以被接續"
           },
           "text": {
-            "en": "Formalized source attribution and verification requirements.",
-            "zh": "明確結論的來源標註與核查要求。"
+            "en": "Added explanatory material so the knowledge base can be understood beyond one conversation.",
+            "zh": "補充使用與維護說明，讓知識庫不只依賴一次對話。"
           }
         },
         {
-          "date": "2026-08-06",
+          "date": "2026-07-20",
           "title": {
-            "en": "Review the knowledge base",
-            "zh": "檢查知識庫的品質"
+            "en": "Bring conversations into context",
+            "zh": "讓溝通內容成為可積累的背景"
           },
           "text": {
-            "en": "Completed an initial health review of structure, naming, and records.",
-            "zh": "完成對結構、命名與記錄的首次月度檢查。"
+            "en": "Began organizing communication records alongside working materials.",
+            "zh": "開始把溝通記錄與工作材料一起整理。"
           }
         },
         {
-          "date": "2026-08-10",
+          "date": "2026-07-18",
           "title": {
-            "en": "From personal knowledge to department work",
-            "zh": "從個人知識走向部門工作"
+            "en": "A structured knowledge base",
+            "zh": "把材料整理成知識體系"
           },
           "text": {
-            "en": "Established departmental progress records and a proposal for easier progress review.",
-            "zh": "建立部門進展記錄，設計更容易跟進工作的方式。"
-          }
-        },
-        {
-          "date": "2026-08-11",
-          "title": {
-            "en": "Make quality rules explicit",
-            "zh": "把品質要求變成共同規則"
-          },
-          "text": {
-            "en": "Strengthened fact checking and checks against established standards.",
-            "zh": "完善事實核查與既有材料的標準檢查。"
-          }
-        },
-        {
-          "date": "2026-08-13",
-          "title": {
-            "en": "Make progress visible",
-            "zh": "讓進展可以被共同看見"
-          },
-          "text": {
-            "en": "A departmental progress board became available for review.",
-            "zh": "部門進展看板形成可供共同查看的成果。"
-          }
-        },
-        {
-          "date": "2026-08-29",
-          "title": {
-            "en": "Connect originals and usable knowledge",
-            "zh": "連接原件與可用知識"
-          },
-          "text": {
-            "en": "Made text extraction from common working documents part of regular knowledge organization.",
-            "zh": "把常見工作文檔的文字提取納入日常知識整理。"
-          }
-        },
-        {
-          "date": "2026-09-03",
-          "title": {
-            "en": "Share the transformation experience",
-            "zh": "整理 AI 轉型經驗分享"
-          },
-          "text": {
-            "en": "Prepared a presentation connecting personal practice, management changes, and broader transformation.",
-            "zh": "形成連接個人實踐、管理改變與更大轉型方向的演講材料。"
-          }
-        },
-        {
-          "date": "2026-09-10",
-          "title": {
-            "en": "Distinguish current and historical material",
-            "zh": "區分現行與歷史材料"
-          },
-          "text": {
-            "en": "Refined navigation and separation of active material from historical reference.",
-            "zh": "優化閱讀入口，區分現行材料與歷史參考。"
-          }
-        },
-        {
-          "date": "2026-09-11",
-          "title": {
-            "en": "Turn mistakes into learning",
-            "zh": "讓錯誤成為可複用的教訓"
-          },
-          "text": {
-            "en": "Created a fact-based review record to preserve lessons from important mistakes.",
-            "zh": "建立基於事實的復盤記錄，保存重要錯誤帶來的教訓。"
-          }
-        },
-        {
-          "date": "2026-09-14",
-          "title": {
-            "en": "Improve knowledge navigation",
-            "zh": "改善知識導航"
-          },
-          "text": {
-            "en": "Expanded directory indexes to connect knowledge documents and their subject structure.",
-            "zh": "完善目錄索引，連接知識文件與主題結構。"
-          }
-        },
-        {
-          "date": "2026-09-16",
-          "title": {
-            "en": "Reorganize around useful subjects",
-            "zh": "按工作主題重整內容"
-          },
-          "text": {
-            "en": "Consolidated research and product material around clearer reading paths.",
-            "zh": "按更清楚的閱讀路徑重整研究與產品材料。"
-          }
-        },
-        {
-          "date": "2026-09-20",
-          "title": {
-            "en": "Make the work public",
-            "zh": "讓實踐被外界看見"
-          },
-          "text": {
-            "en": "The first website presented a public overview of the work and its progress.",
-            "zh": "首版網站把已有工作與進展整理成公開概覽。"
-          }
-        },
-        {
-          "date": "2026-10-12",
-          "title": {
-            "en": "Keep knowledge independent of tools",
-            "zh": "讓知識不依附單一工具"
-          },
-          "text": {
-            "en": "Organized instructions and knowledge for continuity across AI tools.",
-            "zh": "整理跨 AI 工具接續所需的指令與知識。"
-          }
-        },
-        {
-          "date": "2026-10-15",
-          "title": {
-            "en": "Prepare the internal transformation talk",
-            "zh": "準備公司內部轉型分享"
-          },
-          "text": {
-            "en": "Adapted the transformation material for an internal launch discussion.",
-            "zh": "將轉型經驗整理為內部啟動討論的分享材料。"
-          }
-        },
-        {
-          "date": "2026-10-16",
-          "title": {
-            "en": "Begin company-wide expansion",
-            "zh": "開始向公司層面推進"
-          },
-          "text": {
-            "en": "The internal launch brought departmental experience into a wider company transformation effort.",
-            "zh": "內部啟動把部門經驗帶入更大範圍的公司轉型工作。"
-          }
-        },
-        {
-          "date": "2026-10-19",
-          "title": {
-            "en": "Write work for handover",
-            "zh": "把工作寫成可交接的說明"
-          },
-          "text": {
-            "en": "Prepared a recurring-report work instruction and supporting handover materials.",
-            "zh": "形成重複報告工作的說明書與配套交接材料。"
-          }
-        },
-        {
-          "date": "2026-10-26",
-          "title": {
-            "en": "Make recurring work easier to continue",
-            "zh": "讓重複工作更容易接續"
-          },
-          "text": {
-            "en": "Organized reporting requirements, supporting material, and handover records so colleagues can continue the work.",
-            "zh": "整理報告的工作要求、配套材料與交接記錄，方便其他同事接手。"
-          }
-        },
-        {
-          "date": "2026-10-28",
-          "title": {
-            "en": "Unify meeting archives",
-            "zh": "統一會議知識歸檔"
-          },
-          "text": {
-            "en": "Consolidated meeting materials while preserving originals and subject references.",
-            "zh": "集中整理會議材料，保留原件與業務主題的引用。"
-          }
-        },
-        {
-          "date": "2026-10-29",
-          "title": {
-            "en": "Prepare cases, thoughts, and a timeline for the website",
-            "zh": "為網站整理案例、思考與時間軸"
-          },
-          "text": {
-            "en": "Organized practice cases and meeting-based reflections into separate pages, with a timeline linking the main milestones.",
-            "zh": "把實踐案例和來自會議記錄的思考整理為獨立頁面，並用時間軸串起重要事件。"
-          }
-        },
-        {
-          "date": "2026-11-15",
-          "title": {
-            "en": "Added reading notes on two payments books",
-            "zh": "新增兩本支付書的讀書筆記"
-          },
-          "text": {
-            "en": "Published notes for The Pay Off and Paying with Plastic, two books on how payments really work.",
-            "zh": "上架《支付的故事》與《銀行卡時代》的讀書筆記，兩本講支付如何運轉的書。"
-          }
-        },
-        {
-          "date": "2026-11",
-          "display_date": "11",
-          "title": {
-            "en": "Standardized partner assessment and moved it onto the AI platform",
-            "zh": "將伙伴評估標準化，交由 AI 中台持續運行"
-          },
-          "text": {
-            "en": "A shared framework now supports ongoing assessment updates. People focus on advancing cooperation and making consequential decisions.",
-            "zh": "完成跨領域伙伴評估框架與人機分工，遷入 AI 中台持續更新評估；同事專注推動合作，並負責重要取捨。"
+            "en": "Established a subject structure, entry points, and initial maintenance principles.",
+            "zh": "建立主題結構、閱讀入口與最初的維護原則。"
           }
         }
       ]
@@ -2806,6 +2897,162 @@
             "zh": "《銀行卡時代》· 放貸的苦與樂"
           }
         }
+      ]
+    },
+    {
+      "id": "case-hub",
+      "case_number": 9,
+      "kicker": {
+        "zh": "案例 09 / 部門 AI 工作平台",
+        "en": "CASE 09 / DEPARTMENTAL AI PLATFORM"
+      },
+      "title": {
+        "zh": "搭建 AI 中台，成為統一的部門工作平台。",
+        "en": "Build an AI hub as the shared departmental work platform."
+      },
+      "lede": {
+        "zh": "將已驗證的工作逐步交給部門 AI 中台。AI 負責執行，人負責定義工作、監測結果、升級方法，並拓展下一項工作。",
+        "en": "Move proven workflows onto a departmental AI platform. AI executes; people define work, monitor results, improve methods, and expand responsibilities."
+      },
+      "sections": [
+        {
+          "title": {
+            "zh": "把一項工作交過去，而不只是放一份結果",
+            "en": "Hand over the work itself"
+          },
+          "paragraphs": [
+            {
+              "zh": "中台逐步承接部門的具體工作。工作說明書、必要材料與執行要求一起交接，讓 AI 能持續完成工作，成果頁面則讓人了解運行結果。",
+              "en": "The platform gradually takes on departmental tasks. Instructions, required materials, and execution requirements travel together, with results available for review."
+            },
+            {
+              "zh": "每項工作先定義清楚並完成驗證，再交中台執行。人仍可根據實際效果修改標準，讓下一輪執行沿用改進後的方法。",
+              "en": "Each workflow is defined and tested before handover. People refine its standards, so subsequent runs use the improved method."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "已經承接的工作",
+            "en": "Work already running"
+          },
+          "paragraphs": [
+            {
+              "zh": "客服工單日報與伙伴評估已交由中台運行。前者持續整理客服問題，後者根據新反饋與材料更新評估，讓日常維護不再依賴人工逐項追記。",
+              "en": "Support reporting and partner assessment now run on the platform. They organize support issues and update assessments as evidence arrives."
+            },
+            {
+              "zh": "伙伴評估的分工尤其清楚：AI 維護評估，人推動溝通與合作。人的行動帶來新資料，AI 再把資料變成更新後的判斷。",
+              "en": "In partner assessment, AI maintains evaluations while people advance relationships. Their conversations generate new evidence for AI to assess."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "人的工作：定義、監測、升級",
+            "en": "People define, monitor, and improve"
+          },
+          "paragraphs": [
+            {
+              "zh": "人寫清工作目的、輸入、方法、輸出和驗收標準，監測執行是否有效；出現偏差，就調整說明書與工作方式。重要取捨仍由人決定。",
+              "en": "People define purposes, inputs, methods, outputs, and acceptance standards. They monitor execution, improve instructions, and make consequential decisions."
+            },
+            {
+              "zh": "一項工作穩定承接之後，人繼續識別值得做的新工作，定義新的說明書，逐步拓展中台可承擔的範圍。",
+              "en": "Once a workflow is established, people identify valuable new work. New instructions gradually expand what the platform can handle."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "我的投入",
+            "en": "My contribution"
+          },
+          "paragraphs": [
+            {
+              "zh": "我推動部門從使用 AI 工具轉向建立共同工作平台，明確交接標準與人機分工，並以實際工作檢查這套方式是否有效。",
+              "en": "I guide the shared work platform, define handover standards, and test responsibilities through real work."
+            }
+          ]
+        }
+      ],
+      "image": "v4-ai-hub.jpg",
+      "image_alt": {
+        "zh": "部門 AI 中台首頁",
+        "en": "Departmental AI hub homepage"
+      },
+      "related_ids": [
+        "case-standards",
+        "case-partners",
+        "case-support",
+        "thought-boundaries"
+      ]
+    },
+    {
+      "id": "thought-boundaries",
+      "kicker": {
+        "zh": "思考 / FATE",
+        "en": "THOUGHTS / FATE"
+      },
+      "title": {
+        "zh": "AI 接手之後，人要拓展什麼？",
+        "en": "What should people take on after AI takes over?"
+      },
+      "lede": {
+        "zh": "把已有工作交給 AI 只是起點。更重要的是，把原來沒能力做、做不好的工作，變成下一步能推動的事。",
+        "en": "Handing existing work to AI is a starting point. The next question is what people can now accomplish."
+      },
+      "quote": {
+        "zh": "人要輸出需求、做確認，並不斷拓展和管理工作邊界；這是是否真正駕馭 AI 的體現。",
+        "en": "People define requirements, confirm decisions, and expand their responsibilities. Managing that boundary shows whether they truly direct AI."
+      },
+      "quote_type": "summary",
+      "quote_kind": {
+        "zh": "會議觀點",
+        "en": "From my meeting notes"
+      },
+      "source": {
+        "zh": "Fate，2026-08-13 產品部門周會紀要，議題二「AI 時代的人機邊界」。",
+        "en": "Fate, product department meeting, August 13, 2026, topic 2: responsibilities in AI work."
+      },
+      "sections": [
+        {
+          "title": {
+            "zh": "分工要說清楚，也要持續調整",
+            "en": "Define responsibilities, then revisit them"
+          },
+          "paragraphs": [
+            {
+              "zh": "我關心的分工，是讓 AI 承擔已定義的執行工作，讓人掌握方向、確認關鍵選擇，並尋找下一個值得解決的問題。",
+              "en": "I want AI to execute defined work. People set direction, confirm consequential choices, and find the next worthwhile problem."
+            },
+            {
+              "zh": "邊界會隨能力變化。已經驗證有效的方法可以交出去，新的問題與取捨則需要人繼續定義。",
+              "en": "Responsibilities evolve with capability. Proven methods can be delegated, while people define how to address new problems and trade-offs."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "省下的時間，要變成新的業務行動",
+            "en": "Turn saved time into business action"
+          },
+          "paragraphs": [
+            {
+              "zh": "以伙伴評估為例，AI 接手資料整理和持續更新，人就應把更多精力放到取得反饋、推動合作和解決阻礙上。",
+              "en": "When AI maintains partner assessments, people can focus on obtaining feedback, advancing cooperation, and resolving obstacles."
+            },
+            {
+              "zh": "我希望看到的成果，是原來顧不上的機會有人推進，原來做不好的工作有了新的辦法，而不只是個人完成任務更快。",
+              "en": "I want overlooked opportunities pursued and difficult work handled better. Faster individual task completion is only part of that change."
+            }
+          ]
+        }
+      ],
+      "related_ids": [
+        "case-hub",
+        "case-partners",
+        "case-standards"
       ]
     }
   ],

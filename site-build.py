@@ -63,7 +63,7 @@ for lang in ['en','zh']:
    body+=label(U['selected'],'practice',U['more_practice'])+case_rows(p['case_ids'])
    body+=label(U['selected_thoughts'],'writing',U['more_thoughts'])+thought_rows(p['thought_ids'])
    body+=label(U['selected_reading'],'reading',U['more_reading'])+book_rows(['book-principles'])
-   recent=P['updates']['timeline'][-3:][::-1]
+   recent=sorted(P['updates']['timeline'],key=lambda x:x['date'],reverse=True)[:3]
    body+='<section class="feature-note"><div><p class="kicker">'+esc(U['updates'])+'</p><h2>'+esc(txt(p['updates_heading'],lang))+'</h2></div><div><p>'+esc(txt(p['updates_description'],lang))+'</p><a class="text-link" href="'+link('updates')+'">'+esc(U['all'])+' ↗</a><ul class="recent-notes">'+''.join('<li><time datetime="'+x['date']+'">'+x['date']+'</time> <span>'+esc(txt(x['title'],lang))+'</span></li>' for x in recent)+'</ul></div></section>'
   else:
    back=f'<a class="backlink" href="{link("practice")}">← {esc(U["back"])}</a>' if id.startswith('case-') else (f'<a class="backlink" href="{link("writing")}">← {esc(U["back_thoughts"])}</a>' if id.startswith('thought-') else '')
@@ -99,10 +99,10 @@ for lang in ['en','zh']:
    if p.get('book_ids'):body+=book_rows(p['book_ids'])
    if p.get('knowledge'):body+='<section class="knowledge" id="knowledge"><div class="section-label"><span>KNOWLEDGE / '+esc(U['knowledge_title'])+'</span></div><h2>'+esc(U['knowledge_title'])+'</h2><p>'+esc(U['knowledge_note'])+'</p><ul>'+''.join('<li><span>'+f'{i+1:02}'+'</span>'+esc(txt(x,lang))+'</li>' for i,x in enumerate(p['knowledge']))+'</ul></section>'
    if p.get('timeline'):
-    months=sorted(set(x['date'][:7] for x in p['timeline']));body+='<div class="timeline-layout"><nav class="toc" aria-label="'+('Months' if lang=='en' else '月份')+'">'+''.join('<a href="#month-'+m+'">'+m+'</a>' for m in months)+'</nav><div class="timeline">'
+    months=sorted(set(x['date'][:7] for x in p['timeline']),reverse=True);body+='<div class="timeline-layout"><nav class="toc" aria-label="'+('Months' if lang=='en' else '月份')+'">'+''.join('<a href="#month-'+m+'">'+m+'</a>' for m in months)+'</nav><div class="timeline">'
     for m in months:
      body+='<section class="timeline-month" id="month-'+m+'"><h2>'+m+'</h2><ol>'
-     for x in [t for t in p['timeline'] if t['date'].startswith(m)]:body+='<li><time datetime="'+x['date']+'">'+x.get('display_date',x['date'][5:].replace('-','.'))+'</time><div><h3>'+esc(txt(x['title'],lang))+'</h3><p>'+esc(txt(x['text'],lang))+'</p></div></li>'
+     for x in sorted([t for t in p['timeline'] if t['date'].startswith(m)],key=lambda x:x['date'],reverse=True):body+='<li><time datetime="'+x['date']+'">'+x.get('display_date',x['date'][5:].replace('-','.'))+'</time><div><h3>'+esc(txt(x['title'],lang))+'</h3><p>'+esc(txt(x['text'],lang))+'</p></div></li>'
      body+='</ol></section>'
     body+='</div></div>'
   body+=f'<section class="contact-banner"><p>{esc(U["contact_note"])}</p><a href="{link("about")}" data-contact="{esc(CONTACT)}">{esc(U["email"])} ↗</a></section></main>'
@@ -120,7 +120,7 @@ for a in ['site.js','avatar.jpg','favicon.png']+[p['image'] for p in P.values() 
  if (ROOT/a).resolve()!=(OUT/a).resolve():shutil.copy2(ROOT/a,OUT/a)
 shutil.copy2(ROOT/'site-source.css',OUT/'styles.css')
 feed='<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel><title>Fate — Field notes</title><link>https://0xfate.me/</link><description>A personal field journal.</description>'
-for x in reversed(P['updates']['timeline']):
+for x in sorted(P['updates']['timeline'],key=lambda x:x['date'],reverse=True):
  feed+=f'<item><title>{escape(x["title"]["en"])}</title><link>https://0xfate.me/updates.html#month-{x["date"][:7]}</link><guid isPermaLink="false">fate-{x["date"]}-{P["updates"]["timeline"].index(x)}</guid><description>{escape(x["text"]["en"])}</description></item>'
 (OUT/'feed.xml').write_text(feed+'</channel></rss>')
 (OUT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: https://0xfate.me/sitemap.xml\n' if opt.publish else 'User-agent: *\nDisallow: /\n')
