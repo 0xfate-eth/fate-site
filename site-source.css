@@ -27,3 +27,5 @@ h1,h2,h3{text-wrap:balance}
 @media(max-width:620px){.book-card{grid-template-columns:94px minmax(0,1fr);gap:22px;align-items:start}.book-card img{width:94px}.book-copy h3{font-size:27px}.book-copy>p:not(.book-author){font-size:14px}.book-list{margin-bottom:55px}.book-detail-cover img{width:110px}.book-quotes blockquote{font-size:21px}}
 
 .book-list .book-card + .book-card{border-top:1px solid var(--line);padding-top:30px;margin-top:30px}.book-author{text-transform:uppercase}.book-card img{object-fit:contain;background:var(--panel)}
+
+.case-metric{display:flex;align-items:center;gap:40px;padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:40px}.case-metric>strong{font-size:clamp(64px,10vw,104px);line-height:1;color:var(--accent);font-weight:500;letter-spacing:-.06em}.case-metric h2{font-size:22px;margin:0 0 8px}.case-metric p{max-width:660px;margin:0;line-height:1.7}@media(max-width:600px){.case-metric{gap:20px;align-items:flex-start}.case-metric h2{font-size:18px}.case-metric p{font-size:13px}}

@@ -73,6 +73,8 @@ for lang in ['en','zh']:
     first=p['sections'][0]
     body+='<section class="case-intro" id="section-0"><h2>'+esc(txt(first['title'],lang))+'</h2>'+''.join('<p>'+esc(txt(v,lang))+'</p>' for v in first['paragraphs'])+'</section>'
     sections=''.join(f'<section id="section-{i}"><h2>{esc(txt(item["title"],lang))}</h2>'+''.join(f'<p>{esc(txt(v,lang))}</p>' for v in item['paragraphs'])+'</section>' for i,item in enumerate(p['sections']) if i>0)
+   if p.get('metric'):
+    m=p['metric'];body+='<section class="case-metric" aria-label="'+esc(txt(m['label'],lang))+'"><strong>'+esc(m['value'])+'</strong><div><h2>'+esc(txt(m['label'],lang))+'</h2><p>'+esc(txt(m['scope'],lang))+'</p></div></section>'
    if p.get('cover'):body+='<div class="book-detail-cover"><img src="'+esc(p['cover'])+'" alt="'+esc(title)+'"></div>'
    if p.get('image'):body+=f'<figure class="artifact"><a href="{esc(p["image"])}" aria-label="{esc(txt(p["image_alt"],lang))}"><img src="{esc(p["image"])}" alt="{esc(txt(p["image_alt"],lang))}" width="1280" height="720"></a></figure>'
    if p.get('quote'):
@@ -89,8 +91,8 @@ for lang in ['en','zh']:
       body+='<figcaption>'+esc(txt(q['source'],lang))+'</figcaption></figure>'
      body+='</div></section>'
     if p.get('social'):body+='<div class="social-links"><a href="mailto:'+esc(EMAIL)+'">'+esc(EMAIL)+'</a>'+''.join('<a href="'+esc(s['url'])+'" rel="noopener noreferrer">'+esc(s['label'])+' ↗</a>' for s in p['social'])+'</div>'
-    if p.get('related'):
-     r=p['related'];body+=f'<div class="related"><p class="kicker">{esc(U["practice"] if r.startswith("case-") else U["writing"])}</p><a href="{link(r)}">{esc(txt(P[r]["title"],lang))} ↗</a></div>'
+    for r in p.get('related_ids', [p['related']] if p.get('related') else []):
+     body+=f'<div class="related"><p class="kicker">{esc(U["practice"] if r.startswith("case-") else U["writing"])}</p><a href="{link(r)}">{esc(txt(P[r]["title"],lang))} ↗</a></div>'
     body+='</article></div>'
    if p.get('case_ids'):body+=case_rows(p['case_ids'])
    if p.get('thought_ids'):body+=thought_rows(p['thought_ids'])
@@ -100,7 +102,7 @@ for lang in ['en','zh']:
     months=sorted(set(x['date'][:7] for x in p['timeline']));body+='<div class="timeline-layout"><nav class="toc" aria-label="'+('Months' if lang=='en' else '月份')+'">'+''.join('<a href="#month-'+m+'">'+m+'</a>' for m in months)+'</nav><div class="timeline">'
     for m in months:
      body+='<section class="timeline-month" id="month-'+m+'"><h2>'+m+'</h2><ol>'
-     for x in [t for t in p['timeline'] if t['date'].startswith(m)]:body+='<li><time datetime="'+x['date']+'">'+x['date'][5:].replace('-','.')+'</time><div><h3>'+esc(txt(x['title'],lang))+'</h3><p>'+esc(txt(x['text'],lang))+'</p></div></li>'
+     for x in [t for t in p['timeline'] if t['date'].startswith(m)]:body+='<li><time datetime="'+x['date']+'">'+x.get('display_date',x['date'][5:].replace('-','.'))+'</time><div><h3>'+esc(txt(x['title'],lang))+'</h3><p>'+esc(txt(x['text'],lang))+'</p></div></li>'
      body+='</ol></section>'
     body+='</div></div>'
   body+=f'<section class="contact-banner"><p>{esc(U["contact_note"])}</p><a href="{link("about")}" data-contact="{esc(CONTACT)}">{esc(U["email"])} ↗</a></section></main>'

@@ -1,6 +1,6 @@
 {
   "edition": "2026-11",
-  "preview_date": "2026-11-15",
+  "preview_date": "2026-11-18",
   "name": "Fate",
   "pages": [
     {
@@ -20,7 +20,7 @@
       "sections": [],
       "case_ids": [
         "case-continuity",
-        "case-standards",
+        "case-partners",
         "case-support"
       ],
       "thought_ids": [
@@ -76,8 +76,8 @@
         "zh": "從知識庫整理、部門管理到公司轉型，按日期記下做了什麼、改了什麼，以及為什麼改。"
       },
       "principle": {
-        "zh": "我關心的是如何創造性地運用 AI，推動公司業務增長，同時，人應該從重複勞動中得到解放。",
-        "en": "I care about using AI creatively to grow the business. People should also be freed from repetitive work."
+        "zh": "人和 AI 應該有清晰的合作邊界，合理的分工才能推動公司業務增長，而不僅僅是提高個人效率。",
+        "en": "People and AI need clear boundaries for collaboration. A sensible division of responsibilities drives company growth, beyond individual productivity."
       }
     },
     {
@@ -299,82 +299,113 @@
         "zh": "案例 02 / AI 工作體系"
       },
       "title": {
-        "en": "Keep partner knowledge ready for the next task.",
-        "zh": "把合作溝通整理成下次能用的知識。"
+        "en": "Let AI assess partners. Let people move cooperation forward.",
+        "zh": "讓 AI 持續評估伙伴，讓人專注推動合作。"
       },
       "lede": {
-        "en": "AI turns conversations and materials into an evolving record that supports follow-up, decisions, and communication.",
-        "zh": "AI 將溝通與材料持續整理為活記錄，支撐跟進、決策與後續交流。"
+        "en": "One framework covers 126 partners across every stage. AI maintains assessments; people focus on moving cooperation forward.",
+        "zh": "一套跨領域框架，納入全部階段的 126 家伙伴。AI 持續更新評估，人專注推動合作。"
       },
       "sections": [
         {
           "title": {
-            "en": "The work to replace",
-            "zh": "要改變的工作"
+            "en": "The burden behind partner assessment",
+            "zh": "既要推動合作，又要記住所有細節"
           },
           "paragraphs": [
             {
-              "en": "Partner knowledge is easily scattered across conversations and documents. Every new question can require someone to reconstruct the history.",
-              "zh": "合作知識容易散落在對話與文檔中，每遇到新問題，就需要有人重新拼起歷史。"
+              "en": "Partner information keeps changing across conversations and documents. People had to advance discussions while maintaining every assessment.",
+              "zh": "伙伴跨越不同領域，反饋與材料持續變化。同事既要推動溝通，又要記住細節、整理證據和更新判斷，容易出現遺漏與延遲。"
             }
           ]
         },
         {
           "title": {
-            "en": "How AI participates",
-            "zh": "AI 如何參與運轉"
+            "en": "Define a framework that travels across fields",
+            "zh": "先把跨領域的評估標準定清楚"
           },
           "paragraphs": [
             {
-              "en": "AI reads updates, identifies changed facts and open questions, and connects them to the existing partner record.",
-              "zh": "AI 讀取新內容，識別事實變化與未決問題，接回既有合作檔案。"
+              "en": "I defined a shared framework with eight dimensions and 24 research items. Each field uses relevant evidence and comparisons.",
+              "zh": "我制訂了八個維度、24 項研究內容的統一框架。不同領域沿用共同的判斷結構，再按具體業務選擇證據與比較指標。"
             },
             {
-              "en": "Confirmed facts, the other party’s claims, proposals, and unresolved issues stay distinguishable. New information does not erase valid history.",
-              "zh": "已確認事實、對方主張、提案與待確認問題分別記錄，新信息不抹去有效歷史。"
-            },
-            {
-              "en": "The accumulated context supports briefings and reply drafts. People approve commitments and external messages.",
-              "zh": "積累的背景可供生成簡報及回覆草稿；承諾與對外發送由人確認。"
+              "en": "Assessments connect conclusions to evidence, conditions, and unresolved questions. A single score cannot replace these judgments.",
+              "zh": "評估保留結論、依據、適用條件與待確認問題，讓人看清為什麼值得推進、哪些條件會改變判斷，而不是依賴一個總分。"
             }
           ]
         },
         {
           "title": {
-            "en": "The result",
-            "zh": "已有成果"
+            "en": "AI owns ongoing assessment updates",
+            "zh": "讓 AI 持續承擔評估更新"
           },
           "paragraphs": [
             {
-              "en": "Partner fact pages and progress records preserve the context for later research and follow-up.",
-              "zh": "合作方事實頁與進展記錄，為後續研究和跟進保留背景。"
+              "en": "The framework now runs in our shared AI platform. AI checks connected sources daily for new feedback and materials.",
+              "zh": "這套工作已遷入 AI 中台，每天自動運轉。已接入的多種來源出現新的反饋或材料後，AI 整理證據並接回已有評估。"
             },
             {
-              "en": "The value is continuity: the next task starts from accumulated knowledge instead of another search through old conversations.",
-              "zh": "價值在於接續：下一項工作從已有知識開始，而不是再翻一遍舊對話。"
+              "en": "It updates affected judgments, preserves useful history, and identifies questions that could change the next decision.",
+              "zh": "AI 更新受影響的判斷、保留有效歷史，並提出會影響下一步決定的關鍵問題。日常評估維護由 AI 承擔，同事不必重新拼湊整套材料。"
             }
           ]
         },
         {
           "title": {
-            "en": "My contribution",
-            "zh": "我的投入"
+            "en": "People focus on moving cooperation forward",
+            "zh": "人把精力放回推動合作"
           },
           "paragraphs": [
             {
-              "en": "I define which facts matter and review judgments. Colleagues contribute business context; AI organizes and maintains the record.",
-              "zh": "我定義重要信息與判斷標準；同事提供業務背景，AI 協助整理並維護記錄。"
+              "en": "Colleagues advance conversations, obtain useful feedback, and coordinate the next step. People decide priorities, trade-offs, and commitments.",
+              "zh": "同事專注推動溝通、取得關鍵反饋、協調資源和促成下一步。優先順序、重要取捨與對外承諾，仍由人決定。"
+            },
+            {
+              "en": "New information from connected sources feeds the next assessment update. The work continues from accumulated knowledge.",
+              "zh": "只要持續推動事情、讓新的材料進入已接入來源，AI 就能接續更新評估。每次溝通都能在已有知識上繼續前進。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "My contribution and the change it enabled",
+            "zh": "我做的改變，與它帶來的價值"
+          },
+          "paragraphs": [
+            {
+              "en": "I defined the framework, clarified responsibilities, and moved recurring assessment work onto the shared AI platform.",
+              "zh": "我的投入是定義評估框架、劃清人與 AI 的職責，並推動這項工作從人工維護轉為中台持續運行。"
+            },
+            {
+              "en": "AI carries the ongoing assessment work. People spend more attention on relationships, decisions, and actions that advance cooperation.",
+              "zh": "評估工作的持續整理與更新由 AI 接手，人把更多注意力放在關係、判斷與行動上。AI 和人各自做好擅長的工作，才是我希望形成的工作狀態。"
             }
           ]
         }
       ],
-      "image": "v4-partners.jpg",
-      "related": "thought-value",
+      "image": "partner-assessment.jpg",
+      "related": "thought-relief",
       "case_number": 2,
       "image_alt": {
-        "en": "Partner knowledge record",
-        "zh": "合作方知識記錄"
-      }
+        "en": "Partner assessment workspace and shared research framework",
+        "zh": "伙伴評估研究室與統一研究框架"
+      },
+      "metric": {
+        "value": "126",
+        "label": {
+          "en": "Partners in the assessment system",
+          "zh": "納入評估體系的伙伴"
+        },
+        "scope": {
+          "en": "All stages: initial research, evaluation, active cooperation, paused, declined, and exited. Counted on November 18, 2026.",
+          "zh": "涵蓋待了解、評估中、合作中、暫停觀察、決定不合作及歷史退出等全部階段。統計日期：2026-11-18。"
+        }
+      },
+      "related_ids": [
+        "thought-relief",
+        "case-standards"
+      ]
     },
     {
       "id": "case-research",
@@ -910,7 +941,11 @@
       "image_alt": {
         "en": "Work instruction",
         "zh": "工作說明書"
-      }
+      },
+      "related_ids": [
+        "thought-management",
+        "case-partners"
+      ]
     },
     {
       "id": "writing",
@@ -1385,9 +1420,25 @@
               "zh": "我會先找一件能幫到人的工作，再根據結果決定下一步做什麼。"
             }
           ]
+        },
+        {
+          "title": {
+            "en": "Give each side the right work",
+            "zh": "讓人與 AI 各自做好擅長的工作"
+          },
+          "paragraphs": [
+            {
+              "en": "In partner assessment, AI maintains evidence and judgments. People advance conversations, resolve trade-offs, and decide what happens next.",
+              "zh": "在伙伴評估中，AI 持續整理證據、更新判斷；人推動溝通、處理取捨，決定下一步。"
+            },
+            {
+              "en": "Relief comes from handing over ongoing work, while giving people room to focus on actions that matter.",
+              "zh": "真正的解放，是把持續性的工作交出去，讓人有精力推動重要的事情。清晰的分工，讓 AI 的持續處理能力和人的判斷、關係與行動互相補充。"
+            }
+          ]
         }
       ],
-      "related": "case-standards",
+      "related": "case-partners",
       "quote": {
         "en": "The test is whether this creates more work for people. The goal is to reduce time spent, not increase it.",
         "zh": "判斷標準是有沒有讓大家更累；目標是減少時間消耗，而不是增加。"
@@ -1713,6 +1764,18 @@
           "text": {
             "en": "Published notes for The Pay Off and Paying with Plastic, two books on how payments really work.",
             "zh": "上架《支付的故事》與《銀行卡時代》的讀書筆記，兩本講支付如何運轉的書。"
+          }
+        },
+        {
+          "date": "2026-11",
+          "display_date": "11",
+          "title": {
+            "en": "Standardized partner assessment and moved it onto the AI platform",
+            "zh": "將伙伴評估標準化，交由 AI 中台持續運行"
+          },
+          "text": {
+            "en": "A shared framework now supports ongoing assessment updates. People focus on advancing cooperation and making consequential decisions.",
+            "zh": "完成跨領域伙伴評估框架與人機分工，遷入 AI 中台持續更新評估；同事專注推動合作，並負責重要取捨。"
           }
         }
       ]
