@@ -1915,10 +1915,6 @@
             {
               "en": "Most of this work is invisible from outside. This website makes it legible: what exists, how it works, and what changed.",
               "zh": "這些工作從外面幾乎看不見。這個網站把它變得可讀：有什麼、做得怎樣、改了什麼。"
-            },
-            {
-              "en": "It will grow to cover career background, writing, and other channels.",
-              "zh": "之後會逐步加入職業背景、寫作與其他渠道。"
             }
           ]
         },
@@ -1929,8 +1925,8 @@
           },
           "paragraphs": [
             {
-              "en": "NFT enthusiast. E/acc. Best dad ever.",
-              "zh": "NFT enthusiast · E/acc · Best dad ever。"
+              "en": "NFT enthusiast. E/acc. Best dad ever. Influencer.",
+              "zh": "NFT enthusiast · E/acc · Best dad ever · Influencer。"
             },
             {
               "en": "I design secure crypto wallets. But no wallet is truly secure. Security begins with how you use it.",
@@ -1945,8 +1941,8 @@
           },
           "paragraphs": [
             {
-              "en": "I welcome conversations about crypto products, practical AI transformation, collaboration, and professional opportunities.",
-              "zh": "歡迎交流加密產品、AI 轉型實踐、合作與職業機會。"
+              "en": "I welcome conversations about crypto products, practical AI transformation, and opportunities to collaborate.",
+              "zh": "歡迎交流加密產品、AI 轉型實踐，以及彼此合作的可能。"
             },
             {
               "en": "If you are bringing AI into team work, I would be glad to exchange experiences.",
@@ -1977,7 +1973,8 @@
         "tags": [
           "NFT enthusiast",
           "E/acc",
-          "Best dad ever"
+          "Best dad ever",
+          "Influencer"
         ]
       }
     },
