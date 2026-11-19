@@ -2,6 +2,8 @@
 """Offline bilingual preview builder. No credentials, Git writes, or publishing."""
 import argparse,base64,html,json,re,shutil
 from pathlib import Path
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from xml.sax.saxutils import escape
 ROOT=Path(__file__).resolve().parent
 ap=argparse.ArgumentParser();ap.add_argument('--output',required=True);ap.add_argument('--publish',action='store_true');opt=ap.parse_args()
@@ -29,8 +31,11 @@ for item in pair_nodes(C):
   words=re.findall(r"[A-Za-z0-9]+(?:['’][A-Za-z0-9]+)*(?:-[A-Za-z0-9]+)*",sentence)
   assert len(words)<=20,(len(words),sentence)
 P={p['id']:p for p in C['pages']}
+build_date=datetime.now(ZoneInfo('Asia/Shanghai'))
+month_names=('JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER')
 for lang in ['en','zh']:
  U={k:txt(v,lang) for k,v in C['ui'].items()}
+ U['edition']=(f'{month_names[build_date.month-1]} {build_date.year}' if lang=='en' else f'{build_date.year} 年 {build_date.month} 月')
  if opt.publish:U.pop('preview',None)
  def link(id):return name(id,lang)
  def case_rows(ids):
