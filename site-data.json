@@ -1262,7 +1262,7 @@
         "zh": "思考 / FATE"
       },
       "title": {
-        "en": "Management becomes more explicit.",
+        "en": "Management means defining the work clearly.",
         "zh": "管理，是把工作定義清楚。"
       },
       "lede": {
@@ -1868,17 +1868,6 @@
             "en": "Established a subject structure, entry points, and initial maintenance principles.",
             "zh": "建立主題結構、閱讀入口與最初的維護原則。"
           }
-        },
-        {
-          "date": "2026-11-18",
-          "title": {
-            "en": "Added reading notes on four more books",
-            "zh": "新增四本書的讀書筆記"
-          },
-          "text": {
-            "en": "Published notes for Why Nations Fail, The Wealth of Nations, Layered Money, and The Federal Reserve and the Financial Crisis.",
-            "zh": "上架《國家為什麼會失敗》《國富論》《貨幣金字塔》與《金融的本質》的讀書筆記。"
-          }
         }
       ]
     },
@@ -1999,12 +1988,12 @@
         "zh": "READING / 讀書筆記"
       },
       "title": {
-        "en": "Books that stay with me.",
-        "zh": "讀過的書，留下的想法。"
+        "en": "Books that shaped me.",
+        "zh": "塑造我的那些書。"
       },
       "lede": {
-        "en": "Books I have read, and the ideas I keep coming back to.",
-        "zh": "讀過的書，以及那些值得反覆思考的觀點。"
+        "en": "What I’ve read, and how it has influenced my thinking and choices.",
+        "zh": "讀過的書，以及它們如何影響我的思考與選擇。"
       },
       "sections": [],
       "book_ids": [
@@ -2822,8 +2811,8 @@
       "rating": "9",
       "cover": "wealth-cover.jpg",
       "book_intro": {
-        "en": "The founding work of economics, published in 1776: labor, division of work, prices, and the invisible hand. I read it abridged, not in full.",
-        "zh": "1776 年問世的經濟學奠基之作：勞動、分工、價格與看不見的手。我讀的是節選，非全本。"
+        "en": "The founding work of economics, published in 1776: labor, division of work, prices, and the invisible hand.",
+        "zh": "1776 年問世的經濟學奠基之作：勞動、分工、價格與看不見的手。"
       },
       "sections": [
         {
@@ -2837,8 +2826,8 @@
               "zh": "人人都聽說過它，卻幾乎沒人真正讀過它。250 年間世界早已改頭換面，但書中如此多的核心原則至今依然成立。"
             },
             {
-              "en": "The nature of wealth, the division of labor, the invisible hand, free markets, capital and profit. My abridged reading covered the five core books, ending on taxes.",
-              "zh": "財富的本質、分工、看不見的手、自由市場、資本與利潤。我的節選覆蓋五篇核心，止於賦稅。"
+              "en": "The nature of wealth, the division of labor, the invisible hand, free markets, capital and profit.",
+              "zh": "財富的本質、分工、看不見的手、自由市場、資本與利潤。"
             }
           ]
         },
