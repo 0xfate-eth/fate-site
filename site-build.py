@@ -39,7 +39,7 @@ for lang in ['en','zh']:
  if opt.publish:U.pop('preview',None)
  def link(id):return name(id,lang)
  def case_rows(ids):
-  return '<div class="case-grid">'+''.join(f'<a class="case-card" href="{link(id)}"><img src="{esc(P[id]["image"])}" alt="{esc(txt(P[id]["image_alt"],lang))}" loading="lazy" width="1280" height="720"><div class="card-meta">CASE {P[id]["case_number"]:02d} <span aria-hidden="true">↗</span></div><h3>{esc(txt(P[id]["title"],lang))}</h3><p>{esc(txt(P[id]["lede"],lang))}</p></a>' for i,id in enumerate(ids))+'</div>'
+  return '<div class="case-grid">'+''.join(f'<a class="case-card" href="{link(id)}"><img src="{esc(P[id].get("images",{}).get(lang,P[id]["image"]))}" alt="{esc(txt(P[id]["image_alt"],lang))}" loading="lazy" width="1280" height="720"><div class="card-meta">CASE {P[id]["case_number"]:02d} <span aria-hidden="true">↗</span></div><h3>{esc(txt(P[id]["title"],lang))}</h3><p>{esc(txt(P[id]["lede"],lang))}</p></a>' for i,id in enumerate(ids))+'</div>'
  def thought_rows(ids):
   return '<div class="thought-list">'+''.join(f'<a class="case-row" href="{link(id)}"><span class="number">0{i+1}</span><h3>{esc(txt(P[id]["title"],lang))}</h3><p>{esc(txt(P[id]["lede"],lang))}</p><span class="arrow" aria-hidden="true">↗</span></a>' for i,id in enumerate(ids))+'</div>'
  def book_rows(ids):
@@ -81,7 +81,7 @@ for lang in ['en','zh']:
    if p.get('metric'):
     m=p['metric'];body+='<section class="case-metric" aria-label="'+esc(txt(m['label'],lang))+'"><strong>'+esc(m['value'])+'</strong><div><h2>'+esc(txt(m['label'],lang))+'</h2><p>'+esc(txt(m['scope'],lang))+'</p></div></section>'
    if p.get('cover'):body+='<div class="book-detail-cover"><img src="'+esc(p['cover'])+'" alt="'+esc(title)+'"></div>'
-   if p.get('image'):body+=f'<figure class="artifact"><a href="{esc(p["image"])}" aria-label="{esc(txt(p["image_alt"],lang))}"><img src="{esc(p["image"])}" alt="{esc(txt(p["image_alt"],lang))}" width="1280" height="720"></a></figure>'
+   if p.get('image'):body+=f'<figure class="artifact"><a href="{esc(p.get("images",{}).get(lang,p["image"]))}" aria-label="{esc(txt(p["image_alt"],lang))}"><img src="{esc(p.get("images",{}).get(lang,p["image"]))}" alt="{esc(txt(p["image_alt"],lang))}" width="1280" height="720"></a></figure>'
    if p.get('quote'):
     quote_tag='blockquote' if p['quote_type']=='excerpt' else 'div class="viewpoint-text"'
     quote_close='blockquote' if p['quote_type']=='excerpt' else 'div'
@@ -121,7 +121,7 @@ for lang in ['en','zh']:
   beacon=('<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token": "681672e48627417ba21e8e42f246ca91"}\'></script>' if opt.publish else '')
   page=f'<!doctype html><html lang="{"en" if lang=="en" else "zh-Hant"}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">{robots}{metadata}<meta name="description" content="{esc(lede)}"><title>Fate — {esc(title)}</title><link rel="icon" href="favicon.png"><link rel="stylesheet" href="styles.css"><link rel="alternate" type="application/rss+xml" title="Field notes" href="feed.xml"></head><body data-page="{id}"><a class="skip" href="#main">{esc(U["skip"])}</a>{header}{body}{footer}{dialog}<script id="ui-data" type="application/json">{dump(U)}</script><script id="search-data" type="application/json">{dump(search)}</script><script src="site.js" defer></script>{beacon}</body></html>'
   (OUT/name(id,lang)).write_text(page)
-for a in ['site.js','avatar.jpg','favicon.png']+[p['image'] for p in P.values() if p.get('image')]+[p['cover'] for p in P.values() if p.get('cover')]:
+for a in ['site.js','avatar.jpg','favicon.png']+[p['image'] for p in P.values() if p.get('image')]+[v for p in P.values() for v in p.get('images',{}).values()]+[p['cover'] for p in P.values() if p.get('cover')]:
  if (ROOT/a).resolve()!=(OUT/a).resolve():shutil.copy2(ROOT/a,OUT/a)
 shutil.copy2(ROOT/'site-source.css',OUT/'styles.css')
 feed='<?xml version="1.0" encoding="utf-8"?><rss version="2.0"><channel><title>Fate — Field notes</title><link>https://0xfate.me/</link><description>A personal field journal.</description>'

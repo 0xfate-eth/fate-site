@@ -91,8 +91,8 @@
         "zh": "AI 具體幫我們做了什麼。"
       },
       "lede": {
-        "zh": "從部門管理、客服到調研與 AI 中台，九個案例介紹我們怎樣把工作交給 AI。",
-        "en": "Nine cases explain how we use AI in departmental management, support, research, and a shared work platform."
+        "zh": "從部門管理、客服到調研、AI 中台與知識庫，十個案例介紹我們怎樣把工作交給 AI。",
+        "en": "Ten cases explore AI in departmental management, support, research, the shared work platform, and knowledge base operations."
       },
       "sections": [],
       "case_ids": [
@@ -104,7 +104,8 @@
         "case-finance",
         "case-support",
         "case-standards",
-        "case-hub"
+        "case-hub",
+        "case-knowledge-operations"
       ],
       "knowledge": [
         {
@@ -285,12 +286,16 @@
           ]
         }
       ],
-      "image": "v4-department.jpg",
+      "image": "v5-case01-en.png",
       "related": "thought-management",
       "case_number": 1,
       "image_alt": {
-        "en": "Departmental work overview",
-        "zh": "部門工作概覽"
+        "zh": "部門工作數量、進展與狀態分布",
+        "en": "Department work counts, progress, and status"
+      },
+      "images": {
+        "en": "v5-case01-en.png",
+        "zh": "v5-case01-zh.png"
       }
     },
     {
@@ -385,12 +390,12 @@
           ]
         }
       ],
-      "image": "partner-assessment.jpg",
+      "image": "v5-case02-en.png",
       "related": "thought-relief",
       "case_number": 2,
       "image_alt": {
-        "en": "Partner assessment workspace and shared research framework",
-        "zh": "伙伴評估研究室與統一研究框架"
+        "zh": "126個夥伴的實際評估階段分布",
+        "en": "Actual evaluation stages across 126 partners"
       },
       "metric": {
         "value": "126",
@@ -406,7 +411,11 @@
       "related_ids": [
         "thought-relief",
         "case-standards"
-      ]
+      ],
+      "images": {
+        "en": "v5-case02-en.png",
+        "zh": "v5-case02-zh.png"
+      }
     },
     {
       "id": "case-research",
@@ -488,12 +497,16 @@
           ]
         }
       ],
-      "image": "v4-research.jpg",
+      "image": "v6-case03-en.png",
       "related": "thought-judgment",
       "case_number": 3,
       "image_alt": {
-        "en": "Product research comparison",
-        "zh": "產品調研比較"
+        "zh": "帳戶歸檔、確認與恢復入口的連續真機截圖",
+        "en": "Real-device screenshots of account archiving, confirmation, and recovery"
+      },
+      "images": {
+        "en": "v6-case03-en.png",
+        "zh": "v6-case03-zh.png"
       }
     },
     {
@@ -568,12 +581,16 @@
           ]
         }
       ],
-      "image": "v4-materials.jpg",
+      "image": "v5-case04-en.png",
       "related": "thought-growth",
       "case_number": 4,
       "image_alt": {
-        "en": "AI transformation presentation",
-        "zh": "AI 轉型演講材料"
+        "zh": "自上而下與逐步生長的AI轉型方法",
+        "en": "Top-down direction and iterative AI transformation"
+      },
+      "images": {
+        "en": "v5-case04-en.png",
+        "zh": "v5-case04-zh.png"
       }
     },
     {
@@ -652,12 +669,16 @@
           ]
         }
       ],
-      "image": "v4-sentiment.jpg",
+      "image": "v6-case05-en.png",
       "related": "thought-value",
       "case_number": 5,
       "image_alt": {
-        "en": "Public feedback report",
-        "zh": "外部反饋報告"
+        "zh": "新版輿情介面的評價統計、內容分類與匿名評價",
+        "en": "Current sentiment interface with review totals, content categories, and an anonymous review"
+      },
+      "images": {
+        "en": "v6-case05-en.png",
+        "zh": "v6-case05-zh.png"
       }
     },
     {
@@ -671,8 +692,8 @@
         "zh": "讓 AI 參與財務模型的建立與修訂。"
       },
       "lede": {
-        "en": "Connect authoritative inputs, explicit assumptions, calculation, reconciliation, and human review rather than generating an isolated forecast.",
-        "zh": "把權威輸入、明確假設、計算、對賬與人工審閱連起來，而不是只生成一份孤立預測。"
+        "zh": "用 AI 協助建立公司五年收入預測，連起假設、計算、敏感性分析與歷史校準。",
+        "en": "AI helps build five-year company revenue forecasts, connecting assumptions, calculations, sensitivity analysis, and historical calibration."
       },
       "sections": [
         {
@@ -682,8 +703,8 @@
           },
           "paragraphs": [
             {
-              "en": "We define periods, metric meanings, actual inputs, and assumptions before building the model.",
-              "zh": "先明確期間、指標含義、實際輸入與假設，再建立模型。"
+              "zh": "這項工作覆蓋公司五個財年的收入預期。先區分歷史實績、已確認要求與待驗證假設，再建立計算關係。",
+              "en": "The model covers five fiscal years of company revenue. Historical results, confirmed requirements, and assumptions stay distinct."
             }
           ]
         },
@@ -710,8 +731,8 @@
           },
           "paragraphs": [
             {
-              "en": "The work produced models, scenario summaries, and review records. Saved assumptions make later revisions easier.",
-              "zh": "已形成模型、情景摘要與審閱記錄，保留假設，方便後續調整再計算。"
+              "zh": "已形成包含八個工作表的五年預測模型，涵蓋假設、收入建模、彙總、會議要求、敏感性分析，以及歷史基線與校準。",
+              "en": "The five-year model has eight worksheets covering assumptions, revenue modelling, summaries, meeting requirements, sensitivity analysis, and historical calibration."
             }
           ]
         },
@@ -728,12 +749,16 @@
           ]
         }
       ],
-      "image": "v4-finance.jpg",
+      "image": "v7-case06-en.png",
       "related": "thought-judgment",
       "case_number": 6,
       "image_alt": {
-        "en": "Financial scenario summary",
-        "zh": "財務情景摘要"
+        "zh": "五年收入預測模型的閱讀入口與工作表結構",
+        "en": "Reading guide and worksheet structure of the five-year revenue forecast"
+      },
+      "images": {
+        "en": "v7-case06-en.png",
+        "zh": "v7-case06-zh.png"
       }
     },
     {
@@ -860,12 +885,16 @@
           ]
         }
       ],
-      "image": "v4-support.jpg",
+      "image": "v7-case07-en.png",
       "related": "thought-relief",
       "case_number": 7,
       "image_alt": {
-        "en": "Customer support report",
-        "zh": "客服報告"
+        "zh": "客服工作流程：AI協助理解與準備，人工判斷，經驗沉澱與復用",
+        "en": "Support workflow: AI-assisted preparation, human judgment, and reusable service knowledge"
+      },
+      "images": {
+        "en": "v7-case07-en.png",
+        "zh": "v7-case07-zh.png"
       }
     },
     {
@@ -980,18 +1009,23 @@
           ]
         }
       ],
-      "image": "v4-instructions.jpg",
+      "image": "v6-case08-en.png",
       "related": "thought-management",
       "case_number": 8,
       "image_alt": {
-        "en": "Work instruction",
-        "zh": "工作說明書"
+        "zh": "工作說明書的目標、輸入輸出與工作流程開頭",
+        "en": "Work instructions covering purpose, inputs, outputs, and the opening workflow steps"
       },
       "related_ids": [
         "thought-management",
         "case-partners",
-        "case-hub"
-      ]
+        "case-hub",
+        "case-knowledge-operations"
+      ],
+      "images": {
+        "en": "v6-case08-en.png",
+        "zh": "v6-case08-zh.png"
+      }
     },
     {
       "id": "writing",
@@ -1560,6 +1594,17 @@
       },
       "sections": [],
       "timeline": [
+        {
+          "date": "2026-11-22",
+          "title": {
+            "zh": "建立知識庫運行總覽",
+            "en": "Established a knowledge base operations overview"
+          },
+          "text": {
+            "zh": "將知識與成果、持續工作的狀態，以及需要處理的問題集中呈現，建立日常更新與檢查機制，讓知識庫擴大後仍能掌握全貌、發現異常並作出取捨。",
+            "en": "Created a shared view of knowledge, results, work status, and issues, with a daily refresh and review process. It helps me identify exceptions and make decisions as the knowledge base grows."
+          }
+        },
         {
           "date": "2026-11-17",
           "title": {
@@ -3393,17 +3438,22 @@
           ]
         }
       ],
-      "image": "v4-ai-hub.jpg",
+      "image": "v5-case09-en.png",
       "image_alt": {
-        "zh": "部門 AI 中台首頁",
-        "en": "Departmental AI hub homepage"
+        "zh": "AI中台的部門工作入口",
+        "en": "Department workspaces on the AI Hub homepage"
       },
       "related_ids": [
         "case-standards",
         "case-partners",
         "case-support",
-        "thought-boundaries"
-      ]
+        "thought-boundaries",
+        "case-knowledge-operations"
+      ],
+      "images": {
+        "en": "v5-case09-en.png",
+        "zh": "v5-case09-zh.png"
+      }
     },
     {
       "id": "thought-boundaries",
@@ -3471,6 +3521,102 @@
         "case-partners",
         "case-standards"
       ]
+    },
+    {
+      "id": "case-knowledge-operations",
+      "case_number": 10,
+      "kicker": {
+        "zh": "案例 10 / 知識庫運行管理",
+        "en": "CASE 10 / KNOWLEDGE BASE OPERATIONS"
+      },
+      "title": {
+        "zh": "讓不斷擴大的知識庫保持可管理。",
+        "en": "Keeping a growing knowledge base manageable."
+      },
+      "lede": {
+        "zh": "把知識與成果、工作狀態和需要處理的問題集中呈現。AI 承擔日常整理與檢查，我把注意力放在異常、優先級和取捨。",
+        "en": "Bring knowledge, results, work status, and issues into one view. AI handles routine checks; I focus on exceptions, priorities, and decisions."
+      },
+      "sections": [
+        {
+          "title": {
+            "zh": "資料越來越多，只能找到還不夠",
+            "en": "Finding information is only the beginning"
+          },
+          "paragraphs": [
+            {
+              "zh": "知識庫逐漸承載研究、成果、工作方法和持續執行的任務。逐個翻目錄、查看結果，已經很難掌握整體情況：哪些工作在運行、最近留下了什麼成果、哪些問題需要介入。",
+              "en": "The knowledge base now holds research, results, working methods, and ongoing tasks. Checking individual folders no longer gives me a clear overall picture."
+            },
+            {
+              "zh": "我需要一個日常入口，把這些資訊放在一起，先看全貌，再查看值得關注的細節。",
+              "en": "I need one place to see the whole picture, then inspect the details that deserve attention."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "從總覽走到需要處理的事情",
+            "en": "From an overview to decisions"
+          },
+          "paragraphs": [
+            {
+              "zh": "看板將知識與成果、持續工作的狀態，以及維護中發現的問題集中呈現。需要了解細節時，可以繼續查看對應材料與處理依據。",
+              "en": "The dashboard brings together knowledge, results, ongoing work, and maintenance findings. Each area leads to supporting materials when I need details."
+            },
+            {
+              "zh": "我與 AI 一起建立日常更新與檢查機制，讓工作變化和新問題能持續進入同一個入口。已處理的事項與需要我決定的事項分開呈現。",
+              "en": "Together with AI, I established a daily refresh and review process. Completed fixes and decisions requiring my attention appear separately."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "AI 做日常檢查，人做重要取捨",
+            "en": "AI checks; people decide"
+          },
+          "paragraphs": [
+            {
+              "zh": "AI 按工作標準整理資訊、核對變化，處理已授權的常規維護，並把需要判斷的事項連同依據整理出來。我決定優先級、保留什麼，以及下一步如何調整。",
+              "en": "AI organizes information, checks changes, and handles authorized routine maintenance. It assembles evidence for decisions; I set priorities and decide what to retain or change."
+            },
+            {
+              "zh": "我的投入是定義看板應回答哪些問題、哪些資訊值得看，以及什麼事情需要我介入，再用實際成果檢查呈現是否有效。",
+              "en": "I define which questions the dashboard should answer, what deserves attention, and where my judgment is needed."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "知識庫也需要持續管理",
+            "en": "A knowledge base needs ongoing care"
+          },
+          "paragraphs": [
+            {
+              "zh": "這個入口讓我可以先掌握整體狀況，再聚焦需要處理的事情，不必從零逐項拼湊進展。",
+              "en": "This gives me an overall view before I focus on specific issues, without reconstructing progress from scattered records."
+            },
+            {
+              "zh": "我的體會是，當知識庫開始承載持續工作的時候，管理它的運行狀況，就會成為 AI 轉型的一部分。",
+              "en": "My experience suggests that managing a knowledge base becomes part of AI transformation once it supports ongoing work."
+            }
+          ]
+        }
+      ],
+      "image": "v4-knowledge-overview-en.png",
+      "image_alt": {
+        "zh": "知識庫本地全貌：閱讀材料、主題、持續工作、材料分布與儲存概況",
+        "en": "Knowledge base overview: materials, topics, ongoing work, distribution, and storage"
+      },
+      "related_ids": [
+        "case-standards",
+        "case-hub",
+        "thought-boundaries"
+      ],
+      "images": {
+        "en": "v4-knowledge-overview-en.png",
+        "zh": "v4-knowledge-overview-zh.png"
+      }
     }
   ],
   "ui": {
