@@ -20,7 +20,7 @@
       "sections": [],
       "case_ids": [
         "case-continuity",
-        "case-partners",
+        "case-reflection",
         "case-hub"
       ],
       "thought_ids": [
@@ -91,8 +91,8 @@
         "zh": "AI 具體幫我們做了什麼。"
       },
       "lede": {
-        "zh": "從部門管理、客服到調研、AI 中台與知識庫，十個案例介紹我們怎樣把工作交給 AI。",
-        "en": "Ten cases explore AI in departmental management, support, research, the shared work platform, and knowledge base operations."
+        "zh": "從部門管理、調研到工作復盤，十一個案例介紹我們怎樣把 AI 用進實際工作。",
+        "en": "Eleven cases explore how we use AI in departmental management, research, and reflection on our work."
       },
       "sections": [],
       "case_ids": [
@@ -105,7 +105,8 @@
         "case-support",
         "case-standards",
         "case-hub",
-        "case-knowledge-operations"
+        "case-knowledge-operations",
+        "case-reflection"
       ],
       "knowledge": [
         {
@@ -1594,6 +1595,17 @@
       },
       "sections": [],
       "timeline": [
+        {
+          "date": "2026-11-24",
+          "title": {
+            "zh": "用長期工作記錄做協作分析，更新工作準則",
+            "en": "Used accumulated work records to review collaboration and update working standards"
+          },
+          "text": {
+            "zh": "分析工作行為與協作方式，深入復盤自己的選擇，將有用的改善要求寫入 AI 後續工作的輸出準則。",
+            "en": "Reviewed working patterns and collaboration, including my own choices. Turned useful findings into standards for future AI work."
+          }
+        },
         {
           "date": "2026-11-22",
           "title": {
@@ -3617,6 +3629,122 @@
         "en": "v4-knowledge-overview-en.png",
         "zh": "v4-knowledge-overview-zh.png"
       }
+    },
+    {
+      "id": "case-reflection",
+      "case_number": 11,
+      "kicker": {
+        "zh": "案例 11 / 工作復盤",
+        "en": "CASE 11 / REFLECTING ON WORK"
+      },
+      "title": {
+        "zh": "讓 AI 幫我持續改進工作方式。",
+        "en": "Using AI to keep improving how I work."
+      },
+      "lede": {
+        "zh": "從長期工作記錄中分析行為與協作，找出自己難以察覺的問題，再把改進要求寫進 AI 的工作標準。",
+        "en": "Analyze working patterns and collaboration through accumulated records. Turn useful feedback into standards for future AI work."
+      },
+      "sections": [
+        {
+          "title": {
+            "zh": "認識自己，需要記憶之外的證據",
+            "en": "Self-reflection needs evidence beyond memory"
+          },
+          "paragraphs": [
+            {
+              "zh": "自己分析自己，很容易受當下感受和熟悉的解釋影響。外部的人能提供不同視角，卻往往看不到足夠多的日常工作。",
+              "en": "Self-reflection can lean on recent feelings and familiar explanations. Outside observers often lack enough context about everyday work."
+            },
+            {
+              "zh": "我持續把工作材料、會議與溝通記錄納入知識庫，讓 AI 可以把不同時期的決定、行動與結果放在一起看。這次分析因此有了長期記錄作為依據。",
+              "en": "I keep working materials, meetings, and conversations in my knowledge base. AI can compare decisions, actions, and outcomes across time."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "從真實工作中分析，而不是做性格測驗",
+            "en": "Study actual work and collaboration"
+          },
+          "paragraphs": [
+            {
+              "zh": "這次工作整理了核心角色的工作方向、行為習慣、優勢、代價與改善建議，也分析了角色之間如何配合。我尤其深入看了自己的工作方式。",
+              "en": "The review examined core roles, working habits, strengths, tradeoffs, and opportunities to improve collaboration. I examined my own working patterns particularly closely."
+            },
+            {
+              "zh": "AI 對照不同階段的記錄，尋找重複出現的行為，也主動找反例。分析先區分工作條件、資源與共同決策，再判斷個人行為，避免把所有問題都歸因於性格。",
+              "en": "AI compared records across periods, looking for recurring behavior and counterexamples. It separated working conditions, resources, and shared decisions from individual behavior."
+            },
+            {
+              "zh": "我回看具體依據，判斷哪些觀察成立、哪些需要修正。AI 提供一個可以被追問和核查的外部視角，我負責判斷與取捨。",
+              "en": "I reviewed the evidence and decided which observations held up or needed correction. AI offered another perspective; I remained responsible for judgment."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "最重要的產出，是下一次怎樣做",
+            "en": "Make the next piece of work better"
+          },
+          "paragraphs": [
+            {
+              "zh": "分析讓我看見了一些自己原本沒有充分意識到的問題，也把改善方向說得更具體。它的價值開始落在後續工作要求上。",
+              "en": "The review helped me recognize problems I had not fully noticed. It also made the changes I wanted more specific."
+            },
+            {
+              "zh": "先交代實際結果、剩餘差距和推薦；新增重要工作時說清資源、替換項或延期代價；對自己偏好的方案，也要求同樣的證據與驗證。",
+              "en": "Lead with results, gaps, and a recommendation. Make resources and tradeoffs explicit. Apply the same evidence standards to my preferred options."
+            },
+            {
+              "zh": "評價 AI 的作用，也回到正確性、可實施性、總耗時和實際釋放的能力。工具使用應服務於工作結果。",
+              "en": "Assess AI through correctness, feasibility, total time, and capacity released. Tool use should serve the outcome."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "把分析寫進 AI 以後的工作標準",
+            "en": "Put the findings into future AI work"
+          },
+          "paragraphs": [
+            {
+              "zh": "這些要求已寫入我的工作指令與預設輸出準則。AI 之後幫我形成分析、方案或溝通稿時，要先讀取並遵循這些要求。",
+              "en": "These requirements are now part of my working instructions and default output standards. AI must apply them when preparing analyses, proposals, and communications."
+            },
+            {
+              "zh": "我不需要每次重新講一遍，後續成果也有了具體的檢查標準。是否真正改善，要繼續看實際交付與協作結果。",
+              "en": "I no longer need to restate every requirement. Future work can be checked against explicit standards and actual outcomes."
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "長期積累，讓回饋有了上下文",
+            "en": "Accumulated context makes feedback useful"
+          },
+          "paragraphs": [
+            {
+              "zh": "對我而言，知識庫不只是在需要時找回資料。當它保留了足夠多的工作過程，AI 也能幫我重新理解自己的選擇，並把反思轉成下一次工作的要求。",
+              "en": "My knowledge base does more than retrieve information. Accumulated context helps AI question my choices and turn reflection into requirements for future work."
+            }
+          ]
+        }
+      ],
+      "image": "v1-case11-en.svg",
+      "images": {
+        "en": "v1-case11-en.svg",
+        "zh": "v1-case11-zh.svg"
+      },
+      "image_alt": {
+        "zh": "六位虛構角色的工作習慣、協作風格、優勢與改進方向對比",
+        "en": "Six fictional roles compared by working habits, collaboration styles, strengths, and areas for improvement"
+      },
+      "related_ids": [
+        "case-standards",
+        "case-knowledge-operations",
+        "thought-boundaries"
+      ]
     }
   ],
   "ui": {
