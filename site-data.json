@@ -2051,6 +2051,7 @@
       },
       "sections": [],
       "book_ids": [
+        "book-changing-world-order",
         "book-wealth-nations",
         "book-layered-money",
         "book-fed-crisis",
@@ -3745,6 +3746,139 @@
         "case-knowledge-operations",
         "thought-boundaries"
       ]
+    },
+    {
+      "id": "book-changing-world-order",
+      "kicker": {
+        "en": "READING / BOOK NOTES",
+        "zh": "READING / 讀書筆記"
+      },
+      "title": {
+        "en": "Principles for Dealing with the Changing World Order",
+        "zh": "《原則：應對變化中的世界秩序》"
+      },
+      "lede": {
+        "en": "Ray Dalio · My rating: 8.5 / 10",
+        "zh": "瑞・達利歐 · 我的評分：8.5 / 10"
+      },
+      "cover": "changing-world-order-cover.jpg",
+      "book_intro": {
+        "en": "Dalio studies the rise and decline of empires through debt, domestic conflict, and competition between powers. He connects these cycles with changes in reserve currencies.",
+        "zh": "達利歐從債務、國內衝突與大國競爭三條線，梳理帝國的崛起與衰落。他把這些週期與儲備貨幣的更替連在一起，試著理解世界秩序如何變化。"
+      },
+      "sections": [
+        {
+          "title": {
+            "en": "About the book",
+            "zh": "關於這本書"
+          },
+          "paragraphs": [
+            {
+              "en": "Why do powerful countries rise, prosper, and eventually decline? Dalio studies the past 500 years through the Dutch, British, American, and Chinese experiences. He looks for recurring causes behind changes in wealth and power.",
+              "zh": "強國為什麼崛起、繁榮，又逐漸衰落？達利歐回看過去 500 年，以荷蘭、英國、美國與中國的歷史為主線，尋找財富與權力轉移背後反覆出現的因果關係。"
+            },
+            {
+              "en": "His framework connects three cycles: money and debt, domestic order, and international order. Heavy debts constrain economies, unequal wealth fuels internal conflict, and rising powers challenge established ones. The book examines how these forces reinforce each other.",
+              "zh": "全書把三個大週期連在一起：貨幣與債務、內部秩序、外部秩序。債務累積如何拖累經濟，財富差距如何激化內部衝突，新興強國又如何挑戰既有強國，是彼此牽動的三條主線。"
+            },
+            {
+              "en": "Education, innovation, productivity, trade, and finance help explain how countries gain strength. Success can also encourage excessive borrowing, widening inequality, and costly expansion. Reserve currencies often retain their position after the issuing country begins to decline, because established habits endure.",
+              "zh": "教育、創新、生產率、貿易與金融，如何讓一個國家變強？成功又如何滋生過度舉債、貧富分化與代價高昂的擴張？書中也解釋了儲備貨幣的慣性：國力開始衰退後，人們仍可能長期沿用它的貨幣。"
+            },
+            {
+              "en": "The first part explains these mechanisms; historical case studies then show how they interacted. Dalio concludes by applying his framework to China, America, and possible changes in the world order.",
+              "zh": "前半部先解釋世界如何運轉，後半部再用各國興衰與貨幣史，把抽象機制放回具體事件。最後，達利歐用這套框架觀察中美關係與未來的世界秩序。"
+            }
+          ]
+        },
+        {
+          "title": {
+            "en": "Why it matters to me",
+            "zh": "我的評價與想法"
+          },
+          "paragraphs": [
+            {
+              "en": "I like Dalio’s style: plain language, direct explanations, and plenty of examples and data. His books make complex subjects easy to follow and difficult to dismiss.",
+              "zh": "我很喜歡達利歐的風格：文字平實淺顯，直截了當把事情講清楚，再用大量例子和數據墊底。讀起來很輕鬆，不知不覺就覺得必須信服。"
+            },
+            {
+              "en": "For me, the book’s central idea is simple: every empire rises and falls. The Dutch and British did, and America is no exception.",
+              "zh": "他的每本書，核心道理其實都很簡單。這本書只講一件事：歷史上所有帝國都有興衰週期，荷蘭和英國如此，美國也逃不掉。"
+            },
+            {
+              "en": "These cycles last a long time. Our generation may nevertheless live through a shift in power. Understanding what that could bring matters to everyone.",
+              "zh": "大週期通常持續很久，但我們這一代也許剛好站在權力交替的時間點上。了解這可能帶來什麼，對每個人都重要。"
+            },
+            {
+              "en": "I think it suits young readers particularly well. Much of the book explains how the world works. I would probably recommend it to my children.",
+              "zh": "這本書特別適合年輕人。年輕人需要了解世界是怎樣運轉的，而這個主題幾乎佔了全書一半。我大概會推薦我的孩子看。"
+            },
+            {
+              "en": "Dalio devotes considerable space to China and is very optimistic about its future. His long involvement there gives his account depth. But I do not accept his conclusions wholesale.",
+              "zh": "書裡花了很大篇幅講中國。達利歐與中國淵源很深，對中國有深入的理解，也非常看好中國。作為一個中國人，他講得雖有道理，但我不會全盤接受。"
+            },
+            {
+              "en": "Perhaps China can take the leading role; perhaps it cannot. Either way, the transition is far from simple.",
+              "zh": "也許中國真的能接管世界，也許不行。總之，這不是一件簡單的事情。"
+            },
+            {
+              "en": "My main reservation is the very broad perspective. I doubt that a few dozen indicators can predict every country’s future. Historical patterns can also become a trap.",
+              "zh": "要說缺點，就是視角過於宏觀。我不認為幾十個指標真能預測每個國家的未來。某種意義上，這也可能是一種刻舟求劍。"
+            },
+            {
+              "en": "Breakthroughs such as AI introduce further uncertainty. History has repeated itself many times, but the future may still contain enormous surprises.",
+              "zh": "AI 這類重大技術突破，也讓預測充滿變數。歷史劇本雖然重複上演了很多次，未來世界的變化也許仍有很大變數。"
+            }
+          ]
+        }
+      ],
+      "book_quotes": [
+        {
+          "original": "朝着一个方向的走势中，潜藏着导致反向走势的要害。",
+          "translation": "Within a movement in one direction lie the seeds of a reversal.",
+          "source": {
+            "en": "Principles for Dealing with the Changing World Order · Chapter 1 · The Big Cycle",
+            "zh": "《原則：應對變化中的世界秩序》 · 第1章 · 大週期簡述"
+          }
+        },
+        {
+          "original": "世界储备货币就像世界通用语言一样，往往在国家开始衰落后仍然存在，由于人们已经习惯于使用这种货币，货币存在的时间通常长于国家实力持续的时间。",
+          "translation": "Reserve currencies, like global languages, often outlast the power of the countries behind them. People continue using what they know.",
+          "source": {
+            "en": "Principles for Dealing with the Changing World Order · Chapter 1 · How the world works",
+            "zh": "《原則：應對變化中的世界秩序》 · 第1章 · 世界是如何運轉的"
+          }
+        },
+        {
+          "original": "一个国家的财富和权力与国民的幸福几乎没有关联。",
+          "translation": "A country’s wealth and power have almost no relationship with its people’s happiness.",
+          "source": {
+            "en": "Principles for Dealing with the Changing World Order · Chapter 1 · How the world works",
+            "zh": "《原則：應對變化中的世界秩序》 · 第1章 · 世界是如何運轉的"
+          }
+        },
+        {
+          "original": "我们不应僵化地认为，任何经济或政治体制始终是最好的。",
+          "translation": "We should not rigidly assume that any economic or political system is always the best.",
+          "source": {
+            "en": "Principles for Dealing with the Changing World Order · Chapter 5 · Conclusion",
+            "zh": "《原則：應對變化中的世界秩序》 · 第5章 · 結語"
+          }
+        },
+        {
+          "original": "尽管从过去推断未来通常是一种合理的做法，但出现令人惊奇的事也不意外，因为未来将和你预计的大为不同。",
+          "translation": "Extrapolating from the past is usually reasonable. Still, surprises are to be expected: the future will differ greatly from your expectations.",
+          "source": {
+            "en": "Principles for Dealing with the Changing World Order · Chapter 14 · Cycles and bumps along the way",
+            "zh": "《原則：應對變化中的世界秩序》 · 第14章 · 發展過程中的週期和顛簸"
+          }
+        }
+      ],
+      "author": {
+        "en": "Ray Dalio",
+        "zh": "瑞・達利歐"
+      },
+      "rating": "8.5"
     }
   ],
   "ui": {
